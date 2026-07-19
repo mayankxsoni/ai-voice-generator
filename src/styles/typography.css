@@ -1,0 +1,6 @@
+/* =========================
+Default Body and Typography styles
+=========================== */
+body {
+  @apply font-inter-tight antialiased;
+}

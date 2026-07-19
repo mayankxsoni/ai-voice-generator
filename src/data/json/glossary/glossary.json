@@ -1,0 +1,693 @@
+[
+  {
+    "letter": "A",
+    "items": [
+      {
+        "title": "A/B testing",
+        "description": "A method of comparing two versions of a webpage, email, or feature to determine which performs better based on user behavior.",
+        "id": "1"
+      },
+      {
+        "title": "Acquisition cost (CAC)",
+        "description": "Customer Acquisition Cost is the total expense required to acquire a new customer, including marketing, sales, and advertising costs.",
+        "id": "2"
+      },
+      {
+        "title": "Agile development",
+        "description": "An iterative approach to software development that promotes collaboration, adaptability, and continuous delivery.",
+        "id": "3"
+      },
+      {
+        "title": "API (Application Programming Interface)",
+        "description": "A set of protocols and tools that allow different software applications to communicate and share data.",
+        "id": "4"
+      }
+    ],
+    "id": "A"
+  },
+  {
+    "letter": "B",
+    "items": [
+      {
+        "title": "Backlog",
+        "description": "A prioritized list of tasks, features, or bugs waiting to be developed or addressed in future sprints.",
+        "id": "1"
+      },
+      {
+        "title": "Beta release",
+        "description": "A pre-launch version of a software product released to selected users for testing and feedback.",
+        "id": "2"
+      },
+      {
+        "title": "Bootstrapping",
+        "description": "Building and growing a company using personal savings or internal revenue rather than external funding.",
+        "id": "3"
+      }
+    ],
+    "id": "B"
+  },
+  {
+    "letter": "C",
+    "items": [
+      {
+        "title": "Churn Rate",
+        "description": "The percentage of customers who cancel or stop using a subscription service during a given period.",
+        "id": "1"
+      },
+      {
+        "title": "Cloud computing",
+        "description": "The delivery of computing services including servers, storage, databases, and software over the internet instead of local infrastructure.",
+        "id": "2"
+      },
+      {
+        "title": "Conversion rate",
+        "description": "The percentage of users who complete a desired action (such as signing up, purchasing, or upgrading) out of the total number of visitors.",
+        "id": "3"
+      },
+      {
+        "title": "CRM (Customer Relationship Management)",
+        "description": "Software that helps businesses manage interactions with existing and potential customers to improve relationships and retention.",
+        "id": "4"
+      },
+      {
+        "title": "Customer lifetime value (CLV or LTV)",
+        "description": "The total revenue a business can expect from a customer over the entire duration of their relationship.",
+        "id": "5"
+      }
+    ],
+    "id": "C"
+  },
+  {
+    "letter": "D",
+    "items": [
+      {
+        "title": "Dashboard",
+        "description": "A visual interface that displays key metrics, analytics, and performance indicators in real time for easy monitoring and decision-making.",
+        "id": "1"
+      },
+      {
+        "title": "Data analytics",
+        "description": "The process of collecting, analyzing, and interpreting data to uncover patterns, trends, and insights that guide business decisions.",
+        "id": "2"
+      },
+      {
+        "title": "Data migration",
+        "description": "The process of transferring data from one system, platform, or storage type to another, often during upgrades or software transitions.",
+        "id": "3"
+      }
+    ],
+    "id": "D"
+  },
+  {
+    "letter": "E",
+    "items": [
+      {
+        "title": "Engagement rate",
+        "description": "A metric that measures how actively users interact with your product, content, or platform, often through clicks, time spent, or feature usage.",
+        "id": "1"
+      },
+      {
+        "title": "Enterprise SaaS",
+        "description": "Software-as-a-Service designed for large organizations with advanced scalability, security, and customization needs.",
+        "id": "2"
+      },
+      {
+        "title": "Error Log",
+        "description": "A record of issues, bugs, or failures that occur within a system, used by developers to diagnose and resolve problems.",
+        "id": "3"
+      },
+      {
+        "title": "ETL (Extract, Transform, Load)",
+        "description": "A process for collecting data from various sources, transforming it into a usable format, and loading it into a database or data warehouse.",
+        "id": "4"
+      },
+      {
+        "title": "Event tracking",
+        "description": "Monitoring specific user actions within a product (such as clicks or form submissions) to analyze behavior and optimize experiences.",
+        "id": "5"
+      },
+      {
+        "title": "Evergreen content",
+        "description": "Content that remains relevant and valuable over time, often used in marketing and SEO strategies to attract long-term traffic.",
+        "id": "6"
+      }
+    ],
+    "id": "E"
+  },
+  {
+    "letter": "F",
+    "items": [
+      {
+        "title": "Feature flag",
+        "description": "A software switch that allows teams to enable, disable, or test features without deploying new code.",
+        "id": "1"
+      },
+      {
+        "title": "Funnel",
+        "description": "A marketing or sales model that illustrates the stages users go through before converting into paying customers.",
+        "id": "2"
+      },
+      {
+        "title": "Freemium model",
+        "description": "A business model offering a basic product for free while charging for premium features or advanced functionality.",
+        "id": "3"
+      },
+      {
+        "title": "Full stack developer",
+        "description": "An engineer skilled in both front-end and back-end technologies, capable of building complete web applications.",
+        "id": "4"
+      },
+      {
+        "title": "Functional requirements",
+        "description": "Specific behaviors or functions a system must perform, defining how software should operate from the user's perspective.",
+        "id": "5"
+      },
+      {
+        "title": "Feedback loop",
+        "description": "A process of gathering user feedback, analyzing it, and applying insights to improve the product or customer experience.",
+        "id": "6"
+      }
+    ],
+    "id": "F"
+  },
+  {
+    "letter": "G",
+    "items": [
+      {
+        "title": "Gamification",
+        "description": "The use of game-like elements (such as badges, points, or progress bars) in software to increase user engagement and motivation.",
+        "id": "1"
+      },
+      {
+        "title": "Go-to-Market (GTM) Strategy",
+        "description": "A plan that outlines how a company will introduce a product to the market, reach target customers, and achieve competitive advantage.",
+        "id": "2"
+      }
+    ],
+    "id": "G"
+  },
+  {
+    "letter": "H",
+    "items": [
+      {
+        "title": "Headless CMS",
+        "description": "A content management system that separates the backend (content repository) from the frontend (presentation layer), enabling flexible content delivery.",
+        "id": "1"
+      },
+      {
+        "title": "Help desk Software",
+        "description": "Tools that manage customer support requests, tickets, and communication channels efficiently.",
+        "id": "2"
+      }
+    ],
+    "id": "H"
+  },
+  {
+    "letter": "I",
+    "items": [
+      {
+        "title": "Ideation",
+        "description": "The creative process of generating, developing, and refining new ideas for products, features, or improvements.",
+        "id": "1"
+      },
+      {
+        "title": "Infrastructure as a Service (IaaS)",
+        "description": "A cloud computing model that provides virtualized computing resources like servers, storage, and networking on demand.",
+        "id": "2"
+      }
+    ],
+    "id": "I"
+  },
+  {
+    "letter": "J",
+    "items": [
+      {
+        "title": "JavaScript",
+        "description": "A core programming language used to build dynamic and interactive web applications, essential for modern SaaS interfaces.",
+        "id": "1"
+      },
+      {
+        "title": "Journey mapping",
+        "description": "A visual representation of the steps users take when interacting with a product, used to identify pain points and opportunities for improvement.",
+        "id": "2"
+      }
+    ],
+    "id": "J"
+  },
+  {
+    "letter": "K",
+    "items": [
+      {
+        "title": "KPI (Key Performance Indicator)",
+        "description": "A measurable value that shows how effectively a company or team is achieving its business objectives.",
+        "id": "1"
+      },
+      {
+        "title": "Kanban",
+        "description": "An agile project management method that visualizes work on a board to improve flow, efficiency, and task prioritization.",
+        "id": "2"
+      },
+      {
+        "title": "Knowledge base",
+        "description": "A centralized collection of articles, guides, and FAQs designed to help users find answers and learn independently.",
+        "id": "3"
+      },
+      {
+        "title": "Kubernetes",
+        "description": "An open-source system for automating the deployment, scaling, and management of containerized applications.",
+        "id": "4"
+      }
+    ],
+    "id": "K"
+  },
+  {
+    "letter": "L",
+    "items": [
+      {
+        "title": "Landing page",
+        "description": "A standalone webpage designed to convert visitors into leads or customers through focused messaging and a clear call-to-action.",
+        "id": "1"
+      },
+      {
+        "title": "Lean Startup",
+        "description": "A methodology focused on building products quickly, testing hypotheses, and learning from user feedback to reduce waste.",
+        "id": "2"
+      },
+      {
+        "title": "Lifetime Value (LTV)",
+        "description": "The total revenue a business can expect from a single customer throughout their relationship with the company.",
+        "id": "3"
+      },
+      {
+        "title": "Low-Code Platform",
+        "description": "A development environment that enables users to create software with minimal manual coding through drag-and-drop tools and visual interfaces.",
+        "id": "4"
+      },
+      {
+        "title": "Load Balancing",
+        "description": "A method of distributing network or application traffic across multiple servers to improve speed, reliability, and uptime.",
+        "id": "5"
+      }
+    ],
+    "id": "L"
+  },
+  {
+    "letter": "M",
+    "items": [
+      {
+        "title": "Machine Learning (ML)",
+        "description": "A subset of artificial intelligence that enables systems to learn and improve from data without being explicitly programmed.",
+        "id": "1"
+      },
+      {
+        "title": "Managed hosting",
+        "description": "A hosting service where the provider handles setup, maintenance, security, and performance optimization on behalf of the user.",
+        "id": "2"
+      },
+      {
+        "title": "Market fit (Product-Market Fit)",
+        "description": "The stage where a product successfully meets the needs and demands of its target audience, resulting in strong user growth and retention.",
+        "id": "3"
+      },
+      {
+        "title": "Marketing automation",
+        "description": "Software that automates repetitive marketing tasks such as email campaigns, lead nurturing, and social media management.",
+        "id": "4"
+      },
+      {
+        "title": "Metrics dashboard",
+        "description": "A visual overview of key performance indicators (KPIs) and analytics used to track progress and business health.",
+        "id": "5"
+      },
+      {
+        "title": "Microservices",
+        "description": "An architectural approach where software is built as a collection of small, independent services that communicate through APIs.",
+        "id": "6"
+      },
+      {
+        "title": "Minimum viable product (MVP)",
+        "description": "The simplest version of a product that allows teams to test core assumptions and gather feedback from early users.",
+        "id": "7"
+      },
+      {
+        "title": "Mobile optimization",
+        "description": "The process of designing and adjusting websites or applications to deliver a seamless experience on mobile devices.",
+        "id": "8"
+      },
+      {
+        "title": "Monthly recurring revenue (MRR)",
+        "description": "A key SaaS metric that represents predictable monthly income from active subscriptions.",
+        "id": "9"
+      }
+    ],
+    "id": "M"
+  },
+  {
+    "letter": "N",
+    "items": [
+      {
+        "title": "Net promoter score (NPS)",
+        "description": "A customer satisfaction metric that measures how likely users are to recommend a product or service to others.",
+        "id": "1"
+      },
+      {
+        "title": "No-code platform",
+        "description": "A development environment that allows users to build apps and workflows without writing code, using visual interfaces instead.",
+        "id": "2"
+      },
+      {
+        "title": "Notification system",
+        "description": "A feature that sends alerts or updates to users about important events, changes, or actions within a product.",
+        "id": "3"
+      },
+      {
+        "title": "Niche market",
+        "description": "A focused segment of a broader market with specific needs that a product or service is designed to serve.",
+        "id": "4"
+      }
+    ],
+    "id": "N"
+  },
+  {
+    "letter": "O",
+    "items": [
+      {
+        "title": "Onboarding flow",
+        "description": "A step-by-step process designed to help new users get started and experience the product's core value quickly.",
+        "id": "1"
+      },
+      {
+        "title": "Open source",
+        "description": "Software whose source code is publicly available for modification, enhancement, and distribution.",
+        "id": "2"
+      },
+      {
+        "title": "Opt-In",
+        "description": "A user's consent to receive communication, notifications, or marketing materials, typically via email or in-app prompts.",
+        "id": "3"
+      },
+      {
+        "title": "Outbound marketing",
+        "description": "Marketing efforts that actively reach out to potential customers through channels like ads, cold emails, or events.",
+        "id": "4"
+      },
+      {
+        "title": "Optimization",
+        "description": "The practice of improving a system, design, or process for better performance, speed, or conversion.",
+        "id": "5"
+      }
+    ],
+    "id": "O"
+  },
+  {
+    "letter": "P",
+    "items": [
+      {
+        "title": "Paywall",
+        "description": "A system that restricts access to content or features until the user pays or subscribes.",
+        "id": "1"
+      },
+      {
+        "title": "Persona (User persona)",
+        "description": "A fictional profile representing a key segment of your audience, used to guide product design and marketing strategies.",
+        "id": "2"
+      },
+      {
+        "title": "Pipeline",
+        "description": "A structured process of stages that leads prospects from initial contact to conversion, often used in sales and development contexts.",
+        "id": "3"
+      },
+      {
+        "title": "Plugin",
+        "description": "A piece of software that adds specific functionality to an existing application or platform.",
+        "id": "4"
+      },
+      {
+        "title": "Prototype",
+        "description": "An early, simplified version of a product used to test concepts and gather feedback before full development.",
+        "id": "5"
+      },
+      {
+        "title": "Product-Led growth (PLG)",
+        "description": "A go-to-market strategy where the product itself drives user acquisition, conversion, and expansion.",
+        "id": "6"
+      }
+    ],
+    "id": "P"
+  },
+  {
+    "letter": "Q",
+    "items": [
+      {
+        "title": "Quality assurance (QA)",
+        "description": "The process of systematically testing software to ensure it meets quality standards and is free from defects.",
+        "id": "1"
+      },
+      {
+        "title": "Query",
+        "description": "A request made to a database to retrieve or manipulate specific information.",
+        "id": "2"
+      },
+      {
+        "title": "Quota",
+        "description": "A set limit or target for performance, usage, or sales within a defined period.",
+        "id": "3"
+      }
+    ],
+    "id": "Q"
+  },
+  {
+    "letter": "R",
+    "items": [
+      {
+        "title": "REST API",
+        "description": "Representational State Transfer API - a web service architecture that uses standard HTTP methods to enable communication between systems.",
+        "id": "1"
+      },
+      {
+        "title": "Rate limiting",
+        "description": "A technique to control the number of requests a user or system can make to an API or service within a specific time period.",
+        "id": "2"
+      },
+      {
+        "title": "Real-time collaboration",
+        "description": "A feature that allows multiple users to work on the same document or project simultaneously with instant updates visible to all participants.",
+        "id": "3"
+      },
+      {
+        "title": "Refactoring",
+        "description": "The process of restructuring existing code without changing its functionality to improve readability, maintainability, or performance.",
+        "id": "4"
+      },
+      {
+        "title": "Regression testing",
+        "description": "Testing that ensures previously working features continue to function correctly after new changes or updates are made.",
+        "id": "5"
+      },
+      {
+        "title": "Release management",
+        "description": "The process of planning, scheduling, and controlling the deployment of software releases to production environments.",
+        "id": "6"
+      },
+      {
+        "title": "Remote work",
+        "description": "A work arrangement where employees perform their job duties from locations outside the traditional office, often from home.",
+        "id": "7"
+      },
+      {
+        "title": "Repository",
+        "description": "A storage location for software code, typically using version control systems like Git, where developers can store and manage project files.",
+        "id": "8"
+      },
+      {
+        "title": "Revenue recognition",
+        "description": "The accounting principle that determines when revenue should be recorded in financial statements, important for subscription-based businesses.",
+        "id": "9"
+      },
+      {
+        "title": "Rollback",
+        "description": "The process of reverting a system or application to a previous version or state when a new deployment causes issues.",
+        "id": "10"
+      },
+      {
+        "title": "Runtime",
+        "description": "The period during which a program is executing, or the environment in which software runs, including necessary libraries and dependencies.",
+        "id": "11"
+      }
+    ],
+    "id": "R"
+  },
+  {
+    "letter": "S",
+    "items": [
+      {
+        "title": "Retention rate",
+        "description": "The percentage of customers who continue using a product over a specific period, indicating satisfaction and loyalty.",
+        "id": "1"
+      },
+      {
+        "title": "Roadmap",
+        "description": "A visual plan outlining upcoming product features, improvements, and long-term goals.",
+        "id": "2"
+      },
+      {
+        "title": "ROI (Return on Investment)",
+        "description": "A metric that measures the profitability or effectiveness of an investment relative to its cost.",
+        "id": "3"
+      },
+      {
+        "title": "Release Notes",
+        "description": "Documentation detailing new features, bug fixes, or updates included in a product release.",
+        "id": "4"
+      },
+      {
+        "title": "Responsive design",
+        "description": "A design approach that ensures websites and applications automatically adjust to different screen sizes and devices.",
+        "id": "5"
+      }
+    ],
+    "id": "S"
+  },
+  {
+    "letter": "T",
+    "items": [
+      {
+        "title": "TAM",
+        "description": "The total revenue opportunity available for a product or service if 100% market share is achieved.",
+        "id": "1"
+      },
+      {
+        "title": "Tech stack",
+        "description": "The combination of software technologies and tools a company uses to build and run its applications.",
+        "id": "2"
+      },
+      {
+        "title": "Trial conversion rate",
+        "description": "The percentage of users who convert from a free trial to a paid subscription.",
+        "id": "3"
+      },
+      {
+        "title": "Telemetry",
+        "description": "Data collected from software usage to monitor performance and user behavior.",
+        "id": "4"
+      }
+    ],
+    "id": "T"
+  },
+  {
+    "letter": "U",
+    "items": [
+      {
+        "title": "Uptime",
+        "description": "The percentage of time a service or application is operational and available to users.",
+        "id": "1"
+      },
+      {
+        "title": "User journey",
+        "description": "The path a user takes from first interaction with a product to achieving their goal.",
+        "id": "2"
+      },
+      {
+        "title": "Usage-based pricing",
+        "description": "A pricing model where customers pay based on the amount they use a service.",
+        "id": "3"
+      },
+      {
+        "title": "UX (User experience)",
+        "description": "The overall experience and satisfaction a user has while interacting with a product.",
+        "id": "4"
+      }
+    ],
+    "id": "U"
+  },
+  {
+    "letter": "V",
+    "items": [
+      {
+        "title": "Viral coefficient",
+        "description": "A metric that measures how many new users each existing user generates through referrals.",
+        "id": "1"
+      },
+      {
+        "title": "Venture capital (VC)",
+        "description": "Funding provided by investors to startups with high growth potential in exchange for equity.",
+        "id": "2"
+      }
+    ],
+    "id": "V"
+  },
+  {
+    "letter": "W",
+    "items": [
+      {
+        "title": "Webhooks",
+        "description": "Automated messages sent from an app when a specific event occurs, enabling integrations between software.",
+        "id": "1"
+      },
+      {
+        "title": "Workflow automation",
+        "description": "The use of software to automate repetitive tasks and processes within an organization.",
+        "id": "2"
+      },
+      {
+        "title": "White-label SaaS",
+        "description": "A SaaS product that can be rebranded and sold by another company as its own.",
+        "id": "3"
+      }
+    ],
+    "id": "W"
+  },
+  {
+    "letter": "X",
+    "items": [
+      {
+        "title": "XaaS (Anything-as-a-service)",
+        "description": "An umbrella term for services delivered over the cloud, including SaaS, PaaS, and IaaS.",
+        "id": "1"
+      },
+      {
+        "title": "XML (Extensible markup language)",
+        "description": "A format for structuring and exchanging data between systems.",
+        "id": "2"
+      }
+    ],
+    "id": "X"
+  },
+  {
+    "letter": "Y",
+    "items": [
+      {
+        "title": "Yield",
+        "description": "The return or revenue generated by a product, feature, or marketing channel.",
+        "id": "1"
+      },
+      {
+        "title": "Year-over-year (YoY)",
+        "description": "A growth metric comparing performance for the same period in consecutive years.",
+        "id": "2"
+      },
+      {
+        "title": "Young company metrics",
+        "description": "KPIs used to measure growth and traction in early-stage startups.",
+        "id": "3"
+      }
+    ],
+    "id": "Y"
+  },
+  {
+    "letter": "Z",
+    "items": [
+      {
+        "title": "Zero downtime deployment",
+        "description": "Deploying software updates without disrupting service availability for users.",
+        "id": "1"
+      },
+      {
+        "title": "Zapier Integration",
+        "description": "Connecting apps and automating workflows using the Zapier platform.",
+        "id": "2"
+      }
+    ],
+    "id": "Z"
+  }
+]

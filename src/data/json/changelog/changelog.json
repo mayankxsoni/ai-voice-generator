@@ -1,0 +1,130 @@
+[
+  {
+    "id": "june-2025",
+    "dataMonth": "june 2025",
+    "title": "June 2025 UI & performance improvements",
+    "tag": "UX Refresh",
+    "status": "Released",
+    "summary": "Small but impactful changes across the app to improve speed and clarity.",
+    "highlights": [
+      "Redesigned navigation with grouped pages to reduce clicks.",
+      "Faster dashboard load times (reduced first-load by ~30%).",
+      "New helper text and microcopy across onboarding flows.",
+      "Fixed several styling inconsistencies on small screens."
+    ],
+    "image": {
+      "src": "/images/ns-img-381.jpg",
+      "alt": "changelog"
+    }
+  },
+  {
+    "id": "july-2025",
+    "dataMonth": "july 2025",
+    "title": "July 2025 Integrations & API",
+    "tag": "API v2.0",
+    "status": "Beta",
+    "summary": "New integration endpoints and Webhook controls to simplify automation.",
+    "highlights": [
+      "Public API v2",
+      "OAuth2 flow tightened with token rotation support.",
+      "New integration for common call storage providers.",
+      "Expanded webhook retry policy and dead-letter queue."
+    ],
+    "migration": ["v1 endpoints remain available for 90 days plan migration for automated exports."],
+    "image": {
+      "src": "/images/ns-img-382.jpg",
+      "alt": "changelog"
+    }
+  },
+  {
+    "id": "august-2025",
+    "dataMonth": "august 2025",
+    "title": "August 2025 security & reliability",
+    "tag": "Security update",
+    "status": "Released",
+    "summary": "Focused on hardening and reliability.",
+    "highlights": [
+      "Emergency patch for session timeout edge-case.",
+      "Improved database failover testing and monitoring.",
+      "New account recovery flow with device verification.",
+      "Expanded SSO logging for enterprise customers."
+    ],
+    "image": {
+      "src": "/images/ns-img-383.jpg",
+      "alt": "changelog"
+    }
+  },
+  {
+    "id": "september-2025",
+    "dataMonth": "september 2025",
+    "title": "September 2025 UI & performance improvements",
+    "tag": "UX Refresh",
+    "status": "Released",
+    "summary": "Small but impactful changes across the app to improve speed and clarity.",
+    "highlights": [
+      "Redesigned navigation with grouped pages to reduce clicks.",
+      "Faster dashboard load times (reduced first-load by ~30%).",
+      "New helper text and microcopy across onboarding flows.",
+      "Fixed several styling inconsistencies on small screens."
+    ],
+    "image": {
+      "src": "/images/ns-img-381.jpg",
+      "alt": "changelog"
+    }
+  },
+  {
+    "id": "october-2025",
+    "dataMonth": "october 2025",
+    "title": "October 2025 Integrations & API",
+    "tag": "API v2.0",
+    "status": "Beta",
+    "summary": "New integration endpoints and Webhook controls to simplify automation.",
+    "highlights": [
+      "Public API v2",
+      "OAuth2 flow tightened with token rotation support.",
+      "New integration for common call storage providers.",
+      "Expanded webhook retry policy and dead-letter queue."
+    ],
+    "migration": ["v1 endpoints remain available for 90 days plan migration for automated exports."],
+    "image": {
+      "src": "/images/ns-img-382.jpg",
+      "alt": "changelog"
+    }
+  },
+  {
+    "id": "november-2025",
+    "dataMonth": "november 2025",
+    "title": "November 2025 security & reliability",
+    "tag": "Security update",
+    "status": "Released",
+    "summary": "Focused on hardening and reliability.",
+    "highlights": [
+      "Emergency patch for session timeout edge-case.",
+      "Improved database failover testing and monitoring.",
+      "New account recovery flow with device verification.",
+      "Expanded SSO logging for enterprise customers."
+    ],
+    "image": {
+      "src": "/images/ns-img-383.jpg",
+      "alt": "changelog"
+    }
+  },
+  {
+    "id": "january-2026",
+    "dataMonth": "january 2026",
+    "title": "December 2025 UI & performance improvements",
+    "tag": "UX Refresh",
+    "status": "Released",
+    "summary": "Small but impactful changes across the app to improve speed and clarity.",
+    "highlights": [
+      "Redesigned navigation with grouped pages to reduce clicks.",
+      "Faster dashboard load times (reduced first-load by ~30%).",
+      "New helper text and microcopy across onboarding flows.",
+      "Fixed several styling inconsistencies on small screens."
+    ],
+    "image": {
+      "src": "/images/ns-img-381.jpg",
+      "alt": "changelog"
+    }
+  }
+]

@@ -1,0 +1,35 @@
+/* =========================
+Font base styles
+=========================== */
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-inter-tight text-secondary dark:text-accent;
+  }
+
+  h1 {
+    @apply text-heading-4 sm:text-heading-3 md:text-heading-2 xl:text-heading-1 font-medium;
+  }
+  h2 {
+    @apply text-heading-5 sm:text-heading-4 md:text-heading-3 xl:text-heading-2;
+  }
+  h3 {
+    @apply text-heading-5 md:text-heading-4 xl:text-heading-3;
+  }
+  h4 {
+    @apply text-heading-4;
+  }
+  h5 {
+    @apply text-heading-5;
+  }
+  h6 {
+    @apply text-heading-6;
+  }
+  p {
+    @apply text-tagline-2 sm:text-tagline-1 text-secondary/60 dark:text-accent/60 font-normal;
+  }
+}

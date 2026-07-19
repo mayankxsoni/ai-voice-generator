@@ -1,0 +1,92 @@
+/* =========================
+Site Badges Styles
+=========================== */
+@utility badge {
+  @apply text-tagline-2 text-secondary backdrop-blur-ns-badge-blur inline-block rounded-full px-5 py-1.5 font-normal text-nowrap lowercase first-letter:uppercase;
+}
+
+@utility badge-green {
+  @apply bg-ns-green-light dark:text-ns-yellow dark:bg-accent/10;
+}
+
+@utility badge-green-v2 {
+  @apply bg-ns-green-light dark:text-ns-green dark:bg-accent/10;
+}
+
+@utility badge-ns-green-light {
+  @apply bg-ns-green-light;
+}
+
+@utility badge-yellow {
+  @apply bg-ns-yellow-light dark:text-ns-yellow dark:bg-accent/10;
+}
+
+@utility badge-yellow-v2 {
+  @apply bg-ns-yellow-light dark:text-ns-cyan dark:bg-accent/10;
+}
+
+@utility badge-cyan {
+  @apply bg-ns-cyan-light dark:text-ns-green dark:bg-accent/10;
+}
+
+@utility badge-cyan-v2 {
+  @apply bg-ns-cyan-light dark:text-ns-cyan dark:bg-accent/10;
+}
+
+@utility badge-gray {
+  @apply bg-accent/40 dark:bg-secondary/40 dark:text-accent;
+}
+
+@utility badge-gray-light {
+  @apply bg-background-3 dark:bg-accent/10 dark:text-accent/60 text-secondary/60;
+}
+@utility badge-gray-light-v2 {
+  @apply bg-background-12 text-secondary font-medium;
+}
+
+@utility badge-gray-dark {
+  @apply bg-background-3 text-secondary/60;
+}
+
+@utility badge-metal {
+  @apply bg-accent/10 text-accent/60;
+}
+
+@utility badge-white {
+  @apply text-secondary/60 dark:text-accent/60 dark:bg-accent/10 bg-white;
+}
+@utility badge-white-v2 {
+  @apply text-secondary/60 bg-white font-semibold;
+}
+
+@utility badge-primary {
+  @apply bg-background-4 text-primary-500 dark:bg-accent/10 dark:text-ns-green;
+}
+
+@utility badge-primary-light {
+  @apply bg-primary-100 dark:bg-accent/10 dark:text-accent;
+}
+
+@utility badge-blur {
+  @apply bg-accent/10 text-primary-50;
+}
+
+@utility badge-blur-v2 {
+  @apply bg-accent/20 text-primary-50 dark:bg-secondary/20 dark:text-accent/60;
+}
+
+@utility badge-blur-light {
+  @apply bg-accent/10 text-accent dark:text-ns-yellow;
+}
+
+@utility badge-secondary-light {
+  @apply bg-secondary/20 text-primary-50 dark:bg-accent/20 dark:text-accent;
+}
+
+@utility badge-secondary {
+  @apply bg-secondary dark:bg-accent dark:text-secondary font-medium text-white;
+}
+
+@utility badge-ivory {
+  @apply bg-ns-ivory text-secondary text-tagline-2 font-normal;
+}

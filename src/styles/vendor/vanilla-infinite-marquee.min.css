@@ -1,0 +1,91 @@
+/**
+ * Skipped minification because the original files appears to be already minified.
+ * Original file: /npm/vanilla-infinite-marquee@1.0.13/infinite-marquee.css
+ *
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+/**
+ * Infinite Marquee 1.0.12
+ * Infinite Horizontal & Vertical Marquee animation based on CSS and controlled with JS
+ *
+ * Copyright 2024 Vahan Baghdasaryan
+ *
+ * Released under the MIT License
+ *
+ * Released on: August 6, 2024
+ */
+
+.horizontal-marquee {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--_gap);
+  max-width: 100%;
+  overflow: hidden;
+}
+.horizontal-marquee.smooth {
+  -webkit-mask: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+  mask: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
+}
+.horizontal-marquee.paused .horizontal-marquee-inner {
+  animation-play-state: paused;
+}
+.horizontal-marquee.full .horizontal-marquee-inner {
+  min-width: var(--_containerWidth);
+}
+.horizontal-marquee-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: var(--_gap);
+  white-space: nowrap;
+}
+[data-animate='true'] .horizontal-marquee-inner {
+  animation: horizontal-marquee var(--_speed) linear infinite var(--_direction);
+}
+@keyframes horizontal-marquee {
+  0% {
+    transform: translate(calc(var(--_gap) * -1));
+  }
+  100% {
+    transform: translate(calc(-100% - var(--_gap) * 2));
+  }
+}
+.vertical-marquee {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-bottom: var(--_gap);
+  height: calc(calc(var(--_containerSize) - var(--_vGap)) / 1.2);
+  max-height: 100%;
+  overflow: hidden;
+}
+.vertical-marquee.smooth {
+  -webkit-mask: linear-gradient(180deg, transparent, #fff 20%, #fff 80%, transparent);
+  mask: linear-gradient(180deg, transparent, #fff 20%, #fff 80%, transparent);
+}
+.vertical-marquee.paused .vertical-marquee-inner {
+  animation-play-state: paused;
+}
+.vertical-marquee-inner {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: var(--_vGap);
+}
+[data-animate='true'] .vertical-marquee-inner {
+  animation: vertical-marquee var(--_speed) linear infinite var(--_direction);
+}
+.vertical-marquee-inner > :not(:last-child) {
+  margin-right: var(--_hGap);
+}
+@keyframes vertical-marquee {
+  0% {
+    transform: translateY(calc(var(--_vGap) * -1));
+  }
+  100% {
+    transform: translateY(calc(-100% - var(--_vGap) * 2));
+  }
+}

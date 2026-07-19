@@ -1,0 +1,25 @@
+/* Number Animation Styles */
+.business-card-number,
+.bank-card-number {
+  transition: all 0.3s ease;
+}
+
+.business-card-number._number,
+.bank-card-number._number {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.business-card-number ._number > div > div,
+.bank-card-number ._number > div > div {
+  transition: top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Ensure proper spacing for percentage symbol */
+.business-card-number span:last-child,
+.bank-card-number span:last-child {
+  margin-left: 2px;
+  color: inherit;
+  font-weight: inherit;
+}

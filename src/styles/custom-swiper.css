@@ -1,0 +1,234 @@
+/* =========================
+Custome Swiper js styles
+=========================== */
+/* ===== REVIEWS SWIPER STYLES ===== */
+
+.reviews-swiper {
+  @apply overflow-x-hidden;
+}
+
+/* Base slide styles */
+.reviews-swiper .swiper-slide {
+  @apply h-auto py-5 transition-all duration-500;
+  transform: translateY(5px);
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Add before background to all slides with opacity 0 */
+.reviews-swiper .swiper-slide > div {
+  @apply before:bg-secondary dark:before:bg-background-7 relative h-full before:absolute before:inset-0 before:-z-10 before:rounded-[20px] before:opacity-0 before:transition-all before:duration-700 before:ease-out before:content-[''];
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Adjacent slides */
+.reviews-swiper .swiper-slide-prev,
+.reviews-swiper .swiper-slide-next {
+  transform: translateY(5px);
+}
+
+/* ===== ACTIVE SLIDE ENHANCED STYLING ===== */
+
+/* Active slide - enhanced smooth transition */
+.reviews-swiper .swiper-slide-active > div {
+  @apply transition-opacity duration-500 ease-in-out before:opacity-100;
+  animation: slideUp 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Text elements with staggered animation */
+.reviews-swiper .swiper-slide-active .review-text {
+  @apply text-accent dark:text-accent;
+  animation: fadeInUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s both;
+}
+
+.reviews-swiper .swiper-slide-active .review-name {
+  @apply text-accent dark:text-accent;
+  animation: fadeInUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
+}
+
+.reviews-swiper .swiper-slide-active .review-title {
+  @apply text-accent/60 dark:text-accent/60;
+  animation: fadeInUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both;
+}
+
+/* Gradient overlay */
+.reviews-swiper .swiper-slide-active .gradient-overlay {
+  @apply opacity-100;
+  animation: gradientFadeIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* ===== ANIMATION KEYFRAMES ===== */
+
+@keyframes slideUp {
+  from {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes gradientFadeIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ===== SINGLE CARD REVIEWS SWIPER STYLES ===== */
+
+.single-card-reviews-swiper {
+  @apply mx-auto w-full max-w-[840px] overflow-hidden;
+}
+
+.single-card-reviews-swiper .swiper-wrapper {
+  @apply items-center;
+}
+
+.single-card-reviews-swiper .swiper-slide {
+  @apply h-auto;
+  transform: scale(0.8);
+  opacity: 0.3;
+  filter: blur(3px);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.single-card-reviews-swiper .swiper-slide-active {
+  transform: scale(1);
+  opacity: 1;
+  filter: blur(0);
+}
+
+.single-card-reviews-prev:hover,
+.single-card-reviews-next:hover {
+  @apply scale-[102%] transition-transform duration-200 ease-in-out;
+}
+
+/* ===== REVIEWS FADE IN SWIPER STYLES ===== */
+.reviews-fade-in-swiper {
+  @apply w-full overflow-hidden;
+}
+
+.reviews-fade-in-swiper .swiper-wrapper {
+  @apply items-center;
+}
+
+.reviews-fade-in-swiper .swiper-slide {
+  @apply h-auto pt-16;
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Navigation buttons */
+.reviews-fade-in-next,
+.reviews-fade-in-prev {
+  @apply bg-background-4 dark:bg-background-9 flex size-9 cursor-pointer items-center justify-center rounded-full;
+}
+
+/* Pagination dots */
+.reviews-fade-in-pagination {
+  @apply absolute bottom-[27%] left-1/2 z-20 mt-6 flex -translate-x-1/2 items-center justify-center gap-1.5;
+}
+
+.reviews-fade-in-pagination .swiper-pagination-bullet {
+  @apply dark:bg-background-7 size-1 shrink-0 cursor-pointer rounded-full bg-[#b6c6e6]!;
+}
+
+.reviews-fade-in-pagination .swiper-pagination-bullet-active {
+  @apply bg-secondary dark:bg-background-4 size-2 shrink-0;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .reviews-fade-in-swiper .swiper-slide {
+    transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .reviews-fade-in-next,
+  .reviews-fade-in-prev {
+    @apply size-8;
+  }
+
+  .reviews-fade-in-pagination {
+    @apply mt-4;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .reviews-fade-in-swiper .swiper-slide {
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .reviews-fade-in-next,
+  .reviews-fade-in-prev {
+    @apply size-10;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .reviews-fade-in-swiper .swiper-slide {
+    transition: all 0.3s ease;
+  }
+
+  .reviews-fade-in-next,
+  .reviews-fade-in-prev {
+    transition: all 0.2s ease;
+  }
+
+  .reviews-fade-in-pagination .swiper-pagination-bullet {
+    transition: all 0.2s ease;
+  }
+}
+
+/* ===== BLOG ARTICLE SWIPER STYLES ===== */
+
+.blog-article-swiper {
+  @apply w-full overflow-hidden;
+}
+
+.blog-article-swiper .swiper-wrapper {
+  @apply items-center;
+}
+
+.blog-article-swiper .swiper-slide {
+  @apply h-auto;
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Pagination dots */
+.blog-article-swiper .swiper-pagination-bullet {
+  @apply border-stroke-5 size-3 rounded-full border bg-transparent transition-all duration-300;
+}
+
+.blog-article-swiper .swiper-pagination-bullet-active {
+  @apply border-stroke-10 bg-ns-linen size-3.5 rounded-full;
+}
+
+.blog-article-swiper .pagination-bullets {
+  @apply mx-auto flex items-center justify-center gap-2;
+}
+
+/* ai voice generator  swiper styles */
+
+.ai-voice-generator-blog-swiper .swiper-pagination-bullet {
+  @apply bg-ns-ivory border-ns-linen size-3 rounded-full border transition-all duration-300;
+}
+
+.ai-voice-generator-blog-swiper .swiper-pagination-bullet-active {
+  @apply bg-ns-linen;
+}

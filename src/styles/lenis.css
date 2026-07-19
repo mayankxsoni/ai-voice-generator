@@ -1,0 +1,17 @@
+html.lenis {
+  @apply h-auto;
+}
+.lenis {
+  &.lenis-smooth {
+    @apply scroll-auto;
+    &[data-lenis-prevent] {
+      @apply overscroll-contain;
+    }
+  }
+  &.lenis-stopped {
+    @apply overflow-hidden;
+  }
+  &.lenis-scrolling iframe {
+    @apply pointer-events-none;
+  }
+}

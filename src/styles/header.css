@@ -1,0 +1,4 @@
+.nav-hamburger span,
+.nav-hamburger-close span {
+  @apply transition-all duration-200 ease-in-out;
+}
