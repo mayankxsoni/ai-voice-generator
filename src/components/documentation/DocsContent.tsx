@@ -5,252 +5,138 @@ import RevealAnimation from '../animation/RevealAnimation';
 
 const DocsContent = () => {
   return (
-    <section className="pt-32 pb-[200px] sm:pt-36 md:pt-42 xl:pt-[180px]">
-      <div className="main-container mb-[70px]">
-        <div className="space-y-3 text-center">
+    <section className="pt-32 pb-[160px] sm:pt-36 md:pt-42 xl:pt-[180px]">
+      <div className="main-container mb-[60px]">
+        <div className="space-y-3 text-center max-w-[760px] mx-auto">
           <RevealAnimation delay={0.1}>
-            <h2>Welcome to the First Pixel documentation</h2>
+            <div>
+              <span className="badge badge-ivory text-primary-600 border border-primary-200 px-4 py-1.5 rounded-full inline-block font-semibold text-xs mb-2">
+                Agency Documentation
+              </span>
+              <h1 className="text-secondary text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+                First Pixel Video Production Documentation
+              </h1>
+            </div>
           </RevealAnimation>
           <RevealAnimation delay={0.2}>
-            <p>Find everything you need to set up, customize, and master your First Pixel platform.</p>
+            <p className="text-secondary/70 text-base sm:text-lg">
+              Find everything you need to prepare assets, review storyboards, and optimize your explainer video for maximum conversion.
+            </p>
           </RevealAnimation>
         </div>
       </div>
+
       <div className="main-container">
-        <div className="documentation space-y-[70px]">
+        <div className="documentation space-y-[60px]">
+          
+          {/* Main Sections */}
           <div className="space-y-8">
             <RevealAnimation delay={0.3}>
-              <h4>Documentation sections (main categories)</h4>
+              <h3 className="text-2xl font-bold text-secondary">Production Guidelines & Workflows</h3>
             </RevealAnimation>
+
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+              
+              {/* Box 1 */}
               <RevealAnimation delay={0.4}>
-                <div className="relative z-10 space-y-3 overflow-hidden rounded-[20px] bg-white px-[42px] py-14">
-                  {/* right gradient img  */}
+                <div className="relative z-10 space-y-4 overflow-hidden rounded-[24px] border border-[#eef0f3] bg-white p-8 sm:p-10 shadow-sm">
                   <RevealAnimation delay={0.5} direction="right" offset={100}>
-                    <figure className="absolute top-[-127px] right-[-225px] h-[328px] w-[479px] rotate-12 overflow-hidden">
-                      <Image src={gradientImg} alt="multilingual & multi-accent voices" className="size-full" />
+                    <figure className="absolute top-[-127px] right-[-225px] h-[328px] w-[479px] rotate-12 overflow-hidden opacity-30">
+                      <Image src={gradientImg} alt="gradient decoration" className="size-full" />
                     </figure>
                   </RevealAnimation>
-                  <h5>Getting started</h5>
-                  <ul className="text-tagline-1 text-secondary/60 list-inside list-disc space-y-3 font-normal">
-                    <li>
-                      <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                        Introduction to First Pixel
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                        System requirements
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                        Account setup
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                        Dashboard overview
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                        First steps after signup
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                        System requirements
-                      </Link>
-                    </li>
+                  <h4 className="text-xl font-bold text-secondary">01. Onboarding & Asset Preparation</h4>
+                  <ul className="text-sm text-secondary/70 list-inside list-disc space-y-2.5 font-normal">
+                    <li>How to export high-res UI screenshots & Figma files</li>
+                    <li>Logo file requirements (SVG or EPS vector formats)</li>
+                    <li>Brand color palette & typography token intake</li>
+                    <li>Product demo access & sandbox credentials</li>
+                    <li>Target ICP profile & key value propositions</li>
                   </ul>
                 </div>
               </RevealAnimation>
+
+              {/* Box 2 */}
               <RevealAnimation delay={0.5}>
-                <div className="relative z-10 space-y-3 overflow-hidden rounded-[20px] bg-white px-[42px] py-14">
-                  {/* right gradient img  */}
+                <div className="relative z-10 space-y-4 overflow-hidden rounded-[24px] border border-[#eef0f3] bg-white p-8 sm:p-10 shadow-sm">
                   <RevealAnimation delay={0.6} direction="right" offset={100}>
-                    <figure className="absolute top-[-127px] right-[-225px] h-[328px] w-[479px] rotate-12 overflow-hidden">
-                      <Image src={gradientImg} alt="multilingual & multi-accent voices" className="size-full" />
+                    <figure className="absolute top-[-127px] right-[-225px] h-[328px] w-[479px] rotate-12 overflow-hidden opacity-30">
+                      <Image src={gradientImg} alt="gradient decoration" className="size-full" />
                     </figure>
                   </RevealAnimation>
-                  <h5>User management</h5>
-                  <ul className="text-tagline-1 text-secondary/60 list-inside list-disc space-y-3 font-normal">
-                    <li>
-                      <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                        Adding and managing users
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                        Role-based access control
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                        Setting permissions
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                        Managing teams and groups
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                        First steps after signup
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                        System requirements
-                      </Link>
-                    </li>
+                  <h4 className="text-xl font-bold text-secondary">02. Script & Storyboard Review Flow</h4>
+                  <ul className="text-sm text-secondary/70 list-inside list-disc space-y-2.5 font-normal">
+                    <li>Async script feedback via Google Docs & Loom</li>
+                    <li>Frame-by-frame visual storyboard approvals</li>
+                    <li>Selecting native voiceover artists & accent samples</li>
+                    <li>Unlimited script revision policy before animation</li>
+                    <li>Motion pace & animation style guidelines</li>
                   </ul>
                 </div>
               </RevealAnimation>
+
             </div>
           </div>
+
+          {/* Section 2 */}
           <RevealAnimation delay={0.6}>
-            <div className="space-y-6">
+            <div className="rounded-[24px] border border-[#eef0f3] bg-white p-8 sm:p-10 space-y-6 shadow-sm">
               <div className="space-y-2">
-                <h4>Billing and subscription</h4>
-                <p>Handle your billing, subscriptions, and invoices easily.</p>
+                <h4 className="text-2xl font-bold text-secondary">03. Video Export Formats & Website Embedding</h4>
+                <p className="text-sm text-secondary/60">Guidelines for integrating your explainer video seamlessly into Webflow, Framer, and React applications.</p>
               </div>
 
-              <ul className="text-tagline-1 text-secondary/60 list-inside space-y-3 font-normal">
-                <li>
-                  <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                    How to subscribe
-                  </Link>
+              <ul className="text-sm text-secondary/70 space-y-3 font-normal">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary-500 font-bold">•</span>
+                  <span><strong>Webflow & Framer:</strong> Embedding via Wistia, Vimeo, or HTML5 native video tags for zero lag.</span>
                 </li>
-                <li>
-                  <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                    Managing your subscription plan
-                  </Link>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary-500 font-bold">•</span>
+                  <span><strong>Aspect Ratios:</strong> 16:9 Widescreen (Homepage Hero), 1:1 Square (LinkedIn Ads), 9:16 Vertical (TikTok/Reels).</span>
                 </li>
-                <li>
-                  <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                    Payment methods
-                  </Link>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary-500 font-bold">•</span>
+                  <span><strong>Compression Settings:</strong> H.264 MP4 & WebM delivery at optimal bitrate for lightning-fast site speeds.</span>
                 </li>
-                <li>
-                  <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                    Viewing and downloading invoices
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                    Canceling or upgrading plans
-                  </Link>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary-500 font-bold">•</span>
+                  <span><strong>Lottie Animations & GIFs:</strong> Micro-animations delivered as lightweight JSON files for interactive web elements.</span>
                 </li>
               </ul>
             </div>
           </RevealAnimation>
 
+          {/* Section 3 */}
           <RevealAnimation delay={0.7}>
-            <div className="space-y-6">
+            <div className="rounded-[24px] border border-[#eef0f3] bg-white p-8 sm:p-10 space-y-6 shadow-sm">
               <div className="space-y-2">
-                <h4>Settings & customization</h4>
-                <p>Tailor First Pixel to fit your business needs.</p>
+                <h4 className="text-2xl font-bold text-secondary">04. Commercial Licensing & Rights Handoff</h4>
+                <p className="text-sm text-secondary/60">Complete clarity on intellectual property and commercial broadcast rights.</p>
               </div>
 
-              <ul className="text-tagline-1 text-secondary/60 list-inside space-y-3 font-normal">
-                <li>
-                  <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                    General settings overview
-                  </Link>
+              <ul className="text-sm text-secondary/70 space-y-3 font-normal">
+                <li className="flex items-start gap-2">
+                  <span className="text-primary-500 font-bold">•</span>
+                  <span><strong>100% Ownership:</strong> Full commercial rights transferred to your company upon final delivery.</span>
                 </li>
-                <li>
-                  <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                    Customize your branding
-                  </Link>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary-500 font-bold">•</span>
+                  <span><strong>Voiceover & Music Buyout:</strong> Worldwide perpetual usage rights included for digital, paid social, and web.</span>
                 </li>
-                <li>
-                  <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                    Notification settings
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                    Language and localization options
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                    Custom fields and filters
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </RevealAnimation>
-          <RevealAnimation delay={0.8}>
-            <div className="space-y-6">
-              <div className="space-y-2">
-                <h4>Reporting and analytics</h4>
-                <p>Gain insights and grow with detailed reports.</p>
-              </div>
-
-              <ul className="text-tagline-1 text-secondary/60 list-inside space-y-3 font-normal">
-                <li>
-                  <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                    Understanding the analytics dashboard
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                    Exporting reports
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                    Setting up custom reports
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                    KPI and metrics guide
-                  </Link>
+                <li className="flex items-start gap-2">
+                  <span className="text-primary-500 font-bold">•</span>
+                  <span><strong>Source File Package:</strong> Optional handoff of After Effects project files, vector graphics, and audio stems.</span>
                 </li>
               </ul>
             </div>
           </RevealAnimation>
 
-          <RevealAnimation delay={0.9}>
-            <div className="space-y-6">
-              <div className="space-y-2">
-                <h4>Troubleshooting & FAQs</h4>
-                <p>Solutions for common issues and frequent questions.</p>
-              </div>
-
-              <ul className="text-tagline-1 text-secondary/60 list-inside space-y-3 font-normal">
-                <li>
-                  <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                    Login issues
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                    Error messages and solutions
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                    Data sync issues
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                    General FAQs
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </RevealAnimation>
         </div>
       </div>
     </section>
   );
 };
 
+DocsContent.displayName = 'DocsContent';
 export default DocsContent;

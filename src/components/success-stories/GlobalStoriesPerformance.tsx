@@ -8,12 +8,11 @@ const GlobalStoriesPerformance = () => {
       <div className="main-container">
         <div className="mb-11 space-y-3 text-left lg:mb-[70px]">
           <RevealAnimation delay={0.1}>
-            <h2 className="max-w-[450px] lg:max-w-[608px]">Empowering global teams to achieve more</h2>
+            <h2 className="max-w-[450px] lg:max-w-[608px] text-secondary text-3xl sm:text-4xl font-extrabold">Empowering global SaaS companies to convert better</h2>
           </RevealAnimation>
           <RevealAnimation delay={0.2}>
-            <p className="max-w-[470px] lg:max-w-[658px]">
-              Powering productivity for global teams is essential in today’s interconnected and fast-paced business
-              environment.
+            <p className="max-w-[470px] lg:max-w-[658px] text-secondary/70 text-base">
+              From Series A startups to global B2B SaaS platforms, our explainer videos deliver measurable impact across every stage of the funnel.
             </p>
           </RevealAnimation>
         </div>
