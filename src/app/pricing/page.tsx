@@ -1,7 +1,8 @@
-import Benefits from '@/components/pricing/Benefits';
-import Contact from '@/components/pricing/Contact';
-import Features from '@/components/pricing/Features';
-import Pricing from '@/components/pricing/Pricing';
+import PricingCalculator from '@/components/pricing-new/PricingCalculator';
+import WorkshopCTA from '@/components/pricing-new/WorkshopCTA';
+import HowItWorks from '@/components/pricing-new/HowItWorks';
+import ServicesGrid from '@/components/pricing-new/ServicesGrid';
+import RetainerPricing from '@/components/pricing-new/RetainerPricing';
 import CTA from '@/components/shared/cta/CTA';
 import { defaultMetadata } from '@/utils/generateMetaData';
 import { Metadata } from 'next';
@@ -13,11 +14,12 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <main className="bg-background-3">
-      <Pricing />
-      <Benefits />
-      <Features />
-      <Contact />
+    <main className="bg-background-3 pt-20">
+      <PricingCalculator />
+      <WorkshopCTA />
+      <HowItWorks />
+      <ServicesGrid />
+      <RetainerPricing />
       <CTA
         className="bg-white"
         badgeText="Get started"
