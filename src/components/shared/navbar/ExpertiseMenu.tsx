@@ -6,18 +6,90 @@ import Link from 'next/link';
 interface ExpertiseItem {
   id: string;
   title: string;
+  description: string;
   href: string;
-  icon: string;
+  icon: React.ReactNode;
 }
 
 const expertiseList: ExpertiseItem[] = [
-  { id: 'ai-ml', title: 'AI & ML', href: '/use-case', icon: '💼' },
-  { id: 'healthcare', title: 'Healthcare', href: '/use-case', icon: '🖋️' },
-  { id: 'saas', title: 'SaaS', href: '/use-case', icon: '💬' },
-  { id: 'fintech', title: 'FinTech', href: '/use-case', icon: '💡' },
-  { id: 'edtech', title: 'Ed-Tech', href: '/use-case', icon: '🎓' },
-  { id: 'cybersecurity', title: 'Cyber Security', href: '/use-case', icon: '🛡️' },
-  { id: 'web3', title: 'Web3', href: '/use-case', icon: '✨' },
+  {
+    id: 'ai-ml',
+    title: 'AI & ML',
+    description: 'Autonomous agents, LLMs, and neural networks',
+    href: '/use-case',
+    icon: (
+      <svg className="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19 14.5M14.25 3.104c.251.023.501.05.75.082M19 14.5a2.25 2.25 0 010 3.182l-5.5 5.5a2.25 2.25 0 01-3.182 0l-5.5-5.5a2.25 2.25 0 010-3.182" />
+      </svg>
+    ),
+  },
+  {
+    id: 'saas',
+    title: 'SaaS Platforms',
+    description: 'B2B workflows, dashboards, and product tours',
+    href: '/use-case',
+    icon: (
+      <svg className="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925-3.546 5.974 5.974 0 00-4.133-1.486A5.974 5.974 0 008.304 8.49 4.5 4.5 0 002.25 15z" />
+      </svg>
+    ),
+  },
+  {
+    id: 'fintech',
+    title: 'FinTech',
+    description: 'Payments, banking ledgers, and trading tools',
+    href: '/use-case',
+    icon: (
+      <svg className="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5pt18.75A2.25 2.25 0 0021 6.75H3A2.25 2.25 0 00.75 9v9A2.25 2.25 0 003 20.25h18A2.25 2.25 0 0020.25 18V9z" />
+      </svg>
+    ),
+  },
+  {
+    id: 'healthcare',
+    title: 'Healthcare',
+    description: 'Telemedicine, clinical workflows, and medtech',
+    href: '/use-case',
+    icon: (
+      <svg className="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+      </svg>
+    ),
+  },
+  {
+    id: 'edtech',
+    title: 'Ed-Tech',
+    description: 'LMS platforms, courseware, and interactive learning',
+    href: '/use-case',
+    icon: (
+      <svg className="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 01-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+      </svg>
+    ),
+  },
+  {
+    id: 'cybersecurity',
+    title: 'Cyber Security',
+    description: 'Zero-trust, cloud security, and IAM platforms',
+    href: '/use-case',
+    icon: (
+      <svg className="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751A11.959 11.959 0 0112 2.714z" />
+      </svg>
+    ),
+  },
+  {
+    id: 'web3',
+    title: 'Web3 & Crypto',
+    description: 'DeFi protocols, dApps, and blockchain infrastructure',
+    href: '/use-case',
+    icon: (
+      <svg className="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z" />
+      </svg>
+    ),
+  },
 ];
 
 const ExpertiseMenu = ({
@@ -32,12 +104,12 @@ const ExpertiseMenu = ({
       {/* Hover bridge */}
       <div
         className={cn(
-          'fixed top-full left-1/2 z-40 h-4 w-full max-w-[840px] -translate-x-1/2 bg-transparent transition-opacity duration-300',
+          'fixed top-full left-1/2 z-40 h-4 w-full max-w-[540px] -translate-x-1/2 bg-transparent transition-opacity duration-300',
           menuDropdownId === 'expertise-mega-menu' ? 'pointer-events-auto opacity-100' : 'pointer-events-none opacity-0',
         )}
       />
 
-      {/* Mega Menu Dropdown */}
+      {/* Sleek Minimal Dropdown */}
       <div
         id="expertise-mega-menu"
         className={cn(
@@ -46,95 +118,32 @@ const ExpertiseMenu = ({
             ? 'pointer-events-auto translate-y-0 opacity-100'
             : 'pointer-events-none translate-y-2 opacity-0',
         )}>
-        <div className="w-[820px] rounded-[32px] border border-secondary/10 bg-white p-6 shadow-[0_24px_60px_-15px_rgba(20,15,35,0.15)]">
-          <div className="grid grid-cols-12 items-stretch gap-6">
-            
-            {/* ── LEFT COLUMN: Expertise List ── */}
-            <div className="col-span-5 space-y-1">
-              <p className="mb-3 text-sm font-semibold text-secondary/40">Expertise</p>
-              
-              <div className="space-y-1">
-                {expertiseList.map((item) => (
-                  <Link
-                    key={item.id}
-                    href={item.href}
-                    onClick={() => setMenuDropdownId(null)}
-                    className="group flex items-center gap-3.5 rounded-2xl px-3 py-2.5 transition-all duration-200 hover:bg-primary-50/60"
-                  >
-                    <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary-50 text-base transition-transform duration-200 group-hover:scale-110 group-hover:bg-primary-500 group-hover:text-white">
-                      {item.icon}
-                    </span>
-                    <span className="text-sm font-bold text-secondary transition-colors duration-200 group-hover:text-primary-500">
-                      {item.title}
-                    </span>
-                  </Link>
-                ))}
-              </div>
-            </div>
+        <div className="w-[540px] rounded-[24px] border border-secondary/10 bg-white p-5 shadow-[0_20px_50px_-15px_rgba(20,15,35,0.12)]">
+          <p className="mb-3 px-2 text-xs font-semibold text-secondary/40 uppercase tracking-wider">
+            SaaS Verticals & Expertise
+          </p>
 
-            {/* ── VERTICAL DIVIDER ── */}
-            <div className="col-span-1 flex items-center justify-center">
-              <div className="h-full w-px bg-secondary/10" />
-            </div>
-
-            {/* ── RIGHT COLUMN: Featured Case Study Card ── */}
-            <div className="col-span-6 rounded-[24px] border border-primary-100 bg-[#fbfaff] p-5 space-y-4 flex flex-col justify-between">
-              
-              <div className="space-y-3">
-                <p className="text-xs font-semibold text-secondary/40 uppercase tracking-wider">
-                  Featured Case Study
-                </p>
-
-                {/* Thumbnail card */}
-                <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-gradient-to-tr from-primary-600 via-primary-500 to-orange-400 p-5 text-white shadow-md flex flex-col justify-between group cursor-pointer">
-                  <div className="flex items-center justify-between">
-                    <span className="rounded-full bg-white/20 px-2.5 py-0.5 text-[10px] font-bold text-white uppercase tracking-wider backdrop-blur-sm">
-                      SaaS Video
-                    </span>
-                    <span className="flex size-8 items-center justify-center rounded-full bg-white/30 text-white shadow-sm backdrop-blur-md group-hover:scale-110 transition-transform duration-300">
-                      ▶
-                    </span>
-                  </div>
-
-                  <div>
-                    <h4 className="text-lg font-extrabold leading-tight text-white drop-shadow-sm">
-                      7 Video Marketing Trends
-                    </h4>
-                    <p className="text-xs font-medium text-white/80 mt-0.5">
-                      How marketers can leverage them
-                    </p>
-                  </div>
-                </div>
-
-                {/* Pill badge */}
-                <span className="inline-flex items-center gap-1.5 rounded-full border border-primary-200 bg-primary-50 px-3 py-1 text-xs font-semibold text-primary-600">
-                  <span>💼</span>
-                  <span>Case Study</span>
+          <div className="grid grid-cols-2 gap-1.5">
+            {expertiseList.map((item) => (
+              <Link
+                key={item.id}
+                href={item.href}
+                onClick={() => setMenuDropdownId(null)}
+                className="group flex items-start gap-3 rounded-xl p-2.5 transition-all duration-200 hover:bg-primary-50/60"
+              >
+                <span className="flex size-8 shrink-0 items-center justify-center rounded-lg bg-[#f4f5f8] text-secondary/70 transition-all duration-200 group-hover:bg-primary-500 group-hover:text-white">
+                  {item.icon}
                 </span>
-
-                {/* Headline & paragraph */}
-                <div className="space-y-1">
-                  <h3 className="text-base font-extrabold text-secondary leading-snug">
-                    Designing SaaS experiences that get inside your ICP&apos;s mind
-                  </h3>
-                  <p className="text-xs text-secondary/60 leading-relaxed">
-                    Discover how we helped a B2B SaaS platform improve activation by 38% with user-centric video design.
+                <div>
+                  <h4 className="text-sm font-bold text-secondary transition-colors duration-200 group-hover:text-primary-500">
+                    {item.title}
+                  </h4>
+                  <p className="text-[11px] text-secondary/50 leading-snug mt-0.5 line-clamp-1">
+                    {item.description}
                   </p>
                 </div>
-              </div>
-
-              {/* Link CTA */}
-              <Link
-                href="/case-study"
-                onClick={() => setMenuDropdownId(null)}
-                className="inline-flex items-center gap-1.5 text-xs font-bold text-primary-500 hover:text-primary-600 transition-colors duration-200 group"
-              >
-                <span>Read Case Study</span>
-                <span className="group-hover:translate-x-1 transition-transform duration-200">→</span>
               </Link>
-
-            </div>
-
+            ))}
           </div>
         </div>
       </div>
