@@ -14,7 +14,7 @@ interface MenuItemProps {
 const leftColumnMenuItems: MenuItemProps[] = [
   {
     id: 'ai-ml',
-    href: '/use-case',
+    href: '/expertise/ai-ml',
     title: 'AI & ML',
     description: 'Autonomous agents, LLMs, and neural networks',
     icon: (
@@ -25,7 +25,7 @@ const leftColumnMenuItems: MenuItemProps[] = [
   },
   {
     id: 'saas',
-    href: '/use-case',
+    href: '/expertise/saas',
     title: 'SaaS Platforms',
     description: 'B2B workflows, dashboards, and product tours',
     icon: (
@@ -36,7 +36,7 @@ const leftColumnMenuItems: MenuItemProps[] = [
   },
   {
     id: 'fintech',
-    href: '/use-case',
+    href: '/expertise/fintech',
     title: 'FinTech',
     description: 'Payments, banking ledgers, and trading tools',
     icon: (
@@ -47,7 +47,7 @@ const leftColumnMenuItems: MenuItemProps[] = [
   },
   {
     id: 'healthcare',
-    href: '/use-case',
+    href: '/expertise/healthcare',
     title: 'Healthcare',
     description: 'Telemedicine, clinical workflows, and medtech',
     icon: (
@@ -61,7 +61,7 @@ const leftColumnMenuItems: MenuItemProps[] = [
 const rightColumnMenuItems: MenuItemProps[] = [
   {
     id: 'edtech',
-    href: '/use-case',
+    href: '/expertise/edtech',
     title: 'Ed-Tech',
     description: 'LMS platforms, courseware, and learning tools',
     icon: (
@@ -73,7 +73,7 @@ const rightColumnMenuItems: MenuItemProps[] = [
   },
   {
     id: 'cybersecurity',
-    href: '/use-case',
+    href: '/expertise/cybersecurity',
     title: 'Cyber Security',
     description: 'Zero-trust, cloud security, and IAM platforms',
     icon: (
@@ -84,7 +84,7 @@ const rightColumnMenuItems: MenuItemProps[] = [
   },
   {
     id: 'web3',
-    href: '/use-case',
+    href: '/expertise/web3',
     title: 'Web3 & Crypto',
     description: 'DeFi protocols, dApps, and blockchain tech',
     icon: (
