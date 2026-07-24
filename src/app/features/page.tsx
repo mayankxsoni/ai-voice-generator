@@ -23,10 +23,10 @@ const Features = () => {
       <CTA
         className="bg-white"
         badgeClass="hidden"
-        ctaHeading="Build a complete website using the"
+        ctaHeading="Ready to make your SaaS impossible to ignore?"
         spanText="assistance"
-        description="Start your free trial today and see your ideas come to life easily and creatively."
-        ctaBtnText="Get started"
+        description="Join 50+ SaaS founders who trust First Pixel to explain their product and drive signups."
+        ctaBtnText="Get your free video brief"
       />
     </main>
   );

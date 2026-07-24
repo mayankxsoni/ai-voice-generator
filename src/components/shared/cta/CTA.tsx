@@ -21,10 +21,10 @@ interface CTAV1Props {
 const CTA = ({
   className,
   badgeClass,
-  ctaHeading,
+  ctaHeading = 'Ready to make your SaaS impossible to ignore?',
   spanText,
-  description,
-  ctaBtnText,
+  description = 'Join 50+ SaaS founders who trust First Pixel to explain their product and drive signups.',
+  ctaBtnText = 'Get Free Brief',
   badgeText,
   descriptionClass,
   headingClass,
@@ -45,9 +45,9 @@ const CTA = ({
 
             <div className="space-y-3">
               <RevealAnimation delay={badgeText ? 0.4 : 0.3}>
-                <h2 className={cn('md:text-heading-2 text-heading-5', headingClass)} aria-label="cta-heading">
+                <h2 className={cn('md:text-heading-2 text-heading-5 font-extrabold', headingClass)} aria-label="cta-heading">
                   {ctaHeading}
-                  {spanText && <span className="text-ns-oatmeal"> {spanText} </span>}
+                  {spanText && <span className="text-primary-500"> {spanText} </span>}
                 </h2>
               </RevealAnimation>
               <RevealAnimation delay={badgeText ? 0.5 : 0.4}>
@@ -66,11 +66,11 @@ const CTA = ({
               ctaCheckListData={[
                 {
                   id: '1',
-                  text: 'No credit card required',
+                  text: '100% Custom Animated',
                 },
                 {
                   id: '2',
-                  text: '14-Day free trial',
+                  text: '2-Week Turnaround',
                 },
               ]}
               listTextClass={cn(listTextClass, 'text-secondary')}

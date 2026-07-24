@@ -19,9 +19,9 @@ const CaseStudyPage = () => {
       <CTA
         className="bg-white"
         badgeText="Get started"
-        ctaHeading="Build a complete website using the assistance"
-        description="Start your free trial today and see your ideas come to life easily and creatively."
-        ctaBtnText="Get started"
+        ctaHeading="Ready to make your SaaS impossible to ignore?"
+        description="Join 50+ SaaS founders who trust First Pixel to explain their product and drive signups."
+        ctaBtnText="Get your free video brief"
       />
     </main>
   );
