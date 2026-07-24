@@ -61,15 +61,19 @@ export default function RetainerPricing() {
     <section className="py-16 md:py-24 bg-[#f4f5f7]">
       <div className="mx-auto max-w-5xl px-5 md:px-8">
         <RevealAnimation delay={0.1}>
-          <div className="bg-white rounded-[2.5rem] p-4 lg:p-6 shadow-sm border border-[#eef0f3] flex flex-col md:flex-row gap-6">
+          <div className="bg-white rounded-[2rem] p-4 lg:p-6 shadow-sm border border-[#eef0f3] flex flex-col md:flex-row gap-6">
             
             {/* Left Side: Active Plan Details */}
-            <div className="w-full md:w-[70%] bg-[#633CFF] rounded-[2rem] p-8 lg:p-12 relative overflow-hidden flex flex-col justify-between min-h-[400px]">
+            <div className="w-full md:w-[70%] bg-primary-500 rounded-3xl p-8 lg:p-12 relative overflow-hidden flex flex-col justify-between min-h-[400px]">
               
               {/* Ribbon */}
               {activePlan.popular && (
                 <div className="absolute top-6 -left-8 -rotate-45 bg-white text-secondary text-[10px] font-bold py-1 px-10 shadow-lg border border-gray-100 flex items-center gap-1">
-                  Most Popular <span className="text-[#f97316]">🔥</span>
+                  Most Popular
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-primary-500">
+                    <path d="M12 21a9 9 0 0 1-9-9c0-5 5-9 9-9s9 4 9 9a9 9 0 0 1-9 9Z" fill="currentColor"/>
+                    <path d="M12 7l1.5 3 3.5.5-2.5 2.5.5 3.5-3-1.5-3 1.5.5-3.5-2.5-2.5 3.5-.5L12 7Z" fill="white"/>
+                  </svg>
                 </div>
               )}
 
@@ -106,7 +110,7 @@ export default function RetainerPricing() {
               </div>
 
               <div className="mt-12">
-                <Link href="/contact-us" className="block w-full bg-white hover:bg-gray-100 text-[#633CFF] text-center font-bold py-4 rounded-full transition-colors text-sm">
+                <Link href="/contact-us" className="block w-full bg-white hover:bg-gray-100 text-primary-600 text-center font-bold py-4 rounded-full transition-colors text-sm shadow-sm">
                   Get Started
                 </Link>
               </div>
@@ -117,7 +121,7 @@ export default function RetainerPricing() {
               {/* Vertical line indicator for active state (desktop only) */}
               <div className="hidden md:block absolute right-0 top-1/2 -translate-y-1/2 w-[2px] h-3/4 bg-gray-100">
                 <div 
-                  className="w-full bg-[#633CFF] rounded-full transition-all duration-300"
+                  className="w-full bg-primary-500 rounded-full transition-all duration-300"
                   style={{ 
                     height: '33.33%', 
                     transform: `translateY(${plans.findIndex(p => p.id === activeTab) * 100}%)` 
@@ -131,8 +135,8 @@ export default function RetainerPricing() {
                   onClick={() => setActiveTab(plan.id)}
                   className={`w-full py-4 rounded-full border text-center font-medium transition-all ${
                     activeTab === plan.id 
-                      ? 'bg-[#633CFF] border-[#633CFF] text-white shadow-md' 
-                      : 'bg-transparent border-[#e2d8ff] text-[#633CFF] hover:bg-[#f4f1ff]'
+                      ? 'bg-primary-500 border-primary-500 text-white shadow-md' 
+                      : 'bg-transparent border-primary-100 text-primary-600 hover:bg-primary-50'
                   }`}
                 >
                   {plan.name}

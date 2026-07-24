@@ -76,7 +76,7 @@ export default function ServicesGrid() {
           <div>
             <div className="text-center mb-16 lg:mb-24">
               <h2 className="text-5xl lg:text-6xl font-extrabold text-secondary tracking-tight mb-4">
-                Get more spend <span className="text-[#633CFF]">less</span>
+                Get more spend <span className="text-primary-500">less</span>
               </h2>
               <p className="text-secondary/60 text-lg">
                 tell us your monthly content needs and get a custom quote from us
@@ -87,7 +87,7 @@ export default function ServicesGrid() {
               {services.map((service, index) => (
                 <div 
                   key={index} 
-                  className={`w-full max-w-[280px] lg:w-[240px] xl:w-[260px] p-8 rounded-3xl shadow-xl border border-gray-100/50 flex-shrink-0 transition-transform hover:scale-105 duration-300 ${service.bg} ${service.rotate} ${service.zIndex} ${service.translate}`}
+                  className={`w-full max-w-[280px] lg:w-[240px] xl:w-[260px] p-8 rounded-3xl shadow-xl border border-gray-100/50 flex-shrink-0 transition-transform hover:scale-105 duration-300 ${service.bg === 'bg-[#633CFF]' ? 'bg-primary-500' : service.bg} ${service.rotate} ${service.zIndex} ${service.translate}`}
                 >
                   <div className={`w-12 h-12 rounded-2xl flex items-center justify-center mb-6 ${service.iconBg}`}>
                     {service.icon}

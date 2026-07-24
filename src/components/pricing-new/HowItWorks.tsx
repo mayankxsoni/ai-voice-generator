@@ -14,7 +14,7 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-white relative rounded-[3rem] -mt-8 z-10 shadow-sm border border-[#eef0f3]">
+    <section className="py-16 md:py-24 bg-white relative rounded-[2rem] -mt-8 z-10 shadow-sm border border-[#eef0f3]">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <RevealAnimation delay={0.1}>
           <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24 mb-20">
@@ -22,10 +22,10 @@ export default function HowItWorks() {
             {/* Left Side: Content */}
             <div className="w-full lg:w-[45%]">
               <div className="flex items-start gap-4 mb-8">
-                <h2 className="text-5xl lg:text-7xl font-extrabold text-secondary tracking-tight">
-                  How it <span className="text-[#633CFF]">works</span>
+                <h2 className="text-5xl lg:text-6xl font-extrabold text-secondary tracking-tight">
+                  How it <span className="text-primary-500">works</span>
                 </h2>
-                <div className="hidden md:flex mt-2 items-center gap-2 px-4 py-2 rounded-full border border-[#633CFF] text-[#633CFF] font-bold text-sm bg-white shadow-sm">
+                <div className="hidden md:flex mt-2 items-center gap-2 px-4 py-2 rounded-full border border-primary-500 text-primary-600 font-bold text-sm bg-white shadow-sm">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 2L15 8L21 9L16 14L18 20L12 17L6 20L8 14L3 9L9 8L12 2Z" fill="currentColor"/>
                   </svg>
@@ -43,26 +43,26 @@ export default function HowItWorks() {
 
               <ul className="space-y-4 mb-10">
                 <li className="flex items-center gap-3">
-                  <div className="flex-shrink-0 w-6 h-6 rounded-full border-2 border-[#633CFF] flex items-center justify-center text-[#633CFF]">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full border-2 border-primary-500 flex items-center justify-center text-primary-500 bg-primary-50">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                   </div>
                   <span className="font-semibold text-secondary">Unlimited motion requests</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <div className="flex-shrink-0 w-6 h-6 rounded-full border-2 border-[#633CFF] flex items-center justify-center text-[#633CFF]">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full border-2 border-primary-500 flex items-center justify-center text-primary-500 bg-primary-50">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                   </div>
                   <span className="font-semibold text-secondary">Lightning-fast delivery (48h turnaround)</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <div className="flex-shrink-0 w-6 h-6 rounded-full border-2 border-[#633CFF] flex items-center justify-center text-[#633CFF]">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full border-2 border-primary-500 flex items-center justify-center text-primary-500 bg-primary-50">
                     <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
                   </div>
                   <span className="font-semibold text-secondary">Flexible & cancel anytime</span>
                 </li>
               </ul>
 
-              <Link href="/contact-us" className="inline-block bg-[#633CFF] hover:bg-[#522ce0] text-white font-bold py-4 px-10 rounded-full transition-colors shadow-lg shadow-[#633CFF]/30">
+              <Link href="/contact-us" className="inline-block bg-primary-500 hover:bg-primary-600 text-white font-bold py-4 px-10 rounded-full transition-colors shadow-lg shadow-primary-500/30">
                 Book a demo
               </Link>
             </div>
@@ -112,8 +112,8 @@ export default function HowItWorks() {
                   <div className="flex items-center gap-3 mb-2">
                     <span className="bg-black/50 text-white text-xs px-2 py-1 rounded-full backdrop-blur-sm">0:25 / 1:26</span>
                     <div className="flex-grow h-1.5 bg-white/30 rounded-full relative">
-                      <div className="absolute top-0 left-0 h-full bg-red-600 rounded-full w-[30%]">
-                        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-red-600 rounded-full shadow"></div>
+                      <div className="absolute top-0 left-0 h-full bg-primary-500 rounded-full w-[30%]">
+                        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-primary-500 rounded-full shadow"></div>
                       </div>
                     </div>
                   </div>

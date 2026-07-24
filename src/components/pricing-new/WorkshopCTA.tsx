@@ -11,7 +11,7 @@ export default function WorkshopCTA() {
           <div className="bg-white rounded-[2rem] shadow-sm border border-[#eef0f3] overflow-hidden flex flex-col lg:flex-row">
             
             {/* Left Side: Video Mockup */}
-            <div className="w-full lg:w-1/2 p-6 lg:p-10 relative bg-[#633CFF] rounded-tl-[2rem] lg:rounded-bl-[2rem] rounded-tr-[2rem] lg:rounded-tr-none lg:rounded-br-[20rem]">
+            <div className="w-full lg:w-1/2 p-6 lg:p-10 relative bg-primary-500 lg:rounded-br-[15rem]">
               <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-2xl">
                 {/* Fallback image if video not playing */}
                 <Image 
@@ -36,7 +36,7 @@ export default function WorkshopCTA() {
 
                 {/* Play Button */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <button className="w-20 h-20 bg-[#633CFF] rounded-full flex items-center justify-center shadow-lg transform transition hover:scale-105">
+                  <button className="w-20 h-20 bg-primary-500 rounded-full flex items-center justify-center shadow-lg transform transition hover:scale-105">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M8 5V19L19 12L8 5Z" fill="white" />
                     </svg>
@@ -46,7 +46,7 @@ export default function WorkshopCTA() {
                 {/* Fake Player Controls */}
                 <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent">
                   <div className="w-full h-1 bg-white/30 rounded-full mb-3">
-                    <div className="w-1/3 h-full bg-[#633CFF] rounded-full"></div>
+                    <div className="w-1/3 h-full bg-primary-500 rounded-full"></div>
                   </div>
                   <div className="flex justify-between items-center text-white text-xs font-medium">
                     <div className="flex items-center gap-3">
@@ -66,32 +66,32 @@ export default function WorkshopCTA() {
 
             {/* Right Side: Content */}
             <div className="w-full lg:w-1/2 p-10 lg:p-16 flex flex-col justify-center">
-              <span className="px-3 py-1 rounded-full border border-[#e2d8ff] text-[#633CFF] text-xs font-semibold w-fit mb-6">Workshop</span>
+              <span className="px-3 py-1 rounded-full border border-primary-200 text-primary-600 bg-primary-50 text-xs font-semibold w-fit mb-6 tracking-tight">Workshop</span>
               
-              <h2 className="text-4xl lg:text-6xl font-extrabold text-secondary tracking-tight leading-[1.1] mb-10">
-                Not ready for full <span className="text-[#633CFF]">Production</span> yet?
+              <h2 className="text-4xl lg:text-5xl font-extrabold text-secondary tracking-tight leading-[1.1] mb-10">
+                Not ready for full <span className="text-primary-500">Production</span> yet?
               </h2>
 
-              <div className="border-l-4 border-[#633CFF] pl-6 mb-10">
+              <div className="border-l-4 border-primary-500 pl-6 mb-10">
                 <p className="text-secondary font-bold mb-1">Get started with our</p>
                 <p className="text-secondary font-bold">90-Minute <span className="font-normal text-secondary/70">Video Strategy Workshop</span></p>
               </div>
 
               <div className="flex flex-wrap gap-6 mb-10">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-[#f4f1ff] flex items-center justify-center text-[#633CFF]">
+                  <div className="w-10 h-10 rounded-full bg-primary-50 flex items-center justify-center text-primary-500">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="2"/></svg>
                   </div>
                   <p className="text-xs font-bold text-secondary max-w-[80px] leading-tight">Define your video strategy</p>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-[#f4f1ff] flex items-center justify-center text-[#633CFF]">
+                  <div className="w-10 h-10 rounded-full bg-primary-50 flex items-center justify-center text-primary-500">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                   </div>
                   <p className="text-xs font-bold text-secondary max-w-[80px] leading-tight">Identify your audience</p>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-[#f4f1ff] flex items-center justify-center text-[#633CFF]">
+                  <div className="w-10 h-10 rounded-full bg-primary-50 flex items-center justify-center text-primary-500">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 2L11 13"></path><path d="M22 2L15 22L11 13L2 9L22 2Z"></path></svg>
                   </div>
                   <p className="text-xs font-bold text-secondary max-w-[100px] leading-tight">Plan distribution with confidence</p>
@@ -102,9 +102,9 @@ export default function WorkshopCTA() {
                 Walk away with a plan your team can execute. We help you define your video strategy, audience, and distribution before a single frame is made.
               </p>
 
-              <Link href="/contact-us" className="inline-flex items-center justify-between w-fit gap-6 bg-[#633CFF] hover:bg-[#522ce0] text-white font-bold py-4 px-6 rounded-2xl transition-colors">
+              <Link href="/contact-us" className="inline-flex items-center justify-between w-fit gap-6 bg-primary-500 hover:bg-primary-600 text-white font-bold py-4 px-6 rounded-2xl transition-colors shadow-lg shadow-primary-500/20">
                 <span>Book a workshop</span>
-                <div className="bg-white rounded-full p-1 text-[#633CFF]">
+                <div className="bg-white rounded-full p-1 text-primary-500">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </div>
               </Link>

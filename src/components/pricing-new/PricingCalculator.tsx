@@ -47,22 +47,22 @@ export default function PricingCalculator() {
     <section className="py-16 md:py-24 bg-background-3">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <RevealAnimation delay={0.1}>
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 bg-white p-2 rounded-[2rem] shadow-sm border border-[#eef0f3]">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 bg-white p-2 rounded-3xl shadow-sm border border-[#eef0f3]">
             
             {/* Left Column: Calculator Inputs */}
             <div className="lg:col-span-8 p-6 lg:p-12">
               <div className="flex items-center gap-3 mb-6">
-                <span className="px-4 py-1.5 rounded-full border border-[#e2d8ff] text-[#633CFF] text-sm font-medium">Pricing calculator</span>
+                <span className="px-4 py-1.5 rounded-full border border-primary-200 text-primary-600 bg-primary-50 text-sm font-semibold tracking-tight">Pricing calculator</span>
                 <div className="flex items-center bg-[#f3f4f6] rounded-full p-1">
-                  <button className="px-4 py-1.5 rounded-full bg-[#633CFF] text-white text-sm font-medium">Motion-Led</button>
-                  <button className="px-4 py-1.5 rounded-full text-secondary text-sm font-medium">Founder-Led</button>
+                  <button className="px-4 py-1.5 rounded-full bg-primary-500 text-white text-sm font-medium shadow-sm">Motion-Led</button>
+                  <button className="px-4 py-1.5 rounded-full text-secondary text-sm font-medium hover:bg-gray-200 transition-colors">Founder-Led</button>
                 </div>
               </div>
 
-              <h2 className="text-4xl lg:text-6xl font-extrabold text-secondary tracking-tight leading-tight mb-4">
-                Build your <span className="text-[#633CFF]">video<br/>estimate</span>
+              <h2 className="text-4xl lg:text-5xl font-extrabold text-secondary tracking-tight leading-tight mb-4">
+                Build your <span className="text-primary-500">video<br/>estimate</span>
               </h2>
-              <p className="text-secondary/60 text-lg mb-10 max-w-md">
+              <p className="text-secondary/70 text-lg mb-10 max-w-md">
                 Select the video type, duration, delivery speed, and delivery formats. Then copy a shareable estimate link with every value saved in the URL.
               </p>
 
@@ -71,7 +71,7 @@ export default function PricingCalculator() {
                 <div className="border border-[#eef0f3] rounded-2xl p-6 shadow-sm">
                   <div className="flex justify-between items-center mb-6">
                     <h4 className="font-bold text-secondary">Final video duration</h4>
-                    <span className="text-[#633CFF] font-bold">{duration}s</span>
+                    <span className="text-primary-600 font-bold">{duration}s</span>
                   </div>
                   <input 
                     type="range" 
@@ -79,7 +79,7 @@ export default function PricingCalculator() {
                     max="240" 
                     value={duration}
                     onChange={(e) => setDuration(Number(e.target.value))}
-                    className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#633CFF]"
+                    className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary-500"
                   />
                   <div className="flex justify-between text-xs text-secondary/50 mt-2 font-medium">
                     <span>5 sec</span>
@@ -91,7 +91,7 @@ export default function PricingCalculator() {
                 <div className="border border-[#eef0f3] rounded-2xl p-6 shadow-sm">
                   <div className="flex justify-between items-center mb-6">
                     <h4 className="font-bold text-secondary">Rate per second</h4>
-                    <span className="text-[#633CFF] font-bold">${rate}/s</span>
+                    <span className="text-primary-600 font-bold">${rate}/s</span>
                   </div>
                   <input 
                     type="range" 
@@ -99,7 +99,7 @@ export default function PricingCalculator() {
                     max="200" 
                     value={rate}
                     onChange={(e) => setRate(Number(e.target.value))}
-                    className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#633CFF]"
+                    className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary-500"
                   />
                   <div className="flex justify-between text-xs text-secondary/50 mt-2 font-medium">
                     <span>$30 minimum</span>
@@ -119,8 +119,8 @@ export default function PricingCalculator() {
                         onClick={() => setTimeline(opt.id)}
                         className={`w-full flex justify-between items-center p-4 rounded-2xl border transition-all ${
                           timeline === opt.id 
-                            ? 'bg-[#633CFF] border-[#633CFF] text-white shadow-md' 
-                            : 'bg-white border-[#eef0f3] text-secondary hover:border-[#633CFF]/30'
+                            ? 'bg-primary-500 border-primary-500 text-white shadow-md' 
+                            : 'bg-white border-[#eef0f3] text-secondary hover:border-primary-500/30'
                         }`}
                       >
                         <span className="font-bold text-sm">{opt.label}</span>
@@ -144,15 +144,15 @@ export default function PricingCalculator() {
                         onClick={() => handleFormatToggle(opt.id)}
                         className={`w-full flex justify-between items-center p-4 rounded-2xl border text-left transition-all ${
                           formats.includes(opt.id)
-                            ? 'bg-[#f4f1ff] border-[#633CFF] shadow-sm' 
-                            : 'bg-white border-[#eef0f3] hover:border-[#633CFF]/30'
+                            ? 'bg-primary-50 border-primary-300 shadow-sm' 
+                            : 'bg-white border-[#eef0f3] hover:border-primary-500/30'
                         }`}
                       >
                         <div>
                           <p className="font-bold text-sm text-secondary">{opt.label}</p>
                           <p className="text-xs text-secondary/60 mt-0.5">{opt.desc}</p>
                         </div>
-                        <span className={`text-xs font-bold ${formats.includes(opt.id) ? 'text-[#633CFF]' : 'text-[#633CFF]'}`}>{opt.tag}</span>
+                        <span className={`text-xs font-bold ${formats.includes(opt.id) ? 'text-primary-600' : 'text-primary-600'}`}>{opt.tag}</span>
                       </button>
                     ))}
                   </div>
@@ -161,10 +161,10 @@ export default function PricingCalculator() {
             </div>
 
             {/* Right Column: Estimate Display */}
-            <div className="lg:col-span-4 bg-[#0a0a0b] rounded-[1.8rem] p-8 lg:p-10 flex flex-col relative overflow-hidden">
+            <div className="lg:col-span-4 bg-secondary rounded-[1.8rem] p-8 lg:p-10 flex flex-col relative overflow-hidden">
               <div className="relative z-10 flex-grow">
                 <p className="text-white/60 text-xs font-bold tracking-[0.2em] uppercase mb-4">Estimated Project Fee</p>
-                <h3 className="text-5xl lg:text-7xl font-extrabold text-white mb-10 tracking-tight">
+                <h3 className="text-5xl lg:text-6xl font-extrabold text-white mb-10 tracking-tight">
                   ${calculateTotal().toLocaleString()}
                 </h3>
 
@@ -200,8 +200,8 @@ export default function PricingCalculator() {
                 </button>
               </div>
 
-              {/* Decorative Purple Glow */}
-              <div className="absolute top-0 right-0 w-64 h-64 bg-[#633CFF] rounded-full blur-[100px] opacity-20 transform translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+              {/* Decorative Orange Glow */}
+              <div className="absolute top-0 right-0 w-64 h-64 bg-primary-500 rounded-full blur-[100px] opacity-20 transform translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
             </div>
 
           </div>
