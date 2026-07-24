@@ -1,8 +1,8 @@
 import { NextResponse } from 'next/server';
 
-const SYSTEM_PROMPT = `You are PixelBot, the intelligent AI Sales & Support Assistant for First Pixel (https://ai-voice-generator-eight.vercel.app), a premier B2B SaaS Explainer Video & Product Demo Agency.
+const SYSTEM_PROMPT = `You are PixelBot, the AI Sales & Support Assistant for First Pixel (https://ai-voice-generator-eight.vercel.app), a premier B2B SaaS Explainer Video & Product Demo Agency.
 
-Your goal is to answer questions about First Pixel's services, pricing, turnaround time, production process, and industry expertise with extreme professionalism, clarity, and helpfulness. Always encourage prospects to book a 20-minute strategy call or reach out via /contact-us.
+Your goal is to answer questions about First Pixel's services, pricing, turnaround time, production process, and industry expertise with professionalism, clarity, and helpfulness. Always encourage prospects to book a 20-minute strategy call or reach out via /contact-us.
 
 ABOUT FIRST PIXEL AGENCY:
 - Core Specialty: We produce high-converting 60-120s animated explainer videos, product demo videos, launch videos, and paid video ads exclusively for B2B SaaS companies.
@@ -43,7 +43,7 @@ PRICING & CONTACT:
 - Contact Page: /contact-us or click "Schedule Call" to book a 20-minute strategy session with our creative director.
 
 TONE & STYLE:
-- Professional, confident, concise, and helpful.
+- Professional, confident, concise, and helpful. Do not use emojis in replies.
 - Keep answers under 3-4 paragraphs. Use bullet points for readability when appropriate.
 - Always include direct links to relevant services or /contact-us when helpful.`;
 
@@ -72,74 +72,74 @@ export async function POST(req: Request) {
         if (response.ok) {
           const data = await response.json();
           const reply = data.choices[0]?.message?.content || 'Thank you for reaching out to First Pixel!';
-          return NextResponse.json({ reply, provider: 'grok' });
+          return NextResponse.json({ reply, provider: 'api' });
         }
       } catch (err) {
-        console.error('Grok API call failed, falling back to intelligent knowledge engine:', err);
+        console.error('API call failed, falling back to intelligent knowledge engine:', err);
       }
     }
 
-    // Fallback Intelligent Grok AI Knowledge Engine if key is not configured
+    // Fallback Intelligent Knowledge Engine if key is not configured
     const lastUserMessage = messages[messages.length - 1]?.content?.toLowerCase() || '';
 
     let reply = '';
 
     if (lastUserMessage.includes('service') || lastUserMessage.includes('what do you do') || lastUserMessage.includes('offer')) {
       reply = `First Pixel produces high-converting explainer videos and product demos for B2B SaaS companies. Here are our core 8 agency services:\n\n` +
-        `• **Animated Explainer Video**: 60–120s videos that turn complex SaaS into instant clarity.\n` +
-        `• **Product Launch Videos**: Build viral hype for launch day on Product Hunt or X.\n` +
-        `• **App Demo Videos**: Showcase your desktop/mobile UI in action.\n` +
-        `• **Feature Launch Videos**: Announce new features that actually drive adoption.\n` +
-        `• **Product Demo Videos**: Replace live sales demos with a 24/7 video asset.\n` +
-        `• **Animated Promo Ads**: High-performing short-form video ads for LinkedIn & Meta.\n` +
-        `• **AI Powered Video Ads**: Scale ad creatives fast with AI motion graphics.\n` +
-        `• **Tutorial Videos**: Step-by-step visual guides to onboard users fast.\n\n` +
-        `You can explore all options on our [Services Page](/services) or [Book a Strategy Call](/contact-us)!`;
+        `- Animated Explainer Video: 60–120s videos that turn complex SaaS into instant clarity.\n` +
+        `- Product Launch Videos: Build hype for launch day on Product Hunt or X.\n` +
+        `- App Demo Videos: Showcase your desktop/mobile UI in action.\n` +
+        `- Feature Launch Videos: Announce new features that actually drive adoption.\n` +
+        `- Product Demo Videos: Replace live sales demos with a 24/7 video asset.\n` +
+        `- Animated Promo Ads: High-performing short-form video ads for LinkedIn & Meta.\n` +
+        `- AI Powered Video Ads: Scale ad creatives fast with AI motion graphics.\n` +
+        `- Tutorial Videos: Step-by-step visual guides to onboard users fast.\n\n` +
+        `You can explore all options on our [Services Page](/services) or [Book a Strategy Call](/contact-us).`;
     } else if (lastUserMessage.includes('price') || lastUserMessage.includes('cost') || lastUserMessage.includes('pricing') || lastUserMessage.includes('rate')) {
-      reply = `Our video packages are customized based on video duration (60s, 90s, or 120s) and animation complexity (2D motion vs 3D product renders).\n\n` +
+      reply = `Our video packages are customized based on video duration (60s, 90s, or 120s) and animation complexity.\n\n` +
         `Every package includes:\n` +
-        `• Full scriptwriting & ICP positioning\n` +
-        `• Frame-by-frame storyboard\n` +
-        `• Native studio voiceover & licensed music\n` +
-        `• Custom UI motion design matching your design tokens\n` +
-        `• 100% full commercial rights & 4K exports\n\n` +
-        `Visit our [Pricing Page](/pricing) or [Contact Us](/contact-us) to get a custom quote within 2 hours!`;
+        `- Full scriptwriting & ICP positioning\n` +
+        `- Frame-by-frame storyboard\n` +
+        `- Native studio voiceover & licensed music\n` +
+        `- Custom UI motion design matching your design tokens\n` +
+        `- 100% full commercial rights & 4K exports\n\n` +
+        `Visit our [Pricing Page](/pricing) or [Contact Us](/contact-us) to get a custom quote.`;
     } else if (lastUserMessage.includes('time') || lastUserMessage.includes('turnaround') || lastUserMessage.includes('how long') || lastUserMessage.includes('timeline')) {
-      reply = `Our standard turnaround time is **2 to 3 weeks** from initial kickoff to final 4K video delivery.\n\n` +
-        `Here is how the 3-week timeline looks:\n` +
-        `• **Week 1**: Discovery, ICP Scriptwriting & Storyboard approval.\n` +
-        `• **Week 2**: Custom UI Motion Graphics & Native Voiceover recording.\n` +
-        `• **Week 3**: Animation polish, sound design mix, and final 4K delivery.\n\n` +
-        `Need an expedited rush delivery? We offer 7-day express production upon request!`;
+      reply = `Our standard turnaround time is 2 to 3 weeks from initial kickoff to final 4K video delivery.\n\n` +
+        `Production breakdown:\n` +
+        `- Week 1: Discovery, ICP Scriptwriting & Storyboard approval.\n` +
+        `- Week 2: Custom UI Motion Graphics & Native Voiceover recording.\n` +
+        `- Week 3: Animation polish, sound design mix, and final 4K delivery.\n\n` +
+        `We also offer 7-day express production upon request.`;
     } else if (lastUserMessage.includes('vertical') || lastUserMessage.includes('industry') || lastUserMessage.includes('ai') || lastUserMessage.includes('fintech') || lastUserMessage.includes('saas') || lastUserMessage.includes('crypto')) {
       reply = `We specialize across 7 core SaaS verticals with tailored scripts and motion styles:\n\n` +
-        `• **AI & ML**: Autonomous agents, LLMs, and RAG pipelines simplified.\n` +
-        `• **B2B SaaS**: Workflows, dashboards, and self-serve onboarding.\n` +
-        `• **FinTech**: Payment gateways, ledgers, and SOC2 compliance.\n` +
-        `• **Healthcare**: HIPAA workflows, EHR integrations, and patient care.\n` +
-        `• **EdTech**: LMS platforms, courseware, and university tools.\n` +
-        `• **Cyber Security**: Zero-trust, cloud telemetry, and IAM tools.\n` +
-        `• **Web3 & Crypto**: DeFi protocols, smart contracts, and dApps.\n\n` +
-        `Check out our specialized [Expertise Pages](/expertise) to see examples!`;
+        `- AI & ML: Autonomous agents, LLMs, and RAG pipelines simplified.\n` +
+        `- B2B SaaS: Workflows, dashboards, and self-serve onboarding.\n` +
+        `- FinTech: Payment gateways, ledgers, and SOC2 compliance.\n` +
+        `- Healthcare: HIPAA workflows, EHR integrations, and patient care.\n` +
+        `- EdTech: LMS platforms, courseware, and university tools.\n` +
+        `- Cyber Security: Zero-trust, cloud telemetry, and IAM tools.\n` +
+        `- Web3 & Crypto: DeFi protocols, smart contracts, and dApps.\n\n` +
+        `Check out our specialized [Expertise Pages](/expertise) to see examples.`;
     } else if (lastUserMessage.includes('contact') || lastUserMessage.includes('book') || lastUserMessage.includes('call') || lastUserMessage.includes('meeting') || lastUserMessage.includes('hello') || lastUserMessage.includes('hi')) {
-      reply = `Hello! 👋 I am **PixelBot**, First Pixel's AI assistant powered by Grok AI.\n\n` +
+      reply = `Hello. Welcome to First Pixel. I am PixelBot, your AI assistant.\n\n` +
         `We help B2B SaaS companies create animated explainer videos that turn visitors into demo requests.\n\n` +
-        `How can I help you today?\n` +
-        `• **Learn about Services**\n` +
-        `• **Check Production Timelines**\n` +
-        `• **View Industry Expertise**\n` +
-        `• **Book a 20-Min Strategy Call** ([/contact-us](/contact-us))`;
+        `How can I assist you today?\n` +
+        `- Learn about Services\n` +
+        `- Check Production Timelines\n` +
+        `- View Industry Expertise\n` +
+        `- Book a 20-Min Strategy Call ([/contact-us](/contact-us))`;
     } else {
-      reply = `Thanks for asking! At **First Pixel**, we create high-converting animated explainer videos and product demos for B2B SaaS companies.\n\n` +
+      reply = `Thank you for reaching out. At First Pixel, we create high-converting animated explainer videos and product demos for B2B SaaS companies.\n\n` +
         `Our videos help SaaS founders turn complex product features into instant clarity, boosting conversion rates by up to 180%.\n\n` +
         `Would you like to check our [Services](/services), view our [Industry Expertise](/expertise), or [Schedule a 20-Min Strategy Call](/contact-us)?`;
     }
 
-    return NextResponse.json({ reply, provider: 'grok-knowledge-engine' });
+    return NextResponse.json({ reply, provider: 'knowledge-engine' });
   } catch (error) {
     console.error('Chat API Error:', error);
     return NextResponse.json(
-      { reply: 'Sorry, I ran into a temporary connection issue. Please feel free to reach out directly at /contact-us!' },
+      { reply: 'Sorry, I ran into a temporary connection issue. Please feel free to reach out directly at /contact-us.' },
       { status: 500 }
     );
   }
