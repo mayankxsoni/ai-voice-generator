@@ -131,20 +131,24 @@ export default function ChatbotWidget() {
 
   return (
     <>
-      {/* ── FLOATING TRIGGER BUTTON ── */}
+      {/* ── FLOATING TRIGGER BUTTON (VIBRANT ORANGE) ── */}
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 rounded-full border border-[#eef0f3] bg-white px-4 py-3 text-secondary shadow-[0_12px_32px_-6px_rgba(0,0,0,0.1)] transition-all duration-300 hover:border-primary-300 hover:shadow-xl cursor-pointer group"
+          className="fixed bottom-6 right-6 z-50 flex items-center gap-3 rounded-full bg-gradient-to-r from-primary-500 to-orange-500 p-3.5 sm:px-5 sm:py-3.5 text-white shadow-[0_12px_36px_-6px_rgba(249,115,22,0.45)] transition-all duration-300 hover:scale-105 hover:shadow-[0_16px_44px_-6px_rgba(249,115,22,0.6)] cursor-pointer group border border-white/20"
           aria-label="Open Chat Assistant"
         >
-          <div className="flex size-7 items-center justify-center rounded-full bg-[#f4f5f8] text-secondary transition-colors group-hover:bg-primary-50 group-hover:text-primary-500">
-            <svg className="size-4 fill-current" viewBox="0 0 24 24">
+          <div className="relative flex size-7 items-center justify-center rounded-full bg-white/20 backdrop-blur-md">
+            <svg className="size-4 fill-white" viewBox="0 0 24 24">
               <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
             </svg>
+            <span className="absolute -top-1 -right-1 flex size-2.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+              <span className="relative inline-flex size-2.5 rounded-full bg-emerald-500" />
+            </span>
           </div>
-          <span className="text-xs font-medium text-secondary">
-            Chat Assistant <span className="text-secondary/40 font-normal">| First Pixel</span>
+          <span className="text-xs sm:text-sm font-semibold tracking-wide text-white">
+            Chat Assistant <span className="opacity-80 font-normal">| First Pixel</span>
           </span>
         </button>
       )}
