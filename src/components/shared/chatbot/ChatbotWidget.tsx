@@ -131,45 +131,46 @@ export default function ChatbotWidget() {
 
   return (
     <>
-      {/* ── FLOATING TRIGGER BUTTON (VIBRANT ORANGE) ── */}
+      {/* ── FLOATING TRIGGER BUTTON (VIBRANT ORANGE GRADIENT WITH PULSE ANIMATION) ── */}
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 right-6 z-50 flex items-center gap-3 rounded-full bg-gradient-to-r from-primary-500 to-orange-500 p-3.5 sm:px-5 sm:py-3.5 text-white shadow-[0_12px_36px_-6px_rgba(249,115,22,0.45)] transition-all duration-300 hover:scale-105 hover:shadow-[0_16px_44px_-6px_rgba(249,115,22,0.6)] cursor-pointer group border border-white/20"
+          className="fixed bottom-6 right-6 z-50 flex items-center gap-3 rounded-full bg-gradient-to-r from-primary-500 via-orange-500 to-amber-500 px-5 py-3.5 text-white shadow-[0_12px_36px_-6px_rgba(249,115,22,0.55)] transition-all duration-300 hover:scale-108 hover:shadow-[0_16px_44px_-4px_rgba(249,115,22,0.7)] cursor-pointer group border border-white/30 animate-in fade-in zoom-in duration-300"
           aria-label="Open Chat Assistant"
         >
           <div className="relative flex size-7 items-center justify-center rounded-full bg-white/20 backdrop-blur-md">
-            <svg className="size-4 fill-white" viewBox="0 0 24 24">
+            <svg className="size-4 fill-white group-hover:rotate-12 transition-transform duration-300" viewBox="0 0 24 24">
               <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
             </svg>
             <span className="absolute -top-1 -right-1 flex size-2.5">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-              <span className="relative inline-flex size-2.5 rounded-full bg-emerald-500" />
+              <span className="relative inline-flex size-2.5 rounded-full bg-emerald-400" />
             </span>
           </div>
-          <span className="text-xs sm:text-sm font-semibold tracking-wide text-white">
+          <span className="text-xs sm:text-sm font-bold tracking-wide text-white">
             Chat Assistant <span className="opacity-80 font-normal">| First Pixel</span>
           </span>
         </button>
       )}
 
-      {/* ── FLOATING CHAT WINDOW ── */}
+      {/* ── FLOATING CHAT WINDOW (ANIMATED ENTRANCE WITH ORANGE ACCENTS) ── */}
       {isOpen && (
-        <div className="fixed bottom-6 right-4 sm:right-6 z-50 flex h-[560px] max-h-[82vh] w-[370px] sm:w-[400px] max-w-[94vw] flex-col overflow-hidden rounded-[24px] border border-[#eef0f3] bg-white shadow-[0_24px_60px_-12px_rgba(0,0,0,0.15)] transition-all duration-300">
+        <div className="fixed bottom-6 right-4 sm:right-6 z-50 flex h-[570px] max-h-[82vh] w-[370px] sm:w-[400px] max-w-[94vw] flex-col overflow-hidden rounded-[26px] border border-primary-500/20 bg-white shadow-[0_24px_60px_-10px_rgba(20,15,35,0.22)] transition-all duration-300 animate-in fade-in slide-in-from-bottom-6 zoom-in-95">
           
-          {/* Simple White Header */}
-          <div className="flex items-center justify-between border-b border-[#f0f2f6] bg-white px-5 py-4 text-secondary">
+          {/* Header */}
+          <div className="flex items-center justify-between bg-gradient-to-r from-secondary via-secondary to-[#1c1c24] px-5 py-4 text-white border-b border-white/10">
             <div className="flex items-center gap-3">
-              <div className="relative flex size-9 items-center justify-center rounded-xl bg-[#f4f5f8] text-xs font-bold text-secondary border border-[#eef0f3]">
+              <div className="relative flex size-9 items-center justify-center rounded-xl bg-gradient-to-tr from-primary-500 to-orange-400 text-xs font-bold text-white shadow-md border border-white/20">
                 <span>FP</span>
-                <span className="absolute -bottom-0.5 -right-0.5 size-2.5 rounded-full border-2 border-white bg-emerald-500" />
+                <span className="absolute -bottom-0.5 -right-0.5 size-2.5 rounded-full border-2 border-secondary bg-emerald-400" />
               </div>
               <div>
-                <h3 className="text-sm font-semibold text-secondary">
+                <h3 className="text-sm font-bold text-white flex items-center gap-1.5">
                   PixelBot Assistant
                 </h3>
-                <p className="text-[11px] text-secondary/50 font-normal">
-                  First Pixel Support
+                <p className="text-[11px] text-white/60 font-normal flex items-center gap-1">
+                  <span className="size-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                  Online | First Pixel Support
                 </p>
               </div>
             </div>
@@ -188,7 +189,7 @@ export default function ChatbotWidget() {
                   ])
                 }
                 title="Reset Chat"
-                className="rounded-lg p-1.5 text-secondary/40 hover:bg-[#f4f5f8] hover:text-secondary transition-colors cursor-pointer"
+                className="rounded-lg p-1.5 text-white/50 hover:bg-white/10 hover:text-white transition-colors cursor-pointer"
               >
                 <svg className="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
@@ -196,7 +197,7 @@ export default function ChatbotWidget() {
               </button>
               <button
                 onClick={() => setIsOpen(false)}
-                className="rounded-lg p-1.5 text-secondary/40 hover:bg-[#f4f5f8] hover:text-secondary transition-colors cursor-pointer"
+                className="rounded-lg p-1.5 text-white/50 hover:bg-white/10 hover:text-white transition-colors cursor-pointer"
                 aria-label="Close Chat"
               >
                 <svg className="size-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
@@ -211,12 +212,12 @@ export default function ChatbotWidget() {
             {messages.map((msg) => (
               <div
                 key={msg.id}
-                className={`flex flex-col ${msg.role === 'user' ? 'items-end' : 'items-start'}`}
+                className={`flex flex-col ${msg.role === 'user' ? 'items-end' : 'items-start'} animate-in fade-in slide-in-from-bottom-2 duration-200`}
               >
                 <div
                   className={`max-w-[86%] rounded-2xl p-3.5 text-xs sm:text-sm leading-relaxed whitespace-pre-wrap ${
                     msg.role === 'user'
-                      ? 'bg-secondary text-white font-normal rounded-br-xs'
+                      ? 'bg-primary-500 text-white font-medium rounded-br-xs shadow-md shadow-primary-500/20'
                       : 'bg-white text-secondary/90 border border-[#eef0f3] rounded-bl-xs shadow-2xs'
                   }`}
                 >
@@ -228,10 +229,10 @@ export default function ChatbotWidget() {
               </div>
             ))}
 
-            {/* Quick Option Chips (No Emojis) */}
+            {/* Quick Option Chips (Orange Accent Border & Hover) */}
             {messages.length <= 2 && (
               <div className="pt-2">
-                <p className="text-[11px] font-medium text-secondary/40 uppercase tracking-wider mb-2 px-1">
+                <p className="text-[11px] font-semibold text-secondary/40 uppercase tracking-wider mb-2 px-1">
                   Quick Questions
                 </p>
                 <div className="flex flex-wrap gap-1.5">
@@ -239,7 +240,7 @@ export default function ChatbotWidget() {
                     <button
                       key={idx}
                       onClick={() => handleSend(opt.query)}
-                      className="rounded-full border border-[#eef0f3] bg-white px-3.5 py-1.5 text-xs font-normal text-secondary hover:border-primary-500 hover:text-primary-500 transition-colors cursor-pointer shadow-2xs"
+                      className="rounded-full border border-primary-200 bg-primary-50/60 px-3.5 py-1.5 text-xs font-semibold text-primary-600 hover:bg-primary-500 hover:text-white transition-all duration-200 cursor-pointer shadow-2xs"
                     >
                       {opt.label}
                     </button>
@@ -250,12 +251,12 @@ export default function ChatbotWidget() {
 
             {/* Typing Indicator */}
             {loading && (
-              <div className="flex items-center gap-2 rounded-2xl bg-white border border-[#eef0f3] px-4 py-3 text-xs text-secondary/60 w-fit rounded-bl-xs shadow-2xs">
-                <span className="font-normal text-secondary">PixelBot is typing</span>
+              <div className="flex items-center gap-2 rounded-2xl bg-white border border-[#eef0f3] px-4 py-3 text-xs text-secondary/60 w-fit rounded-bl-xs shadow-2xs animate-in fade-in duration-200">
+                <span className="font-semibold text-secondary">PixelBot is thinking</span>
                 <div className="flex items-center gap-1">
-                  <span className="size-1.5 rounded-full bg-secondary/40 animate-bounce" />
-                  <span className="size-1.5 rounded-full bg-secondary/40 animate-bounce [animation-delay:0.2s]" />
-                  <span className="size-1.5 rounded-full bg-secondary/40 animate-bounce [animation-delay:0.4s]" />
+                  <span className="size-1.5 rounded-full bg-primary-500 animate-bounce" />
+                  <span className="size-1.5 rounded-full bg-primary-500 animate-bounce [animation-delay:0.2s]" />
+                  <span className="size-1.5 rounded-full bg-primary-500 animate-bounce [animation-delay:0.4s]" />
                 </div>
               </div>
             )}
@@ -263,7 +264,7 @@ export default function ChatbotWidget() {
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Simple White Footer Input */}
+          {/* Footer Input */}
           <form
             onSubmit={(e) => {
               e.preventDefault();
@@ -281,10 +282,10 @@ export default function ChatbotWidget() {
             <button
               type="submit"
               disabled={!input.trim() || loading}
-              className="flex size-9 shrink-0 items-center justify-center rounded-full bg-secondary text-white shadow-sm transition-colors hover:bg-secondary/90 disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
+              className="flex size-10 shrink-0 items-center justify-center rounded-full bg-primary-500 text-white shadow-md shadow-primary-500/25 transition-all hover:bg-primary-600 hover:scale-105 disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:scale-100 cursor-pointer"
               aria-label="Send Message"
             >
-              <svg className="size-3.5 translate-x-0.5 fill-current" viewBox="0 0 24 24">
+              <svg className="size-4 translate-x-0.5 fill-current" viewBox="0 0 24 24">
                 <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
               </svg>
             </button>
