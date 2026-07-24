@@ -47,7 +47,7 @@ const ContactInfo = () => {
           {/* heading  */}
           <div className="mx-auto max-w-[680px] space-y-3 text-center">
             <RevealAnimation delay={0.2}>
-              <h2>Reach out to our support team for help.</h2>
+              <h2 className="font-medium tracking-tight">Reach out to our support team for help.</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <p>
