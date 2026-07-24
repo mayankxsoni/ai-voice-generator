@@ -15,7 +15,7 @@ const Benefits = () => {
                 </span>
               </RevealAnimation>
               <RevealAnimation delay={0.3}>
-                <h2 className="text-secondary text-3xl sm:text-4xl font-extrabold tracking-tight">
+                <h2 className="text-secondary text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight">
                   High-Converting Videos Delivered Without the Hassle
                 </h2>
               </RevealAnimation>

@@ -73,7 +73,7 @@ const Pricing = () => {
             </span>
           </RevealAnimation>
           <RevealAnimation delay={0.2}>
-            <h1 className="text-secondary text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+            <h1 className="text-secondary text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight leading-tight">
               Simple, Fixed-Fee Explainer Video Production
             </h1>
           </RevealAnimation>
@@ -110,8 +110,8 @@ const Pricing = () => {
 
                   <div className="border-t border-b border-[#f0f2f6] py-5">
                     <div className="flex items-baseline gap-1">
-                      <span className="text-4xl sm:text-5xl font-extrabold text-secondary tracking-tight">{plan.price}</span>
-                      <span className="text-xs text-secondary/50 font-medium">/ per video</span>
+                      <span className="text-4xl sm:text-5xl font-semibold text-secondary tracking-tight">{plan.price}</span>
+                      <span className="text-xs text-secondary/50 font-normal">/ per video</span>
                     </div>
                   </div>
 

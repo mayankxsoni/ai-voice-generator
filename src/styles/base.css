@@ -8,28 +8,28 @@ Font base styles
   h4,
   h5,
   h6 {
-    @apply font-inter-tight text-secondary dark:text-accent;
+    @apply font-inter-tight text-secondary dark:text-accent font-medium tracking-tight;
   }
 
   h1 {
-    @apply text-heading-4 sm:text-heading-3 md:text-heading-2 xl:text-heading-1 font-medium;
+    @apply text-heading-4 sm:text-heading-3 md:text-heading-2 xl:text-heading-1 font-medium tracking-tight leading-[1.12];
   }
   h2 {
-    @apply text-heading-5 sm:text-heading-4 md:text-heading-3 xl:text-heading-2;
+    @apply text-heading-5 sm:text-heading-4 md:text-heading-3 xl:text-heading-2 font-medium tracking-tight leading-[1.18];
   }
   h3 {
-    @apply text-heading-5 md:text-heading-4 xl:text-heading-3;
+    @apply text-heading-5 md:text-heading-4 xl:text-heading-3 font-medium tracking-tight leading-[1.2];
   }
   h4 {
-    @apply text-heading-4;
+    @apply text-heading-4 font-medium tracking-tight leading-[1.25];
   }
   h5 {
-    @apply text-heading-5;
+    @apply text-heading-5 font-medium tracking-tight leading-[1.3];
   }
   h6 {
-    @apply text-heading-6;
+    @apply text-heading-6 font-medium tracking-tight leading-[1.35];
   }
   p {
-    @apply text-tagline-2 sm:text-tagline-1 text-secondary/60 dark:text-accent/60 font-normal;
+    @apply text-tagline-2 sm:text-tagline-1 text-secondary/70 dark:text-accent/70 font-normal leading-relaxed;
   }
 }

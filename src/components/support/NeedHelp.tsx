@@ -15,7 +15,7 @@ const NeedHelp = () => {
               </span>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
-              <h1 className="text-secondary text-4xl sm:text-5xl font-extrabold tracking-tight">
+              <h1 className="text-secondary text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight">
                 Need help planning your SaaS video campaign?
               </h1>
             </RevealAnimation>

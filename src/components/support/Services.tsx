@@ -15,7 +15,7 @@ const Services = () => {
           </RevealAnimation>
           <div className="space-y-3 max-w-[800px] mx-auto">
             <RevealAnimation delay={0.2}>
-              <h2 className="text-secondary text-3xl sm:text-4xl font-extrabold">
+              <h2 className="text-secondary text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight">
                 Dedicated support for every stage of your video production
               </h2>
             </RevealAnimation>

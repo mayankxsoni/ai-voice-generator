@@ -17,7 +17,7 @@ const Features = () => {
           </RevealAnimation>
           <div className="space-y-3 max-w-[760px] mx-auto">
             <RevealAnimation delay={0.3}>
-              <h2 className="text-secondary text-3xl sm:text-4xl font-extrabold tracking-tight">
+              <h2 className="text-secondary text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight">
                 Designed to maximize video conversion & ROI
               </h2>
             </RevealAnimation>
