@@ -1,4 +1,4 @@
-import features2 from '@public/images/ns-img-619.png';
+import features2 from '@public/images/ns-img-610.png';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 
