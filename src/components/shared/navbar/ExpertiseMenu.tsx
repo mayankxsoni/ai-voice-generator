@@ -98,13 +98,19 @@ const ExpertiseMenu = ({
               <PlatformMenuItemLink key={item.title} {...item} setMenuDropdownId={setMenuDropdownId} />
             ))}
           </div>
-          <div className="col-span-4">
-            <figure className="mb-2.5 w-full max-w-full overflow-hidden rounded-xl">
-              <Image src={nsImg427} alt="SaaS Expertise" className="h-full w-full rounded-xl object-cover" />
-            </figure>
-            <p className="text-tagline-2 text-secondary/70 mt-2">
-              We know every SaaS vertical — and how to make audiences understand your product instantly.
-            </p>
+          <div className="col-span-4 rounded-2xl bg-gradient-to-br from-primary-500 to-primary-600 p-5 text-white flex flex-col justify-between shadow-md">
+            <div>
+              <span className="inline-block rounded-full bg-white/20 px-3 py-1 text-[11px] font-semibold text-white">
+                SaaS Vertical Experts
+              </span>
+              <h4 className="mt-3 text-xl font-extrabold text-white">50+ SaaS Launches</h4>
+              <p className="mt-1.5 text-xs text-white/80 leading-relaxed">
+                From Fintech to DevTools, we know how to translate complex software into high-converting video stories.
+              </p>
+            </div>
+            <a href="/use-case" className="mt-4 inline-flex items-center gap-1 text-xs font-bold text-white hover:underline">
+              Explore Industry Work →
+            </a>
           </div>
         </div>
       </div>

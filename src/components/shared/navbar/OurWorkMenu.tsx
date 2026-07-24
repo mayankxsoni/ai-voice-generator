@@ -85,10 +85,16 @@ const OurWorkMenu = ({
             />
           ))}
         </ul>
-        <div className="hidden w-[180px] shrink-0 xl:block">
-          <figure className="relative min-h-[200px] w-full overflow-hidden rounded-[14px]">
-            <Image src={nsImg420} alt="Our Work" className="h-full w-full rounded-[14px] object-cover" />
-          </figure>
+        <div className="hidden w-[180px] shrink-0 xl:flex flex-col justify-between rounded-[14px] bg-gradient-to-br from-primary-500 to-primary-600 p-4 text-white">
+          <div>
+            <span className="text-[10px] font-bold uppercase tracking-wider text-white/80">Case Studies</span>
+            <p className="mt-1 text-xs font-bold text-white leading-snug">
+              3x Average Conversion Lift
+            </p>
+          </div>
+          <a href="/case-study" className="text-[11px] font-bold text-white hover:underline mt-4">
+            View All Work →
+          </a>
         </div>
       </div>
     </div>
