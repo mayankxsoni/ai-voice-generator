@@ -1,15 +1,6 @@
 'use client';
-import {
-  FeatureIcon,
-  IntegrationIcon,
-  ProcessICon,
-  ServiceIcon,
-  PressIcon,
-  BrandKitIcon,
-} from '@/icons/menu-icon';
+
 import { cn } from '@/utils/cn';
-import nsImg420 from '@public/images/ns-img-420.jpg';
-import Image from 'next/image';
 import CompanyMenuItemLink from './CompanyMenuItemLink';
 
 interface MenuItemProps {
@@ -26,28 +17,45 @@ const leftColumnMenuItems: MenuItemProps[] = [
     href: '/services/animated-explainer',
     title: 'Animated Explainer Video',
     description: '60–120s videos that turn complex SaaS into instant clarity',
-    icon: <ServiceIcon className="size-5" />,
+    icon: (
+      <svg className="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.559.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.894.149c-.424.07-.764.383-.929.78-.165.398-.143.854.107 1.204l.527.738c.32.447.27 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.398.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527a1.125 1.125 0 01-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.506-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.108-1.204l-.527-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.149-.894z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+      </svg>
+    ),
   },
   {
     id: 'product-launch',
     href: '/services/product-launch',
     title: 'Product Launch Videos',
     description: 'Build hype and drive signups on launch day',
-    icon: <FeatureIcon className="size-5" />,
+    icon: (
+      <svg className="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+      </svg>
+    ),
   },
   {
     id: 'app-demo',
     href: '/services/app-demo',
     title: 'App Demo Videos',
     description: 'Showcase your UI in action and reduce trial friction',
-    icon: <IntegrationIcon className="size-5" />,
+    icon: (
+      <svg className="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+      </svg>
+    ),
   },
   {
     id: 'feature-launch',
     href: '/services/feature-launch',
     title: 'Feature Launch Videos',
     description: 'Announce new features that actually drive adoption',
-    icon: <BrandKitIcon className="size-5" />,
+    icon: (
+      <svg className="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4.098 19.902a3.75 3.75 0 005.304 0l6.401-6.402M6.75 21A3.75 3.75 0 013 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 003.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072" />
+      </svg>
+    ),
   },
 ];
 
@@ -57,28 +65,44 @@ const rightColumnMenuItems: MenuItemProps[] = [
     href: '/services/product-demo',
     title: 'Product Demo Videos',
     description: 'Replace live demos with a polished, always-on video',
-    icon: <ProcessICon className="size-5" />,
+    icon: (
+      <svg className="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925-3.546 5.974 5.974 0 00-4.133-1.486A5.974 5.974 0 008.304 8.49 4.5 4.5 0 002.25 15z" />
+      </svg>
+    ),
   },
   {
     id: 'promo-ads',
     href: '/services/promo-ads',
     title: 'Animated Promo Video Ads',
     description: 'Short-form animated ads built for paid social channels',
-    icon: <PressIcon className="size-5" />,
+    icon: (
+      <svg className="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+      </svg>
+    ),
   },
   {
     id: 'ai-ads',
     href: '/services/ai-ads',
     title: 'AI Powered Video Ads',
     description: 'Scale ad creative with AI-assisted animation at speed',
-    icon: <ServiceIcon className="size-5" />,
+    icon: (
+      <svg className="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z" />
+      </svg>
+    ),
   },
   {
     id: 'tutorial',
     href: '/services/tutorial',
     title: 'Tutorial Video',
     description: 'Onboard users faster with step-by-step visual guides',
-    icon: <FeatureIcon className="size-5" />,
+    icon: (
+      <svg className="size-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-5.25 6.557c0 1.5 2.35 3 5.25 3s5.25-1.5 5.25-3m-10.5 0a5.25 5.25 0 0010.5 0" />
+      </svg>
+    ),
   },
 ];
 
@@ -105,9 +129,9 @@ const ServicesMenu = ({
             ? 'pointer-events-auto translate-y-0 opacity-100'
             : 'pointer-events-none translate-y-2 opacity-0',
         )}>
-        <div className="w-[820px] rounded-[32px] border border-secondary/10 bg-white p-6 shadow-[0_24px_60px_-15px_rgba(20,15,35,0.15)]">
-          <p className="mb-3 text-sm font-semibold text-secondary/40">Services</p>
-          <div className="grid grid-cols-2 gap-x-6 items-start">
+        <div className="w-[800px] rounded-[32px] border border-secondary/10 bg-white p-6 shadow-[0_24px_60px_-15px_rgba(20,15,35,0.15)]">
+          <p className="mb-4 text-xs font-semibold text-secondary/40 uppercase tracking-wider">Services</p>
+          <div className="grid grid-cols-2 gap-x-8 items-start">
             {/* left column — 4 services */}
             <ul id="services-dropdown-left" className="space-y-1">
               {leftColumnMenuItems.map((item, index) => (
