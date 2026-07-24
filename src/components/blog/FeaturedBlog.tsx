@@ -12,7 +12,7 @@ const FeaturedBlog = () => {
       <div className="main-container">
         <div className="space-y-10 md:space-y-[70px]">
           <RevealAnimation delay={0.2}>
-            <h2 className="mx-auto max-w-[700px] text-center">Latest articles published by NextSaaS</h2>
+            <h2 className="mx-auto max-w-[700px] text-center">Latest articles published by First Pixel</h2>
           </RevealAnimation>
           <FeaturedBlogSwiper featuredBlogs={featuredBlogs} />
         </div>

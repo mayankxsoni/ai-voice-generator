@@ -65,7 +65,7 @@ const GdprContent = () => {
 
   // Data collection purposes
   const dataPurposes: ListItem[] = [
-    { id: 'account-management', text: 'To create and manage your NextSaaS account' },
+    { id: 'account-management', text: 'To create and manage your First Pixel account' },
     { id: 'order-processing', text: 'To process orders, generate invoices, and prevent fraudulent transactions' },
     { id: 'personalization', text: 'To improve your experience on our site through personalized content' },
     { id: 'analytics', text: 'To analyze site traffic and optimize marketing efforts' },
@@ -110,14 +110,14 @@ const GdprContent = () => {
           {/* gdrp  */}
           <RevealAnimation delay={0.3}>
             <div className="space-y-3">
-              <h2>NextSaaS and the general data protection regulation (GDPR)</h2>
+              <h2>First Pixel and the general data protection regulation (GDPR)</h2>
               <p>
                 The General Data Protection Regulation (GDPR) is a privacy regulation enacted by the European Union (EU)
                 to strengthen the protection of individuals&apos; data. It became enforceable on May 25, 2018, and
                 applies to any company that handles the data of EU citizens, no matter where the company is based.
                 <br />
                 <br />
-                This page explains how NextSaaS implements GDPR principles and ensures that your data is handled
+                This page explains how First Pixel implements GDPR principles and ensures that your data is handled
                 transparently, securely, and respectfully.
               </p>
             </div>
@@ -128,7 +128,7 @@ const GdprContent = () => {
               <div className="space-y-3">
                 <h3 className="text-heading-4">Purpose of this document</h3>
                 <p>
-                  At NextSaaS, we are fully committed to respecting your privacy. This page provides a clear overview
+                  At First Pixel, we are fully committed to respecting your privacy. This page provides a clear overview
                   of:
                 </p>
               </div>
@@ -148,21 +148,21 @@ const GdprContent = () => {
               <h3 className="text-heading-4">What is GDPR?</h3>
               <p>
                 In simple terms, GDPR gives you greater control over your personal information. Service providers (like
-                NextSaaS) must be transparent about what data they collect, how they use it, and how they share it — and
+                First Pixel) must be transparent about what data they collect, how they use it, and how they share it — and
                 users must have full rights to access, modify, or delete their data.
                 <br />
                 <br />
                 Although GDPR is an EU regulation, it affects any business that collects or processes the data of EU
-                residents, including NextSaaS.
+                residents, including First Pixel.
               </p>
             </div>
           </RevealAnimation>
-          {/* How NextSaaS Implements GDPR */}
+          {/* How First Pixel Implements GDPR */}
           <RevealAnimation delay={0.3}>
             <div className="space-y-3">
-              <h3 className="text-heading-4">How NextSaaS Implements GDPR</h3>
+              <h3 className="text-heading-4">How First Pixel Implements GDPR</h3>
               <p>
-                NextSaaS has always prioritized user data privacy, even before GDPR came into effect. Our core practices
+                First Pixel has always prioritized user data privacy, even before GDPR came into effect. Our core practices
                 naturally align with GDPR principles, and we&apos;ve made further improvements to ensure full
                 compliance.
               </p>

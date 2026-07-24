@@ -31,9 +31,9 @@ const resourcesMenuItems: ResourcesMenuItem[] = [
     icon: <FaqIcon />,
   },
   {
-    href: '/glossary',
-    title: 'Glossary',
-    description: 'Terms and definitions',
+    href: '/documentation',
+    title: 'Documentation',
+    description: 'Video production process & guides',
     icon: <GlossaryIcon />,
   },
   {
@@ -45,7 +45,7 @@ const resourcesMenuItems: ResourcesMenuItem[] = [
   {
     href: '/success-stories',
     title: 'Success Stories',
-    description: 'Latest updates and changes',
+    description: 'Client case studies & metrics',
     icon: <SuccessStoriesIcon />,
   },
 ];

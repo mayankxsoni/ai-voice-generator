@@ -1,6 +1,6 @@
 ---
 title: 'Lattice'
-description: 'How Lattice used NextSaaS Reports to track engagement metrics and improve company culture.'
+description: 'How Lattice used First Pixel Reports to track engagement metrics and improve company culture.'
 industry: 'saas'
 product: 'dashboard'
 service: 'support'
@@ -8,14 +8,14 @@ solution: 'enterprise'
 lightImage: '/images/icons/lattice.svg'
 darkImage: '/images/icons/lattice-dark.svg'
 alt: 'Lattice'
-detailsTitle: 'How Lattice Strengthened Team Engagement Using NextSaaS Reports'
+detailsTitle: 'How Lattice Strengthened Team Engagement Using First Pixel Reports'
 
 overview:
   titleOne: 'Overview'
   titleTwo: 'Clarity around employee engagement.'
   description: >
     Lattice wanted deeper insights into employee sentiment, performance cycles, and engagement behavior.
-    NextSaaS Reports delivered detailed, role-based dashboards designed for HR and leadership teams.
+    First Pixel Reports delivered detailed, role-based dashboards designed for HR and leadership teams.
 
 problemBlock:
   titleOne: 'The problem'
@@ -31,7 +31,7 @@ problemBlock:
     name: 'Justin Cole'
     role: 'People Operations Lead, Lattice'
     description: >
-      NextSaaS transformed how we read engagement data. We went from spending days compiling reports to having real-time
+      First Pixel transformed how we read engagement data. We went from spending days compiling reports to having real-time
       insights at our fingertips. The depth of analysis we can now provide to leadership has fundamentally changed how
       we approach people operations.
     rating: 4
@@ -41,7 +41,7 @@ solutionBlock:
   titleOne: 'The solution'
   titleTwo: 'Role-based engagement insights.'
   description: >
-    NextSaaS Reports connected directly with Lattice's survey data, goals, and performance logs to generate automated
+    First Pixel Reports connected directly with Lattice's survey data, goals, and performance logs to generate automated
     reports for HR leaders. The platform integrated seamlessly with Lattice's existing HR systems, pulling data from
     employee surveys, performance reviews, goal tracking, and feedback tools. Custom dashboards were configured for
     different roles, allowing HR managers to see team-level insights while executives accessed organization-wide

@@ -10,9 +10,9 @@ interface FAQData {
 const faqData: FAQData[] = [
   {
     id: '1',
-    question: 'What is the NextSaaS Affiliate Program?',
+    question: 'What is the First Pixel Affiliate Program?',
     answer:
-      'It is a revenue-sharing program where you promote NextSaaS to your audience and earn a commission for every new paying customer you refer. You receive a unique tracking link, marketing assets, and a dedicated dashboard to monitor clicks, conversions, and payouts in real time.',
+      'It is a revenue-sharing program where you promote First Pixel to your audience and earn a commission for every new paying customer you refer. You receive a unique tracking link, marketing assets, and a dedicated dashboard to monitor clicks, conversions, and payouts in real time.',
   },
   {
     id: '2',
@@ -45,7 +45,7 @@ const Faq = () => {
     <section className="py-14 md:py-20 lg:py-28">
       <div className="main-container">
         <RevealAnimation delay={0.1}>
-          <h2 className="text-center">FAQ for NextSaaS affiliates program</h2>
+          <h2 className="text-center">FAQ for First Pixel affiliates program</h2>
         </RevealAnimation>
 
         {/* faq accordion list   */}

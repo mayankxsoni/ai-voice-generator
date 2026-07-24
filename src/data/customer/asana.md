@@ -1,6 +1,6 @@
 ---
 title: 'Asana'
-description: 'How Asana improved project visibility and accelerated delivery using NextSaaS Cross-Project Dashboards.'
+description: 'How Asana improved project visibility and accelerated delivery using First Pixel Cross-Project Dashboards.'
 industry: 'saas'
 product: 'dashboard'
 service: 'training'
@@ -8,7 +8,7 @@ solution: 'enterprise'
 lightImage: '/images/icons/asana-v2.svg'
 darkImage: '/images/icons/asana-v2-dark.svg'
 alt: 'Asana'
-detailsTitle: 'How Asana Gained Real-Time Project Visibility with NextSaaS Cross-Project Dashboards'
+detailsTitle: 'How Asana Gained Real-Time Project Visibility with First Pixel Cross-Project Dashboards'
 
 overview:
   titleOne: 'Overview'
@@ -16,7 +16,7 @@ overview:
   description: >
     Asana manages thousands of ongoing projects across engineering, product, design, and customer operations.
     They needed clearer cross-team visibility to identify bottlenecks and ensure on-time delivery.
-    NextSaaS Cross-Project Dashboards provided unified reporting across all departments to improve planning and execution.
+    First Pixel Cross-Project Dashboards provided unified reporting across all departments to improve planning and execution.
 
 problemBlock:
   titleOne: 'The Problem'
@@ -31,7 +31,7 @@ problemBlock:
     name: 'Ava Miller'
     role: 'Program Manager, Asana'
     description: >
-      NextSaaS gave us clarity we never had before. We finally saw every project in one place, which transformed how we plan and execute across teams.
+      First Pixel gave us clarity we never had before. We finally saw every project in one place, which transformed how we plan and execute across teams.
       The unified visibility helped us catch potential delays weeks earlier than we could before.
     rating: 4
     xLink: 'https://x.com'
@@ -40,7 +40,7 @@ solutionBlock:
   titleOne: 'The Solution'
   titleTwo: 'Unified dashboards built to scale with every workflow.'
   description: >
-    NextSaaS synced project data from engineering boards, roadmap milestones, sprint metrics, and support queues.
+    First Pixel synced project data from engineering boards, roadmap milestones, sprint metrics, and support queues.
     Teams gained real-time dashboards with filters, alerts, and automated progress updates.
     The platform integrated seamlessly with Asana’s existing tools, pulling data from Jira, GitHub, Figma, and internal tracking systems.
     Custom views allowed each department to see their own metrics while leadership accessed cross-functional insights that highlighted
@@ -69,7 +69,7 @@ resultBlock:
     name: 'Emma Carter'
     role: 'Director of Operations, Asana'
     description: >
-      NextSaaS dashboards completely changed how we plan, track, and deliver projects. We’ve seen a significant reduction in project delays,
+      First Pixel dashboards completely changed how we plan, track, and deliver projects. We’ve seen a significant reduction in project delays,
       and our teams are more aligned than ever. The real-time insights have become essential to our operational excellence.
     rating: 4
     xLink: 'https://x.com'

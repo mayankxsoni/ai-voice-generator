@@ -11,10 +11,10 @@ const AffiliateProgram = () => {
         <div className="space-y-14 md:space-y-[70px]">
           <RevealAnimation delay={0.1}>
             <div className="mx-auto max-w-[602px] space-y-1.5 md:space-y-3 md:text-center">
-              <h2>NextSaaS affiliate program</h2>
+              <h2>First Pixel affiliate program</h2>
               <h3 className="text-heading-4">Earn up to $200 per referral!</h3>
               <p>
-                Become part of the NextSaaS family by joining our Affiliate Program. Help businesses grow while you earn
+                Become part of the First Pixel family by joining our Affiliate Program. Help businesses grow while you earn
                 generous commissions — it’s a win-win!
               </p>
               <div className="mt-7 md:mt-14">
@@ -38,12 +38,12 @@ const AffiliateProgram = () => {
           </RevealAnimation>
           <div className="max-w-[830px] space-y-3">
             <RevealAnimation delay={0.3}>
-              <h4>Why join the NextSaaS affiliate program?</h4>
+              <h4>Why join the First Pixel affiliate program?</h4>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
               <p>
                 Our rapidly growing platform, high customer satisfaction, and strong renewal rates make promoting <br />
-                NextSaaS easy and profitable.
+                First Pixel easy and profitable.
               </p>
             </RevealAnimation>
             <RevealAnimation delay={0.5}>
@@ -63,7 +63,7 @@ const AffiliateProgram = () => {
                 </li>
                 <li className="text-tagline-1 text-secondary/60 before:bg-secondary font-normal before:relative before:left-0 before:mr-1 before:inline-block before:h-1.5 before:w-1.5 before:-translate-y-1/2 before:rounded-full before:content-['']">
                   <strong className="text-secondary font-medium">Attractive lifetime deals: </strong>
-                  <span> Make it easier for your audience to invest and grow with NextSaaS. </span>
+                  <span> Make it easier for your audience to invest and grow with First Pixel. </span>
                 </li>
               </ul>
             </RevealAnimation>

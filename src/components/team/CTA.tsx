@@ -12,7 +12,7 @@ const CTA = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <h2 className="mx-auto max-w-[1042px]">
-                NextSaaS – your ultimate email &amp; transactional messaging platform
+                First Pixel – your ultimate email &amp; transactional messaging platform
               </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>

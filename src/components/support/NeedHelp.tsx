@@ -10,11 +10,11 @@ const NeedHelp = () => {
         <div className="mb-[70px] space-y-14 text-center">
           <div className="space-y-3">
             <RevealAnimation delay={0.3}>
-              <h2>Need help with NextSaaS?</h2>
+              <h2>Need help with First Pixel?</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
               <p>
-                Welcome to the NextSaaS Support Center! We&apos;re ready to assist you if you have an issue or a
+                Welcome to the First Pixel Support Center! We&apos;re ready to assist you if you have an issue or a
                 question.
               </p>
             </RevealAnimation>

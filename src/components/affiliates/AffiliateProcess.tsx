@@ -16,7 +16,7 @@ const AffiliateProcess = () => {
               <h2>How it works</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
-              <p>Becoming a NextSaaS affiliate and earning money is simple</p>
+              <p>Becoming a First Pixel affiliate and earning money is simple</p>
             </RevealAnimation>
           </div>
           <AffiliatesStep />

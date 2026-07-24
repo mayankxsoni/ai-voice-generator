@@ -27,9 +27,9 @@ const Tutorial = () => {
       <CTA
         className="bg-white"
         badgeText="Get Started"
-        ctaHeading="Ready to start earning with NextSaaS?"
-        description="If you have any questions, feel free to reach out to our team."
-        ctaBtnText="Get started"
+        ctaHeading="Ready to turn your SaaS product into an animated video that converts?"
+        description="Join 50+ SaaS founders who trust First Pixel for high-converting explainer videos."
+        ctaBtnText="Book 20-Min Strategy Call"
       />
     </main>
   );

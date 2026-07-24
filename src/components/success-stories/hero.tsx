@@ -12,7 +12,7 @@ const Hero = () => {
           <RevealAnimation delay={0.2} instant>
             <p>
               Discover how teams and creators are scaling faster, simplifying workflows, and unlocking growth all
-              powered by NextSaaS.
+              powered by First Pixel.
             </p>
           </RevealAnimation>
         </div>

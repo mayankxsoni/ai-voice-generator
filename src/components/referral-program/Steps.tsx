@@ -47,7 +47,7 @@ const Steps = () => {
           {/* cards  */}
           <div
             className="relative grid grid-cols-12 items-center justify-center gap-x-3 gap-y-6"
-            aria-label="Step-by-step process to use NextSaaS">
+            aria-label="Step-by-step process to use First Pixel">
             {/* card one  */}
             {stepCardData.map((step, index) => (
               <RevealAnimation key={step.id} delay={0.1 + index * 0.2} direction="left">

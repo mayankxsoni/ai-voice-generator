@@ -37,7 +37,7 @@ const Hero = () => {
           <div className="flex items-start justify-center gap-4">
             <RevealAnimation delay={0.5}>
               <figure className="size-14">
-                <Image src={logo} alt="NextSaaS" className="size-full object-cover" />
+                <Image src={logo} alt="First Pixel" className="size-full object-cover" />
               </figure>
             </RevealAnimation>
             <RevealAnimation delay={0.6} direction="left">

@@ -1,6 +1,6 @@
 ---
 title: 'Discord'
-description: 'How Discord’s data team used NextSaaS AI Predictions to forecast engagement trends and boost retention.'
+description: 'How Discord’s data team used First Pixel AI Predictions to forecast engagement trends and boost retention.'
 industry: 'social'
 product: 'analytics'
 service: 'training'
@@ -8,7 +8,7 @@ solution: 'enterprise'
 lightImage: '/images/icons/discord.svg'
 darkImage: '/images/icons/discord-dark.svg'
 alt: 'Discord'
-detailsTitle: 'How Discord Improved Engagement Forecasting Using NextSaaS Predictions'
+detailsTitle: 'How Discord Improved Engagement Forecasting Using First Pixel Predictions'
 
 overview:
   titleOne: 'Overview'
@@ -16,7 +16,7 @@ overview:
   description: >
     Discord manages millions of conversations and community interactions every single day, making it essential
     for the team to anticipate user behavior with accuracy. Traditional reporting tools lacked the early-warning
-    capabilities required to prevent activity drop-offs. After integrating NextSaaS AI Predictions, Discord gained
+    capabilities required to prevent activity drop-offs. After integrating First Pixel AI Predictions, Discord gained
     a unified predictive layer capable of forecasting engagement patterns before they occurred. This enabled proactive
     interventions that stabilized activity across global servers.
 
@@ -33,7 +33,7 @@ problemBlock:
     name: 'Jason Reed'
     role: 'Data Scientist, Discord'
     description: >
-      Before NextSaaS, our team spent far too much time manually analyzing fragmented data from different parts
+      Before First Pixel, our team spent far too much time manually analyzing fragmented data from different parts
       of the platform. The new predictive layer not only improved our accuracy but also revealed trends we couldn’t
       previously detect. It empowered us to make proactive decisions instead of constantly reacting to late signals.
     rating: 4
@@ -43,7 +43,7 @@ solutionBlock:
   titleOne: 'The solution'
   titleTwo: 'AI models trained on Discord’s activity signals.'
   description: >
-    NextSaaS integrated seamlessly with Discord’s internal activity logs, including message frequency, voice chat
+    First Pixel integrated seamlessly with Discord’s internal activity logs, including message frequency, voice chat
     duration, moderation activity, and server growth metrics. These signals were processed by adaptive machine
     learning models that continuously adjusted to new behavioral patterns. The system generated early alerts when
     unusual activity was detected, enabling Discord’s teams to predict engagement shifts and respond with targeted
@@ -63,7 +63,7 @@ resultBlock:
   titleOne: 'The result'
   titleTwo: 'Higher retention through proactive insights.'
   description: >
-    After adopting NextSaaS Predictions, Discord achieved measurable improvements in community retention and overall
+    After adopting First Pixel Predictions, Discord achieved measurable improvements in community retention and overall
     engagement stability. Activity dips were detected earlier, giving teams the opportunity to intervene before major
     declines occurred. Discord also reduced the operational workload on their insights teams by leveraging automated
     intelligence instead of manual data reviews, improving consistency and boosting confidence in their forecasting

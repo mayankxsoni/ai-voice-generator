@@ -12,8 +12,8 @@ const FinanceAndOperation = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <p>
-                NextSaaS is designed to serve a wide range of teams and industries. Whether you&apos;re managing data,
-                scaling operations, optimizing finances, or streamlining customer experiences—NextSaaS is the platform
+                First Pixel is designed to serve a wide range of teams and industries. Whether you&apos;re managing data,
+                scaling operations, optimizing finances, or streamlining customer experiences—First Pixel is the platform
                 that grows with you.
               </p>
             </RevealAnimation>
@@ -34,7 +34,7 @@ const FinanceAndOperation = () => {
                     Collaborate better. Launch faster. Iterate smarter.
                   </span>
                   <br />
-                  From roadmap planning to feature tracking, product teams use NextSaaS to keep everyone aligned and
+                  From roadmap planning to feature tracking, product teams use First Pixel to keep everyone aligned and
                   deliver with confidence.
                 </p>
               </RevealAnimation>
@@ -87,7 +87,7 @@ const FinanceAndOperation = () => {
                 <p>
                   <span className="text-secondary dark:text-accent">Plan campaigns. Analyze results. Drive ROI.</span>
                   <br />
-                  NextSaaS helps marketers connect strategy to results, with built-in analytics and collaborative tools
+                  First Pixel helps marketers connect strategy to results, with built-in analytics and collaborative tools
                   that simplify workflows.
                 </p>
               </RevealAnimation>
@@ -192,7 +192,7 @@ const FinanceAndOperation = () => {
                 <p>
                   <span className="text-secondary dark:text-accent">Make data-driven decisions without the noise.</span>
                   <br />
-                  NextSaaS gives leadership teams the visibility they need across every department—all in one unified
+                  First Pixel gives leadership teams the visibility they need across every department—all in one unified
                   view.
                 </p>
               </RevealAnimation>
@@ -245,7 +245,7 @@ const FinanceAndOperation = () => {
                 <p>
                   <span className="text-secondary dark:text-accent">Stay organized. Scale without stress.</span>
                   <br />
-                  Even small teams can get big results. Use NextSaaS to manage your pipeline, track progress, and
+                  Even small teams can get big results. Use First Pixel to manage your pipeline, track progress, and
                   automate repetitive tasks.
                 </p>
               </RevealAnimation>

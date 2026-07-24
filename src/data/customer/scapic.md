@@ -1,6 +1,6 @@
 ---
 title: 'ScaPic'
-description: 'How ScaPic built an AI-driven 3D content API using NextSaaS infrastructure.'
+description: 'How ScaPic built an AI-driven 3D content API using First Pixel infrastructure.'
 industry: 'ai'
 product: 'api'
 service: 'consulting'
@@ -8,13 +8,13 @@ solution: 'custom'
 lightImage: '/images/icons/scapic.svg'
 darkImage: '/images/icons/scapic-dark.svg'
 alt: 'ScaPic'
-detailsTitle: 'How ScaPic Launched a Scalable AI 3D API Using NextSaaS'
+detailsTitle: 'How ScaPic Launched a Scalable AI 3D API Using First Pixel'
 
 overview:
   titleOne: 'Overview'
   titleTwo: 'A foundation for real-time 3D processing.'
   description: >
-    ScaPic needed a scalable infrastructure to process thousands of 3D content requests per day. NextSaaS provided the
+    ScaPic needed a scalable infrastructure to process thousands of 3D content requests per day. First Pixel provided the
     compute, queueing, and monitoring layers required to run AI workloads reliably.
 
 problemBlock:
@@ -32,7 +32,7 @@ problemBlock:
     name: 'Harsh Verma'
     role: 'CTO, ScaPic'
     description: >
-      NextSaaS helped us reduce infrastructure strain and scale without rewriting our backend. We went from constantly
+      First Pixel helped us reduce infrastructure strain and scale without rewriting our backend. We went from constantly
       managing servers to focusing on building features. The reliability improvements have been game-changing for our
       product.
     rating: 4
@@ -42,7 +42,7 @@ solutionBlock:
   titleOne: 'The solution'
   titleTwo: 'A custom pipeline optimized for 3D workloads.'
   description: >
-    NextSaaS delivered a custom solution including GPU scaling, automated job queues, monitoring dashboards, and asset
+    First Pixel delivered a custom solution including GPU scaling, automated job queues, monitoring dashboards, and asset
     delivery optimization. The platform was configured specifically for ScaPic's 3D rendering requirements, with
     intelligent GPU allocation that scaled up during peak demand and down during quiet periods. Automated job queues
     managed the processing pipeline, ensuring requests were handled in priority order and failed jobs were automatically
@@ -74,7 +74,7 @@ resultBlock:
     name: 'Rohan Singh'
     role: 'Engineering Manager, ScaPic'
     description: >
-      NextSaaS gave us reliability at a scale we could not achieve alone. We have been able to grow our user base
+      First Pixel gave us reliability at a scale we could not achieve alone. We have been able to grow our user base
       tenfold without adding infrastructure complexity. The performance improvements have directly translated to better
       customer experiences and higher retention.
     rating: 5

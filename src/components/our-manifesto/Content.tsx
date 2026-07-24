@@ -26,7 +26,7 @@ const Content = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <p className="w-full max-w-[590px]">
-                We believe great products start with bold ideas and the courage to bring them to life. NextSaaS exists
+                We believe great products start with bold ideas and the courage to bring them to life. First Pixel exists
                 to empower creators, startups, and teams to launch faster, scale smarter, and design experiences that
                 matter.
               </p>
@@ -40,7 +40,7 @@ const Content = () => {
             <RevealAnimation delay={0.4}>
               <p className="w-full max-w-[750px]">
                 Software should simplify, not overwhelm. Every line of code, every pixel, and every interaction in
-                NextSaaS is designed to make your workflow smoother and your decisions clearer.
+                First Pixel is designed to make your workflow smoother and your decisions clearer.
               </p>
             </RevealAnimation>
           </div>
@@ -82,7 +82,7 @@ const Content = () => {
             <div className="space-y-2">
               <h2 className="lg:text-heading-5 sm:text-heading-6 text-lg">Built for the future</h2>
               <p className="w-full max-w-[590px]">
-                We design for what’s next. As technology evolves, NextSaaS evolves too ensuring you always stay ahead,
+                We design for what’s next. As technology evolves, First Pixel evolves too ensuring you always stay ahead,
                 never behind.
               </p>
             </div>

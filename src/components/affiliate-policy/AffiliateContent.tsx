@@ -24,7 +24,7 @@ const AffiliateContent = () => {
       id: 'how-it-works',
       title: 'How does it work?',
       description:
-        "As a NextSaaS affiliate, you are part of our extended sales team.\nFor every customer you refer who completes a purchase, you'll earn a commission. The more you refer, the more you can earn — there's no limit!",
+        "As a First Pixel affiliate, you are part of our extended sales team.\nFor every customer you refer who completes a purchase, you'll earn a commission. The more you refer, the more you can earn — there's no limit!",
     },
     {
       id: 'track-sales',

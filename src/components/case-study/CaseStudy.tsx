@@ -9,11 +9,11 @@ const CaseStudy = () => {
         <div className="space-y-[70px]">
           <div className="max-w-[900px] space-y-3">
             <RevealAnimation delay={0.2}>
-              <h1 className="text-heading-3 md:text-heading-2 font-normal">How leading teams grow with NextSaaS</h1>
+              <h1 className="text-heading-3 md:text-heading-2 font-normal">How leading teams grow with First Pixel</h1>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <p>
-                From fast-moving startups to established enterprises, businesses around the world use NextSaaS to
+                From fast-moving startups to established enterprises, businesses around the world use First Pixel to
                 streamline operations, increase visibility, and accelerate growth. Explore how our platform delivers
                 real-world impact.
               </p>
@@ -77,7 +77,7 @@ const CaseStudy = () => {
                   <h4 className="text-heading-4">The Solution</h4>
                 </RevealAnimation>
                 <RevealAnimation delay={0.4}>
-                  <p>NextSaaS helped them:</p>
+                  <p>First Pixel helped them:</p>
                 </RevealAnimation>
               </div>
               <ul className="space-y-2">
@@ -110,7 +110,7 @@ const CaseStudy = () => {
                   <h4 className="text-heading-4">The results</h4>
                 </RevealAnimation>
                 <RevealAnimation delay={0.4}>
-                  <p>NextSaaS helped them:</p>
+                  <p>First Pixel helped them:</p>
                 </RevealAnimation>
               </div>
               <ul className="space-y-2">

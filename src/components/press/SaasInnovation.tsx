@@ -16,7 +16,7 @@ const SaasInnovation = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
               <p>
-                NextSaaS empowers creators, teams, and enterprises to scale smarter with AI-powered tools and seamless
+                First Pixel empowers creators, teams, and enterprises to scale smarter with AI-powered tools and seamless
                 integrations.
               </p>
             </RevealAnimation>

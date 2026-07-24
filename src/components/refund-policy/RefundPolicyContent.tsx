@@ -22,12 +22,12 @@ const policySections: PolicySection[] = [
   {
     title: 'Return and refund guidelines',
     content:
-      'At NextSaaS, we are committed to providing you with the best possible service and experience. However, if for any reason our platform does not meet your expectations, we offer a simple and hassle-free refund policy.',
+      'At First Pixel, we are committed to providing you with the best possible service and experience. However, if for any reason our platform does not meet your expectations, we offer a simple and hassle-free refund policy.',
   },
   {
     title: '14-Day money-back guarantee',
     content:
-      'We are confident that you will love using NextSaaS. Still, if you are not fully satisfied, we offer a full refund within 14 days of your original purchase — no questions asked.',
+      'We are confident that you will love using First Pixel. Still, if you are not fully satisfied, we offer a full refund within 14 days of your original purchase — no questions asked.',
   },
 ];
 
@@ -68,7 +68,7 @@ const conditionsForRefund: ListSection = {
 const nonRefundableSituations: ListSection = {
   title: 'Non-refundable situations',
   description:
-    'NextSaaS reserves the right to suspend or terminate any user account without prior notice for reasons including but not limited to',
+    'First Pixel reserves the right to suspend or terminate any user account without prior notice for reasons including but not limited to',
   items: [
     'Purchases made through unauthorized sources.',
     'Requests based on lack of features not available in the product description.',
@@ -85,7 +85,7 @@ const additionalSections: PolicySection[] = [
   {
     title: 'We appreciate your feedback',
     content:
-      'If you choose to request a refund, we would be grateful if you could let us know why. Your feedback helps us improve NextSaaS for future users!',
+      'If you choose to request a refund, we would be grateful if you could let us know why. Your feedback helps us improve First Pixel for future users!',
   },
 ];
 

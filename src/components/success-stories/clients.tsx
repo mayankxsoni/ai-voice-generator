@@ -117,13 +117,13 @@ const Clients = () => {
             id="clients-heading"
             className="mx-auto max-w-[800px] text-center 2xl:mx-0 2xl:text-left"
             itemProp="description">
-            NextSaaS resumes have helped users land jobs at top companies.
+            First Pixel resumes have helped users land jobs at top companies.
           </h2>
         </RevealAnimation>
         <RevealAnimation delay={0.2} instant>
           <div
             className="mt-14 overflow-hidden"
-            aria-label="Logos of companies where NextSaaS users have found employment">
+            aria-label="Logos of companies where First Pixel users have found employment">
             <Marquee speed={40} autoFill>
               <div className="flex items-center justify-center gap-x-14">
                 {clientLogos.map((logo) => (

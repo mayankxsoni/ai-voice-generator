@@ -9,10 +9,10 @@ const DocsContent = () => {
       <div className="main-container mb-[70px]">
         <div className="space-y-3 text-center">
           <RevealAnimation delay={0.1}>
-            <h2>Welcome to the NextSaaS documentation</h2>
+            <h2>Welcome to the First Pixel documentation</h2>
           </RevealAnimation>
           <RevealAnimation delay={0.2}>
-            <p>Find everything you need to set up, customize, and master your NextSaaS platform.</p>
+            <p>Find everything you need to set up, customize, and master your First Pixel platform.</p>
           </RevealAnimation>
         </div>
       </div>
@@ -35,7 +35,7 @@ const DocsContent = () => {
                   <ul className="text-tagline-1 text-secondary/60 list-inside list-disc space-y-3 font-normal">
                     <li>
                       <Link href="#" className="hover:text-secondary transition-colors duration-500 ease-in-out">
-                        Introduction to NextSaaS
+                        Introduction to First Pixel
                       </Link>
                     </li>
                     <li>
@@ -152,7 +152,7 @@ const DocsContent = () => {
             <div className="space-y-6">
               <div className="space-y-2">
                 <h4>Settings & customization</h4>
-                <p>Tailor NextSaaS to fit your business needs.</p>
+                <p>Tailor First Pixel to fit your business needs.</p>
               </div>
 
               <ul className="text-tagline-1 text-secondary/60 list-inside space-y-3 font-normal">

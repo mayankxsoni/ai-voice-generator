@@ -20,7 +20,7 @@ const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
         className="bg-white py-28"
         ctaHeading="Start creating stunning "
         spanText="voices today"
-        description="Join thousands using NextSaaS to create lifelike voices—no mic, no hassle."
+        description="Join thousands using First Pixel to create lifelike voices—no mic, no hassle."
         ctaBtnText="Get started"
       />
     </main>

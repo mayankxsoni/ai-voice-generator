@@ -1,6 +1,6 @@
 ---
 title: 'Spotify'
-description: 'How Spotify improved recommendation accuracy and boosted listener engagement using NextSaaS Intelligence.'
+description: 'How Spotify improved recommendation accuracy and boosted listener engagement using First Pixel Intelligence.'
 industry: 'media'
 product: 'api'
 service: 'consulting'
@@ -8,14 +8,14 @@ solution: 'enterprise'
 lightImage: '/images/icons/spotify.svg'
 darkImage: '/images/icons/spotify-dark.svg'
 alt: 'Spotify'
-detailsTitle: 'How Spotify Used NextSaaS Intelligence to Enhance Personalization and Listener Retention'
+detailsTitle: 'How Spotify Used First Pixel Intelligence to Enhance Personalization and Listener Retention'
 
 overview:
   titleOne: 'Overview'
   titleTwo: 'Sharper personalization for millions of listeners.'
   description: >
     Spotify wanted deeper behavioral insights to improve music recommendations and increase session engagement.
-    NextSaaS Intelligence unified listening data across devices, enabling more accurate recommendations and faster
+    First Pixel Intelligence unified listening data across devices, enabling more accurate recommendations and faster
     detection of preference changes.
 
 problemBlock:
@@ -33,7 +33,7 @@ problemBlock:
     name: 'Daniel Ruiz'
     role: 'Data Analyst, Spotify'
     description: >
-      NextSaaS helped us unify device-level insights and finally see the full listener journey. We can now understand
+      First Pixel helped us unify device-level insights and finally see the full listener journey. We can now understand
       how users move between devices and how that impacts their music preferences. This holistic view has transformed
       our ability to deliver personalized experiences.
     rating: 5
@@ -43,7 +43,7 @@ solutionBlock:
   titleOne: 'The solution'
   titleTwo: 'A unified intelligence layer powering recommendations.'
   description: >
-    NextSaaS integrated real-time listening sessions, skip patterns, playlist saves, and interaction depth into a
+    First Pixel integrated real-time listening sessions, skip patterns, playlist saves, and interaction depth into a
     consolidated intelligence layer used across Spotify's personalization systems. The platform connected data streams
     from all devices and platforms, normalizing the information into a unified format that machine learning models
     could process effectively. Real-time processing ensured that recommendation engines had access to the most current
@@ -75,7 +75,7 @@ resultBlock:
     name: 'Elias Turner'
     role: 'Director of Personalization, Spotify'
     description: >
-      NextSaaS played a key role in strengthening our personalization experience worldwide. The unified data layer has
+      First Pixel played a key role in strengthening our personalization experience worldwide. The unified data layer has
       enabled us to deliver more relevant recommendations at scale, which directly impacts user satisfaction and
       retention. This foundation has been essential to our continued growth.
     rating: 5

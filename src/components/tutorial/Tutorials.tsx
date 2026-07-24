@@ -26,12 +26,12 @@ const Tutorials = () => {
                 <figure className="h-full w-full">
                   <Image
                     src={tutorial1}
-                    alt="Intro to NextSaaS video tutorial thumbnail"
+                    alt="Intro to First Pixel video tutorial thumbnail"
                     className="h-full w-full object-cover"
                   />
                 </figure>
                 <div className="bg-secondary/10 absolute right-0 bottom-2.5 left-0 mx-auto w-[95%] rounded-xl p-6 text-center backdrop-blur-[10px] transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100 md:translate-y-full md:opacity-0">
-                  <h3 className="text-heading-5 text-accent">Intro to NextSaaS</h3>
+                  <h3 className="text-heading-5 text-accent">Intro to First Pixel</h3>
                   <p className="flex items-center justify-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 20 20" fill="none">
                       <path

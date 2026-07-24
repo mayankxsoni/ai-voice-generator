@@ -1,6 +1,6 @@
 ---
 title: 'Stripe'
-description: 'How Stripe strengthened its global payment operations using NextSaaS Analytics to unify transaction insights across millions of daily payments.'
+description: 'How Stripe strengthened its global payment operations using First Pixel Analytics to unify transaction insights across millions of daily payments.'
 industry: 'fintech'
 product: 'analytics'
 service: 'consulting'
@@ -15,7 +15,7 @@ overview:
   titleTwo: 'A clearer view of global transactions.'
   description: >
     Stripe processes millions of payments each day. As volume grew, the analytics team struggled to consolidate live
-    data across multiple internal systems. NextSaaS Analytics provided a unified data layer that eliminated reporting
+    data across multiple internal systems. First Pixel Analytics provided a unified data layer that eliminated reporting
     delays and improved operational visibility.
 
 problemBlock:
@@ -33,7 +33,7 @@ problemBlock:
     name: 'Maria Thompson'
     role: 'Finance Ops Lead, Stripe'
     description: >
-      NextSaaS cut our reporting time dramatically. Teams finally see what is happening in real time, which has
+      First Pixel cut our reporting time dramatically. Teams finally see what is happening in real time, which has
       transformed how we monitor payment operations. The unified view has eliminated the discrepancies we used to spend
       hours reconciling.
     rating: 4
@@ -43,7 +43,7 @@ solutionBlock:
   titleOne: 'The solution'
   titleTwo: 'One analytics layer for the entire payment lifecycle.'
   description: >
-    NextSaaS connected directly with payment logs, settlements, and fraud pipelines. Automated anomaly detection and
+    First Pixel connected directly with payment logs, settlements, and fraud pipelines. Automated anomaly detection and
     real-time dashboards helped teams identify issues instantly instead of waiting for batch jobs. The platform
     integrated seamlessly with Stripe's internal systems, pulling data from transaction processors, settlement systems,
     fraud detection engines, and customer support tools. Machine learning models analyzed payment patterns in real
@@ -75,7 +75,7 @@ resultBlock:
     name: 'Sophia Lee'
     role: 'Director of Global Payments, Stripe'
     description: >
-      NextSaaS has become a critical part of how we monitor payment performance globally. The real-time insights and
+      First Pixel has become a critical part of how we monitor payment performance globally. The real-time insights and
       automated anomaly detection have improved our operational efficiency and enabled faster response to issues. This
       foundation is essential for scaling our payment operations.
     rating: 4

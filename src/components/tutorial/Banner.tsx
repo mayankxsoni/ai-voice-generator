@@ -15,8 +15,8 @@ const Banner = () => {
               </RevealAnimation>
               <RevealAnimation delay={0.2}>
                 <p>
-                  NextSaaS is designed to serve a wide range of teams and industries. Whether you’re managing data,
-                  scaling operations, optimizing finances, or streamlining customer experiences—NextSaaS is the platform
+                  First Pixel is designed to serve a wide range of teams and industries. Whether you’re managing data,
+                  scaling operations, optimizing finances, or streamlining customer experiences—First Pixel is the platform
                   that grows with you.
                 </p>
               </RevealAnimation>

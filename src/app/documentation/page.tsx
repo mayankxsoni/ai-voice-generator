@@ -15,7 +15,7 @@ const page = () => {
       <CTA
         className="bg-white"
         badgeText="Get Started"
-        ctaHeading="Ready to start earning with NextSaaS?"
+        ctaHeading="Ready to start earning with First Pixel?"
         description="If you have any questions, feel free to reach out to our team."
         ctaBtnText="Get started"
       />

@@ -23,7 +23,7 @@ const blogs = [
   {
     id: 2,
     title: 'Product tour',
-    subtitle: 'A visual overview of everything you can do inside NextSaaS.',
+    subtitle: 'A visual overview of everything you can do inside First Pixel.',
     time: '25 Hours',
     readTime: '25 Hours',
     tag: 'Crypto',
@@ -50,7 +50,7 @@ const blogs = [
   {
     id: 5,
     title: 'Product tour',
-    subtitle: 'A visual overview of everything you can do inside NextSaaS.',
+    subtitle: 'A visual overview of everything you can do inside First Pixel.',
     time: '25 Hours',
     readTime: '25 Hours',
     tag: 'AI software',

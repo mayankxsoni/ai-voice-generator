@@ -1,6 +1,6 @@
 ---
 title: 'Outreach'
-description: 'How Outreach increased sales productivity and improved pipeline visibility using NextSaaS Automation & Intelligence.'
+description: 'How Outreach increased sales productivity and improved pipeline visibility using First Pixel Automation & Intelligence.'
 industry: 'saas'
 product: 'analytics'
 service: 'consulting'
@@ -8,14 +8,14 @@ solution: 'enterprise'
 lightImage: '/images/icons/outreach.svg'
 darkImage: '/images/icons/outreach-white.svg'
 alt: 'Outreach'
-detailsTitle: 'How Outreach Improved Sales Productivity with NextSaaS Automation & Intelligence'
+detailsTitle: 'How Outreach Improved Sales Productivity with First Pixel Automation & Intelligence'
 
 overview:
   titleOne: 'Overview'
   titleTwo: 'Stronger insights for global sales teams.'
   description: >
     Outreach needed deeper analytics to help revenue teams understand rep performance and streamline outbound
-    workflows. NextSaaS provided automation, predictive scoring, and unified dashboards to help Outreach optimize
+    workflows. First Pixel provided automation, predictive scoring, and unified dashboards to help Outreach optimize
     pipeline health and increase productivity across distributed sales teams.
 
 problemBlock:
@@ -33,7 +33,7 @@ problemBlock:
     name: 'Julia Spencer'
     role: 'Revenue Operations Manager, Outreach'
     description: >
-      Before NextSaaS, we were stitching together data from too many places. It slowed our decision-making every week.
+      Before First Pixel, we were stitching together data from too many places. It slowed our decision-making every week.
       Now we have a unified view that gives us confidence in our forecasts and helps us identify coaching opportunities
       much faster.
     rating: 5
@@ -43,7 +43,7 @@ solutionBlock:
   titleOne: 'The solution'
   titleTwo: 'Automation and analytics built for revenue teams.'
   description: >
-    NextSaaS connected Outreach activity logs, CRM data, call outcomes, and sequence performance into unified
+    First Pixel connected Outreach activity logs, CRM data, call outcomes, and sequence performance into unified
     dashboards. Predictive signals identified at-risk deals, and automated workflows helped reps prioritize the
     highest-impact actions. The platform integrated seamlessly with Salesforce, Outreach.io, Gong, and other sales
     tools, creating a single source of truth for all revenue data. Machine learning models analyzed historical patterns
@@ -75,7 +75,7 @@ resultBlock:
     name: 'Emma Rodriguez'
     role: 'VP of Sales, Outreach'
     description: >
-      NextSaaS transformed our visibility and directly improved our revenue outcomes. We can now make decisions with
+      First Pixel transformed our visibility and directly improved our revenue outcomes. We can now make decisions with
       confidence, knowing we have complete and accurate data. The impact on our sales performance has been substantial
       and measurable.
     rating: 4

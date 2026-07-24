@@ -16,7 +16,7 @@ const Guideline = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.5}>
               <p>
-                Welcome to the NextSaaS Affiliate Program! <br />
+                Welcome to the First Pixel Affiliate Program! <br />
                 Please read these terms carefully to ensure you fully understand how our program works and what is
                 expected.
               </p>

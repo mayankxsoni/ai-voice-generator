@@ -10,8 +10,8 @@ const TermsConditionContent = () => {
             <h2>Terms &amp; conditions</h2>
             <div className="space-y-7">
               <p>
-                This site, nextsaas.com (hereafter referred to as NextSaaS, site, or website) is owned and operated by
-                NextSaaS Technologies LLC (hereafter referred to as NextSaaS, we, or company).
+                This site, nextsaas.com (hereafter referred to as First Pixel, site, or website) is owned and operated by
+                First Pixel Technologies LLC (hereafter referred to as First Pixel, we, or company).
               </p>
               <p>
                 Please carefully read, review, and understand our Terms and Conditions before using any services or
@@ -30,9 +30,9 @@ const TermsConditionContent = () => {
             <div className="space-y-6">
               <h3>1. Limitation of liability</h3>
               <p>
-                Under no circumstances shall NextSaaS be liable for any direct, indirect, incidental, special, or
+                Under no circumstances shall First Pixel be liable for any direct, indirect, incidental, special, or
                 consequential damages, including but not limited to loss of data, profits, or business interruption,
-                arising out of the use, or inability to use, the materials on this site, even if NextSaaS or an
+                arising out of the use, or inability to use, the materials on this site, even if First Pixel or an
                 authorized representative has been advised of the possibility of such damages.
               </p>
               <p>
@@ -45,13 +45,13 @@ const TermsConditionContent = () => {
             <div className="space-y-6">
               <h3>2. License</h3>
               <p>
-                NextSaaS services, platforms, and tools are provided under a commercial license agreement. Each
+                First Pixel services, platforms, and tools are provided under a commercial license agreement. Each
                 subscription or license purchased includes access to updates and support for 365 days from the
                 completion of the order.
               </p>
               <p>
                 License activation is necessary to receive updates and premium support. You are not permitted to resell,
-                redistribute, or offer NextSaaS products or services, modified or unmodified, without our written
+                redistribute, or offer First Pixel products or services, modified or unmodified, without our written
                 consent.
               </p>
             </div>
@@ -60,12 +60,12 @@ const TermsConditionContent = () => {
             <div className="space-y-6">
               <h3>3. Ownership and liability</h3>
               <p>
-                All NextSaaS products, solutions, and materials remain the intellectual property of NextSaaS
+                All First Pixel products, solutions, and materials remain the intellectual property of First Pixel
                 Technologies LLC. You may not claim ownership of our services, whether modified or unmodified.
               </p>
               <p>
                 Our products and services are provided &quot;as is&quot; without warranty of any kind, expressed or
-                implied. NextSaaS is not liable for any losses or damages resulting from the use or inability to use its
+                implied. First Pixel is not liable for any losses or damages resulting from the use or inability to use its
                 products.
               </p>
               <p>
@@ -80,7 +80,7 @@ const TermsConditionContent = () => {
             <div className="space-y-6">
               <h3>4. Refund policy</h3>
               <p>
-                We believe you&apos;ll love NextSaaS! Still, if you&apos;re not satisfied, we offer a 14-day
+                We believe you&apos;ll love First Pixel! Still, if you&apos;re not satisfied, we offer a 14-day
                 no-questions-asked refund policy. Simply contact our support team within 14 days of your original
                 purchase, and we&apos;ll issue a full refund. We might ask for feedback to help us improve, but
                 you&apos;re under no obligation to share.
@@ -100,7 +100,7 @@ const TermsConditionContent = () => {
             <div className="space-y-6">
               <h3>5. Warranty</h3>
               <p>
-                NextSaaS services are provided without any warranty, either expressed or implied. We do not guarantee
+                First Pixel services are provided without any warranty, either expressed or implied. We do not guarantee
                 full compatibility with all browsers, devices, third-party plugins, or external systems. Before
                 purchasing, you may review demos or contact our support team to verify compatibility with your setup.
               </p>
@@ -110,11 +110,11 @@ const TermsConditionContent = () => {
             <div className="space-y-6">
               <h3>6. Account termination and suspension</h3>
               <p>
-                NextSaaS reserves the right to suspend or terminate any user account without prior notice for reasons
+                First Pixel reserves the right to suspend or terminate any user account without prior notice for reasons
                 including but not limited to
               </p>
               <ul>
-                <li>Abusive, defamatory, or malicious behavior towards NextSaaS staff or customers</li>
+                <li>Abusive, defamatory, or malicious behavior towards First Pixel staff or customers</li>
                 <li>Spreading false information or misleading reviews</li>
                 <li>Unauthorized resale, distribution, or promotion of competitor products</li>
                 <li>Involvement in hacking, spamming, piracy, or illegal activities</li>
@@ -126,7 +126,7 @@ const TermsConditionContent = () => {
             <div className="space-y-6">
               <h3>7. Privacy policy</h3>
               <p>
-                We value your privacy. NextSaaS does not sell, rent, or share your personal information with third
+                We value your privacy. First Pixel does not sell, rent, or share your personal information with third
                 parties. Your data is used solely for purposes such as
               </p>
               <ul>
@@ -137,7 +137,7 @@ const TermsConditionContent = () => {
                 <li>Legal compliance</li>
               </ul>
               <p>
-                By using NextSaaS services, you consent to the collection and use of your data by our Privacy Policy.
+                By using First Pixel services, you consent to the collection and use of your data by our Privacy Policy.
               </p>
             </div>
           </RevealAnimation>

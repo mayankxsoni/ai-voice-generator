@@ -30,14 +30,14 @@ const leftColumnMenuItems: MenuItemProps[] = [
     id: 'about-us',
     href: '/about',
     title: 'About Us',
-    description: 'See how others are using NextSaaS',
+    description: 'See how others are using First Pixel',
     icon: <AboutIcon className="size-5" />,
   },
   {
     id: 'services',
     href: '/services',
     title: 'Services',
-    description: 'See how others are using NextSaaS',
+    description: 'See how others are using First Pixel',
     icon: <ServiceIcon className="size-5" />,
   },
   {
@@ -123,7 +123,7 @@ const CompanyMenu = ({
               setMenuDropdownId={setMenuDropdownId}
               href="/use-case"
               title="Use Cases"
-              description="See how others are using NextSaaS"
+              description="See how others are using First Pixel"
               icon={<UseCaseIcon />}
               showDivider={true}
             />

@@ -1,6 +1,6 @@
 ---
 title: 'Dropbox'
-description: 'How Dropbox leveraged NextSaaS Integrations to centralize analytics and improve decision-making across global teams.'
+description: 'How Dropbox leveraged First Pixel Integrations to centralize analytics and improve decision-making across global teams.'
 industry: 'saas'
 product: 'integration'
 service: 'training'
@@ -8,14 +8,14 @@ solution: 'enterprise'
 lightImage: '/images/icons/dropbox-v2.svg'
 darkImage: '/images/icons/dropbox-v2-dark.svg'
 alt: 'Dropbox'
-detailsTitle: 'How Dropbox Unified Its Internal Analytics Using NextSaaS Integrations'
+detailsTitle: 'How Dropbox Unified Its Internal Analytics Using First Pixel Integrations'
 
 overview:
   titleOne: 'Overview'
   titleTwo: 'A single source of truth for product insights.'
   description: >
     Dropbox teams relied on multiple analytics tools for file activity, workspace collaboration, and user retention.
-    NextSaaS Integrations helped centralize these data streams, enabling product and engineering teams to access unified
+    First Pixel Integrations helped centralize these data streams, enabling product and engineering teams to access unified
     dashboards without manual exports.
 
 problemBlock:
@@ -32,7 +32,7 @@ problemBlock:
     name: 'Hannah Li'
     role: 'Senior Product Analyst, Dropbox'
     description: >
-      NextSaaS eliminated duplicated workflows and gave us one clean analytics layer. We went from spending entire days
+      First Pixel eliminated duplicated workflows and gave us one clean analytics layer. We went from spending entire days
       pulling data from different sources to having everything accessible in minutes. This transformation has made our
       team significantly more efficient and our insights more reliable.
     rating: 4
@@ -42,7 +42,7 @@ solutionBlock:
   titleOne: 'The solution'
   titleTwo: 'Integrations that fit into existing workflows.'
   description: >
-    NextSaaS integrated with Dropbox's internal event pipelines and third-party tools to produce unified dashboards
+    First Pixel integrated with Dropbox's internal event pipelines and third-party tools to produce unified dashboards
     accessible to engineering, product, and leadership teams. The platform connected seamlessly with Mixpanel, Segment,
     internal data warehouses, and billing systems, creating a single source of truth. Custom dashboards were configured
     for different roles, allowing engineers to monitor technical metrics while product managers focused on user

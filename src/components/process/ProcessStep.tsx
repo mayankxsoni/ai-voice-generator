@@ -63,7 +63,7 @@ const ProcessStep = () => {
           <RevealAnimation delay={0.4}>
             <p className="mx-auto max-w-[692px]">
               We make it easy to Get started, simple to scale, and seamless to succeed. Whether you&apos;re using one
-              feature or the full suite, NextSaaS is built to support you every step of the way.
+              feature or the full suite, First Pixel is built to support you every step of the way.
             </p>
           </RevealAnimation>
         </div>

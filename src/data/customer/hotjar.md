@@ -1,6 +1,6 @@
 ---
 title: 'Hotjar'
-description: 'Hotjar used NextSaaS Dashboards to consolidate metrics and deliver faster insights to product teams.'
+description: 'Hotjar used First Pixel Dashboards to consolidate metrics and deliver faster insights to product teams.'
 industry: 'saas'
 product: 'dashboard'
 service: 'consulting'
@@ -8,14 +8,14 @@ solution: 'enterprise'
 lightImage: '/images/icons/hotjar.svg'
 darkImage: '/images/icons/hotjar-dark.svg'
 alt: 'Hotjar'
-detailsTitle: 'How Hotjar Consolidated Product Analytics Using NextSaaS Dashboards'
+detailsTitle: 'How Hotjar Consolidated Product Analytics Using First Pixel Dashboards'
 
 overview:
   titleOne: 'Overview'
   titleTwo: 'A single dashboard for all product signals.'
   description: >
     Hotjar needed to unify user recordings, feedback, heatmap data, and usage analytics.
-    NextSaaS Dashboards provided one interface for monitoring all product signals in real time.
+    First Pixel Dashboards provided one interface for monitoring all product signals in real time.
 
 problemBlock:
   titleOne: 'The problem'
@@ -41,7 +41,7 @@ solutionBlock:
   titleOne: 'The solution'
   titleTwo: 'Unified metrics across every feature.'
   description: >
-    NextSaaS Dashboards synced Hotjar's recordings, events, user feedback, and segmentation into unified, filterable
+    First Pixel Dashboards synced Hotjar's recordings, events, user feedback, and segmentation into unified, filterable
     dashboards. The platform integrated seamlessly with Hotjar's existing tools, pulling data from session recordings,
     heatmaps, surveys, and analytics platforms. Custom dashboards were created for different product areas, allowing
     teams to focus on metrics relevant to their features. Advanced filtering and segmentation capabilities enabled deep

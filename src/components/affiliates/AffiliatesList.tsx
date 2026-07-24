@@ -43,8 +43,8 @@ const affiliateSectionsData: AffiliateSection[] = [
     items: [
       'Spam links in irrelevant discussions',
       'Use incorrect URLs or expired promotional methods',
-      'Spread false or exaggerated information about NextSaaS',
-      'Promote NextSaaS alongside direct competitors',
+      'Spread false or exaggerated information about First Pixel',
+      'Promote First Pixel alongside direct competitors',
       'List our deals on coupon/discount-only websites',
     ],
   },

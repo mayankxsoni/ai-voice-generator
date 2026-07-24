@@ -52,7 +52,7 @@ const AnalyticsDetails = () => {
             </RevealAnimation>
             <RevealAnimation delay={0.2}>
               <p>
-                Every team has different goals. With NextSaaS, you can tailor dashboards by department, role, or
+                Every team has different goals. With First Pixel, you can tailor dashboards by department, role, or
                 individual needs.
               </p>
             </RevealAnimation>
