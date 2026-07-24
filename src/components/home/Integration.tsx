@@ -15,8 +15,8 @@ const Integration = () => {
                 </RevealAnimation>
                 <div className="space-y-3">
                   <RevealAnimation delay={0.3}>
-                    <h2>
-                      Works with your <span className="text-ns-linen">existing stack</span>
+                    <h2 className="font-extrabold">
+                      Works with your <span className="text-primary-500">existing stack</span>
                     </h2>
                   </RevealAnimation>
                   <RevealAnimation delay={0.4}>
@@ -31,7 +31,7 @@ const Integration = () => {
                 <div className="text-center">
                   <LinkButton
                     href="/services"
-                    btnClass="btn-lg-v2 lg:btn-xl-v2 btn-secondary-v2 group-hover/btn-v2:btn-primary-v2">
+                    btnClass="btn-lg-v2 lg:btn-xl-v2 btn-primary-v2">
                     See delivery formats
                   </LinkButton>
                 </div>

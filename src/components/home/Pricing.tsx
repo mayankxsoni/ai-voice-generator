@@ -85,8 +85,8 @@ const Pricing = () => {
               </RevealAnimation>
               <div className="space-y-3 text-center">
                 <RevealAnimation delay={0.2}>
-                  <h2 className="font-normal">
-                    Video packages for <span className="text-ns-linen">every stage</span>
+                  <h2 className="font-extrabold">
+                    Video packages for <span className="text-primary-500">every stage</span>
                   </h2>
                 </RevealAnimation>
                 <RevealAnimation delay={0.3}>
@@ -101,11 +101,11 @@ const Pricing = () => {
             <RevealAnimation delay={0.4}>
               <div className="relative z-0 mx-auto w-full max-w-[293px]">
                 <RevealAnimation delay={1} duration={1} direction="up" offset={200}>
-                  <span className="bg-secondary text-tagline-2 absolute -top-2.5 -right-6 z-11 inline-block w-[90px] rotate-20 rounded-[36px] px-3.5 py-1.5 font-medium text-white capitalize shadow-xs">
+                  <span className="bg-primary-500 text-tagline-2 absolute -top-2.5 -right-6 z-11 inline-block w-[90px] rotate-20 rounded-[36px] px-3.5 py-1.5 font-semibold text-white capitalize shadow-lg shadow-primary-500/30">
                     save 20%
                   </span>
                 </RevealAnimation>
-                <label className="shadow-1 bg-ns-ivory relative z-10 inline-flex cursor-pointer items-center rounded-full px-[57px] py-6">
+                <label className="shadow-1 bg-white border border-[#eef0f3] relative z-10 inline-flex cursor-pointer items-center rounded-full px-[57px] py-6">
                   <span className="pr-2.5 text-base font-normal text-black">Monthly</span>
                   <input
                     type="checkbox"
@@ -115,7 +115,7 @@ const Pricing = () => {
                     checked={isYearly}
                     onChange={(e) => setIsYearly(e.target.checked)}
                   />
-                  <span className="border-stroke-1/30 after:bg-accent before:bg-secondary relative h-[28px] w-13 rounded-[34px] border bg-transparent before:absolute before:-top-[5px] before:-left-[6px] before:-z-10 before:h-[36px] before:w-[62px] before:rounded-[34px] before:p-[5px] before:transition-all before:content-[''] after:absolute after:start-[2px] after:top-1/2 after:size-6 after:-translate-y-1/2 after:rounded-full after:transition-all after:content-[''] peer-checked:after:start-[2px] peer-checked:after:translate-x-[94%]"></span>
+                  <span className="border-stroke-1/30 after:bg-white before:bg-primary-500 relative h-[28px] w-13 rounded-[34px] border bg-transparent before:absolute before:-top-[5px] before:-left-[6px] before:-z-10 before:h-[36px] before:w-[62px] before:rounded-[34px] before:p-[5px] before:transition-all before:content-[''] after:absolute after:start-[2px] after:top-1/2 after:size-6 after:-translate-y-1/2 after:rounded-full after:transition-all after:content-[''] peer-checked:after:start-[2px] peer-checked:after:translate-x-[94%]"></span>
                   <span className="ps-2.5 text-base font-normal text-black">Yearly</span>
                 </label>
               </div>

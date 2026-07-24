@@ -26,19 +26,19 @@ const defaultMetadata: Metadata = {
   },
 };
 
-const generateMetadata = (title?: string, description?: string, canonicaUrl?: string, imageUrl?: string): Metadata => {
+const generateMetadata = (title?: string, description?: string, canonicalUrl?: string, imageUrl?: string): Metadata => {
   return {
     ...defaultMetadata,
     title: title ?? defaultMetadata.title,
     description: description ?? defaultMetadata.description,
     alternates: {
-      canonical: canonicaUrl,
+      canonical: canonicalUrl,
     },
     openGraph: {
       ...defaultMetadata.openGraph,
       title: title ?? defaultMetadata.openGraph?.title,
       description: description ?? defaultMetadata.openGraph?.description,
-      url: canonicaUrl ?? defaultMetadata.openGraph?.url,
+      url: canonicalUrl ?? defaultMetadata.openGraph?.url,
       images: imageUrl ? [{ url: imageUrl, width: 1200, height: 630 }] : defaultMetadata.openGraph?.images,
     },
     twitter: {

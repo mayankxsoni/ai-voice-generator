@@ -41,7 +41,7 @@ const Clients = () => {
           <RevealAnimation delay={0.1}>
             <h2 id="clients-heading" className="mx-auto mb-14 max-w-[800px] text-center font-normal">
               Trusted by
-              <span className="text-ns-linen"> 50+</span> fast-growing SaaS teams worldwide
+              <span className="text-primary-500"> 50+</span> fast-growing SaaS teams worldwide
             </h2>
           </RevealAnimation>
 

@@ -20,18 +20,18 @@ const TopNavHeading = ({ className }: { className?: string }) => {
           <div className="flex items-center justify-center">
             <Marquee autoFill speed={40}>
               <p className="text-secondary text-tagline-2 font-inter-tight mr-2 leading-[150%] font-normal">
-                Introducing our AI-powered voice generator –
-                <Link href="#" className="cursor-pointer underline hover:underline-offset-2">
-                  discover now
+                🎬 New: 60-second SaaS explainer videos from{' '}
+                <Link href="/pricing" className="cursor-pointer underline hover:underline-offset-2 font-semibold">
+                  $599
                 </Link>{' '}
-                and upgrade your voice generation.
+                — conversion-focused, 100% custom, delivered in 2 weeks. &nbsp;✨
               </p>
               <p className="text-secondary text-tagline-2 font-inter-tight leading-[150%] font-normal">
-                Try the latest voice generator for modern voice generation{' '}
-                <Link href="#" className="cursor-pointer underline hover:underline-offset-2">
-                  see details{' '}
-                </Link>
-                and stand out to voice generation.{' '}
+                Turn your SaaS product into the obvious choice —{' '}
+                <Link href="/contact-us" className="cursor-pointer underline hover:underline-offset-2 font-semibold">
+                  book a free brief
+                </Link>{' '}
+                and see how First Pixel makes it happen. &nbsp;🚀
               </p>
             </Marquee>
           </div>

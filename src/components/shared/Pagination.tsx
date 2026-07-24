@@ -74,7 +74,7 @@ const Pagination = ({ totalItems, itemsPerPage, currentPage, onPageChange, class
         <button
           onClick={handlePrevious}
           disabled={currentPage === 1}
-          className="border-stroke-3 hover:bg-ns-linen stroke-secondary flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border duration-300 hover:stroke-white disabled:cursor-not-allowed">
+          className="border-stroke-3 hover:bg-primary-500 stroke-secondary flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border duration-300 hover:stroke-white disabled:cursor-not-allowed">
           <span>
             <svg xmlns="http://www.w3.org/2000/svg" width={14} height={12} viewBox="0 0 14 12" fill="none">
               <path
@@ -101,8 +101,8 @@ const Pagination = ({ totalItems, itemsPerPage, currentPage, onPageChange, class
               className={cn(
                 'text-tagline-2 flex h-10 w-10 items-center justify-center rounded-full font-medium transition-all duration-300',
                 currentPage === page
-                  ? 'bg-ns-linen text-white'
-                  : 'text-tagline-2 hover:bg-ns-linen/70 cursor-pointer hover:text-white',
+                  ? 'bg-primary-500 text-white'
+                  : 'text-tagline-2 hover:bg-primary-500/70 cursor-pointer hover:text-white',
               )}>
               {page}
             </button>
@@ -115,7 +115,7 @@ const Pagination = ({ totalItems, itemsPerPage, currentPage, onPageChange, class
         <button
           onClick={handleNext}
           disabled={currentPage === totalPages}
-          className="border-stroke-3 hover:bg-ns-linen stroke-secondary flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border duration-300 hover:stroke-white disabled:cursor-not-allowed">
+          className="border-stroke-3 hover:bg-primary-500 stroke-secondary flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border duration-300 hover:stroke-white disabled:cursor-not-allowed">
           <span>
             <svg xmlns="http://www.w3.org/2000/svg" width={14} height={12} viewBox="0 0 14 12" fill="none">
               <path

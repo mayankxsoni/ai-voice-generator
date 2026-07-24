@@ -19,8 +19,8 @@ const CTA = () => {
           </RevealAnimation>
           <div className="space-y-3">
             <RevealAnimation delay={0.2}>
-              <h2 id="cta-heading" className="mx-auto max-w-[689px] text-center font-medium" itemProp="headline">
-                Ready to make your SaaS <span className="text-ns-linen">impossible to ignore?</span>
+              <h2 id="cta-heading" className="mx-auto max-w-[689px] text-center font-extrabold" itemProp="headline">
+                Ready to make your SaaS <span className="text-primary-500">impossible to ignore?</span>
               </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.3}>
@@ -33,7 +33,7 @@ const CTA = () => {
           <div className="mx-auto mt-[76px] w-[90%] text-center md:w-auto">
             <LinkButton
               href="/contact-us"
-              btnClass="btn-xl-v2 btn-secondary-v2 group-hover/btn-v2:btn-primary-v2"
+              btnClass="btn-xl-v2 btn-primary-v2"
               aria-label="Get a free video brief - Navigate to contact page">
               Get Your Free Video Brief
             </LinkButton>

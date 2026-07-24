@@ -3,6 +3,15 @@ import RevealAnimation from '@/components/animation/RevealAnimation';
 import Image from 'next/image';
 import { useState } from 'react';
 
+export interface VoiceSample {
+  id?: string;
+  name: string;
+  imgLink?: string;
+  description?: string;
+  audioPath?: string;
+  youtubeId?: string;
+}
+
 interface PortfolioItem {
   id: string;
   name: string;
@@ -150,7 +159,7 @@ const VoiceSamples = () => {
           {/* Header Left: Tag & Title */}
           <div className="lg:col-span-7 space-y-5">
             <RevealAnimation instant delay={0.1}>
-              <span className="inline-block rounded-full border border-[#7C3AED]/20 bg-transparent px-4 py-1.5 text-xs font-semibold text-[#7C3AED]">
+              <span className="inline-block rounded-full border border-[#f97316]/20 bg-transparent px-4 py-1.5 text-xs font-semibold text-primary-500">
                 Portfolio
               </span>
             </RevealAnimation>
@@ -158,13 +167,13 @@ const VoiceSamples = () => {
             <RevealAnimation instant delay={0.2}>
               <div className="space-y-4">
                 <h2 id="portfolio-heading" className="text-secondary text-4xl font-extrabold leading-[1.15] tracking-tight sm:text-5xl lg:text-[3.25rem]">
-                  We <span className="text-[#7c3aed]">create videos</span> 🤯<br />
+                  We <span className="text-primary-500">create videos</span> 🤯<br />
                   that get inside your ICP&apos;s<br />
                   brain cells{' '}
-                  <div className="inline-flex items-center gap-1.5 rounded-full border border-[#7C3AED] px-4 py-2 bg-white shadow-sm rotate-2 hover:rotate-0 transition-all duration-300 ml-2 align-middle text-xs font-bold text-[#7C3AED]">
-                    <span className="size-2 rounded-full bg-[#7C3AED] animate-pulse" />
+                  <div className="inline-flex items-center gap-1.5 rounded-full border border-primary-500 px-4 py-2 bg-white shadow-sm rotate-2 hover:rotate-0 transition-all duration-300 ml-2 align-middle text-xs font-bold text-primary-500">
+                    <span className="size-2 rounded-full bg-primary-500 animate-pulse" />
                     <span>Videos That Convert</span>
-                    <svg className="size-3 text-[#7C3AED] fill-[#7C3AED] rotate-[-45deg] translate-y-0.5" viewBox="0 0 24 24">
+                    <svg className="size-3 text-primary-500 fill-primary-500 rotate-[-45deg] translate-y-0.5" viewBox="0 0 24 24">
                       <path d="M7 2v11l3-3 3 5 2-1-3-5 4-1Z" />
                     </svg>
                   </div>
@@ -217,16 +226,16 @@ const VoiceSamples = () => {
       <div className="mt-16 flex justify-center">
         <RevealAnimation instant delay={0.4}>
           <a 
-            href="#contact" 
+            href="/contact-us" 
             className="group inline-flex items-center hover:scale-[1.03] transition-transform duration-300"
             aria-label="Book a free consultation"
           >
             {/* Left side text pill */}
-            <span className="flex h-14 items-center bg-white px-8 text-base font-bold text-[#7C3AED] rounded-l-full shadow-[0_8px_30px_rgba(0,0,0,0.03)] border-y border-l border-[#eef0f3] group-hover:border-[#7C3AED]/20 transition-colors">
+            <span className="flex h-14 items-center bg-white px-8 text-base font-bold text-primary-500 rounded-l-full shadow-[0_8px_30px_rgba(0,0,0,0.03)] border-y border-l border-[#eef0f3] group-hover:border-[#f97316]/20 transition-colors">
               Free Consultation
             </span>
             {/* Right side arrow icon box */}
-            <span className="flex size-14 items-center justify-center bg-[#7C3AED] text-white rounded-r-full shadow-[0_8px_30px_rgba(124,58,237,0.15)] group-hover:bg-[#6D28D9] transition-colors">
+            <span className="flex size-14 items-center justify-center bg-primary-500 text-white rounded-r-full shadow-[0_8px_30px_rgba(249,115,22,0.15)] group-hover:bg-primary-600 transition-colors">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" className="size-5 group-hover:translate-x-0.5 transition-transform">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
               </svg>

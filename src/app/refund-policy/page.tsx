@@ -5,7 +5,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   ...defaultMetadata,
-  title: 'Refund Policy - AI Voice Generator || NextSaaS',
+  title: 'Refund Policy — First Pixel | SaaS Explainer Video Agency',
 };
 
 const RefundPolicy = () => {

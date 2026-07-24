@@ -89,13 +89,13 @@ const VoiceSampleItem = memo(({ data, index, isPlaying, onPlayPause }: VoiceSamp
       <div
         ref={itemRef}
         className={`group flex w-full max-w-[417px] items-center justify-between gap-x-3 rounded-full p-2 transition-colors duration-500 ease-in-out ${
-          isPlaying ? 'bg-ns-linen' : 'bg-ns-ivory'
+          isPlaying ? 'bg-primary-50 border border-primary-200' : 'bg-[#f4f5f8]'
         }`}
         aria-label={`Voice sample: ${name}`}>
         <div className="flex flex-auto items-center justify-start gap-x-3">
           <figure className="size-[56px] shrink-0 overflow-hidden rounded-full">
             <Image
-              src={imgLink}
+              src={imgLink || '/images/ns-avatar-1.png'}
               alt={`Avatar for ${name} voice sample`}
               width={56}
               height={56}

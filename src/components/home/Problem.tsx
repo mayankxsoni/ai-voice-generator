@@ -12,7 +12,7 @@ const Problem = () => {
           {/* Tagline above the header */}
           <div className="mb-4">
             <RevealAnimation instant delay={0.1}>
-              <span className="inline-block rounded-full border border-[#7C3AED]/20 bg-transparent px-4.5 py-1 text-sm font-medium text-[#7C3AED]">
+              <span className="inline-block rounded-full border border-[#f97316]/20 bg-transparent px-4.5 py-1 text-sm font-medium text-primary-500">
                 Problem
               </span>
             </RevealAnimation>
@@ -23,7 +23,7 @@ const Problem = () => {
             <div className="flex flex-col sm:flex-row sm:items-center gap-4 lg:gap-6">
               <h2 id="problem-heading" className="text-secondary text-4xl font-extrabold leading-[1.12] tracking-tight sm:text-5xl lg:text-[3.5rem]">
                 Your product is solid, <br className="hidden sm:inline" />
-                <span className="text-[#7C3AED] inline-flex items-center gap-3">
+                <span className="text-primary-500 inline-flex items-center gap-3">
                   so why no traction?
                 </span>
               </h2>

@@ -8,7 +8,7 @@ import gradient6 from '../../public/images/ns-img-498.png';
 
 export const metadata: Metadata = {
   ...defaultMetadata,
-  title: '404 - AI Voice Generator || NextSaaS',
+  title: '404 — First Pixel | SaaS Explainer Video Agency',
 };
 
 const NotFound = () => {

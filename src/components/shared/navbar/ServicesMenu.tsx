@@ -22,49 +22,63 @@ interface MenuItemProps {
 
 const leftColumnMenuItems: MenuItemProps[] = [
   {
-    id: 'explainer-videos',
-    href: '/services',
-    title: 'Explainer Videos',
-    description: '60–120s videos that convert SaaS visitors into signups',
+    id: 'animated-explainer',
+    href: '/services/animated-explainer',
+    title: 'Animated Explainer Video',
+    description: '60–120s videos that turn complex SaaS into instant clarity',
     icon: <ServiceIcon className="size-5" />,
   },
   {
-    id: 'motion-graphics',
-    href: '/services',
-    title: 'Motion Graphics',
-    description: 'Sleek, brand-matched animations for product walkthroughs',
+    id: 'product-launch',
+    href: '/services/product-launch',
+    title: 'Product Launch Videos',
+    description: 'Build hype and drive signups on launch day',
     icon: <FeatureIcon className="size-5" />,
   },
   {
-    id: 'script-writing',
-    href: '/services',
-    title: 'Script Writing',
-    description: 'Conversion-focused scripts written by SaaS strategists',
-    icon: <BrandKitIcon className="size-5" />,
+    id: 'app-demo',
+    href: '/services/app-demo',
+    title: 'App Demo Videos',
+    description: 'Showcase your UI in action and reduce trial friction',
+    icon: <IntegrationIcon className="size-5" />,
   },
   {
-    id: 'brand-videos',
-    href: '/services',
-    title: 'Brand Videos',
-    description: 'Tell your company story and build investor confidence',
-    icon: <IntegrationIcon className="size-5" />,
+    id: 'feature-launch',
+    href: '/services/feature-launch',
+    title: 'Feature Launch Videos',
+    description: 'Announce new features that actually drive adoption',
+    icon: <BrandKitIcon className="size-5" />,
   },
 ];
 
 const rightColumnMenuItems: MenuItemProps[] = [
   {
-    id: 'social-cuts',
-    href: '/services',
-    title: 'Social Cuts',
-    description: 'Short-form edits ready for LinkedIn, Twitter, and ads',
+    id: 'product-demo',
+    href: '/services/product-demo',
+    title: 'Product Demo Videos',
+    description: 'Replace live demos with a polished, always-on video',
     icon: <ProcessICon className="size-5" />,
   },
   {
-    id: 'our-process',
-    href: '/process',
-    title: 'Our Process',
-    description: 'Discovery → Script → Animation → Delivery in 2 weeks',
+    id: 'promo-ads',
+    href: '/services/promo-ads',
+    title: 'Animated Promo Video Ads',
+    description: 'Short-form animated ads built for paid social channels',
     icon: <PressIcon className="size-5" />,
+  },
+  {
+    id: 'ai-ads',
+    href: '/services/ai-ads',
+    title: 'AI Powered Video Ads',
+    description: 'Scale ad creative with AI-assisted animation at speed',
+    icon: <ServiceIcon className="size-5" />,
+  },
+  {
+    id: 'tutorial',
+    href: '/services/tutorial',
+    title: 'Tutorial Video',
+    description: 'Onboard users faster with step-by-step visual guides',
+    icon: <FeatureIcon className="size-5" />,
   },
 ];
 
@@ -79,19 +93,20 @@ const ServicesMenu = ({
     <div>
       <div
         className={cn(
-          '0.3 ease ease absolute top-full left-1/2 z-40 h-3 w-full min-w-[752px] -translate-x-1/2 bg-transparent transition-opacity duration-300',
+          '0.3 ease ease absolute top-full left-1/2 z-40 h-3 w-full min-w-[820px] -translate-x-1/2 bg-transparent transition-opacity duration-300',
           menuDropdownId === 'services-mega-menu' ? 'pointer-events-auto! opacity-100' : 'pointer-events-none opacity-0',
         )}
       />
       <div
         id="services-mega-menu"
         className={cn(
-          'border-stroke-10/80 ease absolute top-full left-1/2 z-50 mt-2 hidden w-full -translate-x-1/2 items-start gap-y-6 rounded-[20px] border bg-white p-4 transition-all duration-300 md:w-[752px] md:gap-x-6 xl:flex',
+          'border-stroke-10/80 ease absolute top-full left-1/2 z-50 mt-2 hidden w-full -translate-x-1/2 items-start gap-y-6 rounded-[20px] border bg-white p-4 transition-all duration-300 md:w-[820px] md:gap-x-6 xl:flex',
           menuDropdownId === 'services-mega-menu'
             ? 'translate-y-0 opacity-100'
             : 'pointer-events-none translate-y-2.5 opacity-0',
         )}>
-        {/* left column */}
+
+        {/* left column — 4 services */}
         <ul id="services-dropdown-left" className="flex-1 space-y-1">
           {leftColumnMenuItems.map((item, index) => (
             <CompanyMenuItemLink
@@ -106,7 +121,7 @@ const ServicesMenu = ({
           ))}
         </ul>
 
-        {/* right column */}
+        {/* right column — 4 services + image */}
         <div className="flex-1 space-y-[15px]">
           <ul id="services-dropdown-right" className="flex-1 space-y-1">
             {rightColumnMenuItems.map((item, index) => (
@@ -121,9 +136,6 @@ const ServicesMenu = ({
               />
             ))}
           </ul>
-          <figure className="relative min-h-[220px] w-full max-w-full overflow-hidden rounded-[14px]">
-            <Image src={nsImg420} alt="First Pixel Services" className="h-full w-full rounded-[14px] object-cover" />
-          </figure>
         </div>
       </div>
     </div>

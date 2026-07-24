@@ -34,7 +34,7 @@ const OurAchievements = ({
 }: OurAchievementsProps) => {
   return (
     <RevealAnimation delay={delay} instant={instant}>
-      <div className={cn('bg-ns-linen dark:bg-background-6 rounded-[20px] py-6', className)}>
+      <div className={cn('bg-gradient-to-br from-primary-500 to-primary-600 dark:bg-background-6 rounded-[20px] py-6', className)}>
         <div className="flex flex-col items-center md:flex-row">
           {achievements.map((achievement, index) => (
             <div

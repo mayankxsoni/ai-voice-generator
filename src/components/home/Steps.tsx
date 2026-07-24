@@ -118,14 +118,14 @@ const Steps = () => {
         <div className="flex flex-wrap items-start justify-center gap-y-[58px] lg:flex-nowrap lg:gap-x-[58px] lg:gap-y-0">
           {/* heading  */}
           <RevealAnimation delay={0.1}>
-            <h2 className="top-[156px] max-w-[629px] text-center font-normal lg:sticky lg:text-left">
-              From brief to final video in <span className="text-ns-linen">4 simple steps</span>
+            <h2 className="top-[156px] max-w-[629px] text-center font-bold lg:sticky lg:text-left">
+              From brief to final video in <span className="text-primary-500">4 simple steps</span>
             </h2>
           </RevealAnimation>
 
           {/* bar  */}
           <RevealAnimation delay={0.1}>
-            <div className="bg-ns-ivory sticky top-[156px] hidden h-[564px] w-px lg:block" />
+            <div className="bg-primary-200 sticky top-[156px] hidden h-[564px] w-px lg:block" />
           </RevealAnimation>
 
           {/* cards  */}
@@ -151,8 +151,8 @@ const Steps = () => {
                   key={step.id}
                   onClick={() => handleStepClick(step.stepNumber)}
                   className={cn(
-                    'step-number text-heading-6 flex h-15 w-[44px] cursor-pointer items-center justify-center rounded-full px-4 py-[15px] font-normal transition-colors duration-300 ease-in-out',
-                    activeStep === step.stepNumber ? 'bg-ns-linen text-accent' : 'bg-ns-ivory text-secondary/40',
+                    'step-number text-heading-6 flex h-15 w-[44px] cursor-pointer items-center justify-center rounded-full px-4 py-[15px] font-semibold transition-colors duration-300 ease-in-out',
+                    activeStep === step.stepNumber ? 'bg-primary-500 text-white shadow-lg shadow-primary-500/30' : 'bg-[#f4f5f8] text-secondary/40 hover:bg-primary-50 hover:text-primary-500',
                   )}
                   data-step-number={step.stepNumber}
                   aria-label={`Go to step ${step.stepNumber}`}>

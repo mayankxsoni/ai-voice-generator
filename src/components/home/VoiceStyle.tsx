@@ -32,7 +32,7 @@ const VoiceStyle = () => {
             <div className="ml-0 w-full space-y-3 text-center xl:max-w-[398px] xl:text-left">
               <RevealAnimation delay={0.1}>
                 <h2 className="font-normal" id="voice-styles-section-heading">
-                  Choose from our <span className="text-ns-linen">video</span> styles
+                  Choose from our <span className="text-primary-500">video</span> styles
                 </h2>
               </RevealAnimation>
               <RevealAnimation delay={0.2}>
@@ -79,7 +79,7 @@ const VoiceStyle = () => {
                             key={format.name}
                             className="shadow-14 flex h-12 w-auto min-w-[131px] shrink-0 items-center justify-start gap-x-3 rounded-full bg-white px-4"
                             aria-label={`${format.name} video format`}>
-                            <span className="size-3 rounded-full bg-ns-linen shrink-0" />
+                            <span className="size-3 rounded-full bg-primary-500 shrink-0" />
                             <p className="text-secondary font-normal whitespace-nowrap">{format.name}</p>
                           </div>
                         ))}

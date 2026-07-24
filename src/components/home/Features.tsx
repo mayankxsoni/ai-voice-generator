@@ -12,39 +12,60 @@ interface ServiceItem {
 
 const servicesList: ServiceItem[] = [
   {
-    id: 'explainer',
-    title: 'Explainer Videos',
-    description: 'Simplify complex ideas and drive action. Our premier animated explainer video company delivers high-converting animated explainer video production. Partner with a top explainer video company for your explanation video.',
+    id: 'animated-explainer',
+    title: 'Animated Explainer Video',
+    description: 'Simplify complex ideas and drive action. Our conversion-focused explainer videos turn curious visitors into confident buyers — with a script built around your ICP\'s real objections.',
     mediaType: 'video',
     mediaUrl: '/videos/services/explainer.mp4',
   },
   {
-    id: 'ai-ads',
-    title: 'AI Powered Video Ads',
-    description: 'Scale digital campaigns instantly. We combine animated explainer video production with commercial strategy for high-impact business explainer ads delivering product launch videos that maximise ad spend ROI.',
-    mediaType: 'gif',
-    mediaUrl: '/videos/services/ai-ads.gif',
+    id: 'product-launch',
+    title: 'Product Launch Videos',
+    description: 'Build pre-launch hype and drive day-one signups. We craft launch videos that tell your product\'s story before anyone has even tried it — making your audience feel it\'s already essential.',
+    mediaType: 'video',
+    mediaUrl: '/videos/services/feature-launch.mp4',
+  },
+  {
+    id: 'app-demo',
+    title: 'App Demo Videos',
+    description: 'Bring your interface to life and reduce trial friction. We showcase real-world functionality and value through smooth UI walkthroughs that help users understand your product in seconds.',
+    mediaType: 'video',
+    mediaUrl: '/videos/services/app-demo.mp4',
   },
   {
     id: 'feature-launch',
     title: 'Feature Launch Videos',
-    description: 'Transform abstract tech concepts into unforgettable visual experiences. We deliver high-end tech explainer videos and corporate explainer videos using advanced motion mechanics and seamless data visualisation.',
+    description: 'Transform abstract tech concepts into unforgettable visual moments. Announce new features in a way that drives adoption — not just awareness — with focused, benefit-led animations.',
     mediaType: 'video',
     mediaUrl: '/videos/services/feature-launch.mp4',
   },
   {
     id: 'product-demo',
     title: 'Product Demo Videos',
-    description: 'Showcase creative precision with a high-octane portfolio showreel. We’re among the best explainer video companies, packing animated explainer video work, product launch videos, and brand launch videos.',
+    description: 'Replace live demos with a polished, always-on video asset. We create product demo videos that close the gap between "I should try this" and "I need to sign up now."',
     mediaType: 'video',
     mediaUrl: '/videos/services/product-demo.mp4',
   },
   {
-    id: 'app-demo',
-    title: 'App Demo Videos',
-    description: 'Bring your interface to life with premium product demo videos and interactive video demo assets. We showcase real-world functionality and value to boost adoption rates and drive high-converting results.',
+    id: 'promo-ads',
+    title: 'Animated Promo Video Ads',
+    description: 'Short-form animated ads built for paid social channels. We combine punchy copy with motion design optimised for Meta, LinkedIn, and YouTube pre-roll to maximise your ad spend ROI.',
+    mediaType: 'gif',
+    mediaUrl: '/videos/services/ai-ads.gif',
+  },
+  {
+    id: 'ai-ads',
+    title: 'AI Powered Video Ads',
+    description: 'Scale your digital campaigns instantly. We combine AI-assisted production with proven direct-response frameworks to create high-volume ad creative that doesn\'t sacrifice quality.',
+    mediaType: 'gif',
+    mediaUrl: '/videos/services/ai-ads.gif',
+  },
+  {
+    id: 'tutorial',
+    title: 'Tutorial Video',
+    description: 'Onboard users faster and reduce support volume. Our step-by-step tutorial videos walk new users through your product with clarity and patience — turning confusion into confidence.',
     mediaType: 'video',
-    mediaUrl: '/videos/services/app-demo.mp4',
+    mediaUrl: '/videos/services/explainer.mp4',
   },
 ];
 
@@ -116,14 +137,14 @@ const Features = () => {
         {/* ── TOP HEADER SECTION ── */}
         <div className="text-center max-w-[850px] mx-auto mb-16 space-y-5">
           <RevealAnimation instant delay={0.1}>
-            <span className="inline-block rounded-full border border-[#7C3AED]/20 bg-transparent px-4 py-1.5 text-xs font-semibold text-[#7C3AED] uppercase tracking-wide">
+            <span className="inline-block rounded-full border border-[#f97316]/20 bg-transparent px-4 py-1.5 text-xs font-semibold text-primary-500 uppercase tracking-wide">
               Services
             </span>
           </RevealAnimation>
 
           <RevealAnimation instant delay={0.2}>
             <h2 id="services-heading" className="text-secondary text-4xl font-extrabold leading-[1.12] tracking-tight sm:text-5xl lg:text-[3.5rem]">
-              <span className="text-[#7C3AED]">Videos?</span><br />
+              <span className="text-primary-500">Videos?</span><br />
               You name it, we have it
             </h2>
           </RevealAnimation>

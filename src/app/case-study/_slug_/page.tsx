@@ -13,7 +13,7 @@ export async function generateStaticParams() {
 
 export const metadata: Metadata = {
   ...defaultMetadata,
-  title: 'Case Study Details - AI Voice Generator || NextSaaS',
+  title: 'Case Study Details — First Pixel | SaaS Explainer Video Agency',
 };
 
 interface CaseStudyDetailsPageProps {

@@ -6,7 +6,7 @@ import FinanceAndOperation from '../../components/use-case/FinanceAndOperation';
 
 export const metadata: Metadata = {
   ...defaultMetadata,
-  title: 'Use Case - AI Voice Generator || NextSaaS',
+  title: 'Use Case — First Pixel | SaaS Explainer Video Agency',
 };
 
 const page = () => {

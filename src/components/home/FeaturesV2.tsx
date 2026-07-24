@@ -164,7 +164,7 @@ const FeaturesV2 = () => {
         {/* ── HEADER SECTION ── */}
         <div className="max-w-[680px] space-y-4">
           <RevealAnimation instant delay={0.1}>
-            <span className="inline-block rounded-full border border-[#7C3AED]/20 bg-transparent px-4 py-1.5 text-xs font-semibold text-[#7C3AED] uppercase tracking-wide">
+            <span className="inline-block rounded-full border border-[#f97316]/20 bg-transparent px-4 py-1.5 text-xs font-semibold text-primary-500 uppercase tracking-wide">
               Industries
             </span>
           </RevealAnimation>
@@ -185,7 +185,7 @@ const FeaturesV2 = () => {
               </div>
               
               <br />
-              we <span className="text-[#7C3AED]">love you</span> already
+              we <span className="text-primary-500">love you</span> already
             </h2>
           </RevealAnimation>
         </div>
@@ -221,7 +221,7 @@ const FeaturesV2 = () => {
                           className="size-8 object-contain"
                         />
                       </span>
-                      <h3 className="font-sans text-[24px] font-medium leading-[140%] text-[#140F23] group-hover:text-[#7C3AED] transition-colors duration-300">
+                      <h3 className="font-sans text-[24px] font-medium leading-[140%] text-[#140F23] group-hover:text-primary-500 transition-colors duration-300">
                         {item.title}
                       </h3>
                     </div>
@@ -239,7 +239,7 @@ const FeaturesV2 = () => {
                         </p>
                         <button 
                           onClick={() => handleCopy(revealedHook)}
-                          className="absolute top-2 right-2 text-[10px] text-[#7C3AED] font-bold opacity-0 group-hover/hook:opacity-100 transition-opacity"
+                          className="absolute top-2 right-2 text-[10px] text-primary-500 font-bold opacity-0 group-hover/hook:opacity-100 transition-opacity"
                         >
                           {copiedText === revealedHook ? 'Copied!' : 'Copy'}
                         </button>
@@ -250,9 +250,9 @@ const FeaturesV2 = () => {
                   {/* Dynamic Concept Generator Button */}
                   <button
                     onClick={() => handleRevealHook(item.id, item.wittyHooks)}
-                    className="mt-6 w-full flex items-center justify-center gap-2 py-2.5 rounded-full border border-[#7C3AED]/20 text-[12px] font-bold text-[#7C3AED] bg-transparent hover:bg-[#7C3AED]/5 transition-colors duration-300 shadow-sm"
+                    className="mt-6 w-full flex items-center justify-center gap-2 py-2.5 rounded-full border border-[#f97316]/20 text-[12px] font-bold text-primary-500 bg-transparent hover:bg-primary-500/5 transition-colors duration-300 shadow-sm"
                   >
-                    <svg viewBox="0 0 24 24" fill="currentColor" className="size-4 animate-pulse text-[#7C3AED]">
+                    <svg viewBox="0 0 24 24" fill="currentColor" className="size-4 animate-pulse text-primary-500">
                       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z" />
                     </svg>
                     <span>{revealedHook ? 'Generate Another Concept' : 'Get Video Script Concept'}</span>
@@ -268,11 +268,11 @@ const FeaturesV2 = () => {
         <RevealAnimation instant delay={0.3}>
           <div className="mx-auto flex w-full max-w-[577px] items-center gap-2 rounded-[84px] border border-[#e5e5ea] bg-white p-2 shadow-sm mt-8 hover:shadow-md transition-shadow duration-300">
             <span className="min-w-0 flex-1 rounded-[32px] bg-white py-4 pl-6 pr-4 text-base leading-[1.5] font-semibold text-[#828088]">
-              Get your Free Script
+              Get a Free Concept Call
             </span>
             <a 
-              className="group/btn inline-flex items-center justify-center gap-2 rounded-full bg-[#7C3AED] px-8 py-4 text-base font-bold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#6D28D9] shadow-[0_8px_20px_rgba(124,58,237,0.15)] hover:shadow-[0_12px_24px_rgba(124,58,237,0.25)]"
-              href="#contact"
+              className="group/btn inline-flex items-center justify-center gap-2 rounded-full bg-primary-500 px-8 py-4 text-base font-bold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-primary-600 shadow-[0_8px_20px_rgba(124,58,237,0.15)] hover:shadow-[0_12px_24px_rgba(124,58,237,0.25)]"
+              href="/contact-us"
             >
               <span>Try Now</span>
               <svg viewBox="0 0 18 18" fill="none" className="size-4 text-white group-hover/btn:rotate-12 transition-transform duration-200" aria-hidden="true">

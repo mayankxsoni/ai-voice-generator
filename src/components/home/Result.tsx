@@ -20,7 +20,7 @@ const Result = () => {
         <div className="space-y-12 md:space-y-19">
           <RevealAnimation delay={0.1}>
             <h2 className="text-center font-normal lg:text-left">
-              Proven results, <span className="text-ns-linen">real clients</span>
+              Proven results, <span className="text-primary-500">real clients</span>
             </h2>
           </RevealAnimation>
 
@@ -86,14 +86,14 @@ const Result = () => {
 
                 {/* card three  */}
                 <RevealAnimation delay={0.4}>
-                  <div className="bg-ns-linen w-full max-w-[316px] space-y-3 rounded-4xl p-6">
+                  <div className="bg-gradient-to-br from-primary-500 to-primary-600 w-full max-w-[316px] space-y-3 rounded-4xl p-6 shadow-lg shadow-primary-500/20">
                     <h2
                       className="flex items-center justify-start pt-6 text-4xl font-light text-white sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl xl:leading-[110%]"
                       aria-label="50 percent time reduction">
                       <NumberAnimation number={50} speed={2000} interval={100} rooms={2} heightSpaceRatio={2} />%
                     </h2>
 
-                    <p className="text-accent/60 font-normal">
+                    <p className="text-white/80 font-normal">
                       more demo conversions reported by clients after their First Pixel video went live.
                     </p>
                   </div>

@@ -12,7 +12,7 @@ export async function generateStaticParams() {
 
 export const metadata: Metadata = {
   ...defaultMetadata,
-  title: 'Whitepaper Details - AI Voice Generator || NextSaaS',
+  title: 'Whitepaper Details — First Pixel | SaaS Explainer Video Agency',
 };
 
 const page = async ({ params }: { params: Promise<{ slug: string }> }) => {

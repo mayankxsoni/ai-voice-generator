@@ -8,7 +8,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   ...defaultMetadata,
-  title: 'Team - AI Voice Generator || NextSaaS',
+  title: 'Team — First Pixel | SaaS Explainer Video Agency',
 };
 
 const page = () => {
