@@ -93,49 +93,51 @@ const ServicesMenu = ({
     <div>
       <div
         className={cn(
-          '0.3 ease ease absolute top-full left-1/2 z-40 h-3 w-full min-w-[820px] -translate-x-1/2 bg-transparent transition-opacity duration-300',
-          menuDropdownId === 'services-mega-menu' ? 'pointer-events-auto! opacity-100' : 'pointer-events-none opacity-0',
+          'fixed top-full left-1/2 z-40 h-4 w-full max-w-[820px] -translate-x-1/2 bg-transparent transition-opacity duration-300',
+          menuDropdownId === 'services-mega-menu' ? 'pointer-events-auto opacity-100' : 'pointer-events-none opacity-0',
         )}
       />
       <div
         id="services-mega-menu"
         className={cn(
-          'border-stroke-10/80 ease absolute top-full left-1/2 z-50 mt-2 hidden w-full -translate-x-1/2 items-start gap-y-6 rounded-[20px] border bg-white p-4 transition-all duration-300 md:w-[820px] md:gap-x-6 xl:flex',
+          'fixed top-full left-1/2 z-50 mt-3 hidden -translate-x-1/2 transition-all duration-300 xl:block',
           menuDropdownId === 'services-mega-menu'
-            ? 'translate-y-0 opacity-100'
-            : 'pointer-events-none translate-y-2.5 opacity-0',
+            ? 'pointer-events-auto translate-y-0 opacity-100'
+            : 'pointer-events-none translate-y-2 opacity-0',
         )}>
+        <div className="w-[820px] rounded-[32px] border border-secondary/10 bg-white p-6 shadow-[0_24px_60px_-15px_rgba(20,15,35,0.15)]">
+          <p className="mb-3 text-sm font-semibold text-secondary/40">Services</p>
+          <div className="grid grid-cols-2 gap-x-6 items-start">
+            {/* left column — 4 services */}
+            <ul id="services-dropdown-left" className="space-y-1">
+              {leftColumnMenuItems.map((item, index) => (
+                <CompanyMenuItemLink
+                  setMenuDropdownId={setMenuDropdownId}
+                  key={item.id}
+                  href={item.href}
+                  title={item.title}
+                  description={item.description}
+                  icon={item.icon}
+                  showDivider={index !== leftColumnMenuItems.length - 1}
+                />
+              ))}
+            </ul>
 
-        {/* left column — 4 services */}
-        <ul id="services-dropdown-left" className="flex-1 space-y-1">
-          {leftColumnMenuItems.map((item, index) => (
-            <CompanyMenuItemLink
-              setMenuDropdownId={setMenuDropdownId}
-              key={item.id}
-              href={item.href}
-              title={item.title}
-              description={item.description}
-              icon={item.icon}
-              showDivider={index !== leftColumnMenuItems.length - 1}
-            />
-          ))}
-        </ul>
-
-        {/* right column — 4 services + image */}
-        <div className="flex-1 space-y-[15px]">
-          <ul id="services-dropdown-right" className="flex-1 space-y-1">
-            {rightColumnMenuItems.map((item, index) => (
-              <CompanyMenuItemLink
-                setMenuDropdownId={setMenuDropdownId}
-                key={item.id}
-                href={item.href}
-                title={item.title}
-                description={item.description}
-                icon={item.icon}
-                showDivider={index !== rightColumnMenuItems.length - 1}
-              />
-            ))}
-          </ul>
+            {/* right column — 4 services */}
+            <ul id="services-dropdown-right" className="space-y-1">
+              {rightColumnMenuItems.map((item, index) => (
+                <CompanyMenuItemLink
+                  setMenuDropdownId={setMenuDropdownId}
+                  key={item.id}
+                  href={item.href}
+                  title={item.title}
+                  description={item.description}
+                  icon={item.icon}
+                  showDivider={index !== rightColumnMenuItems.length - 1}
+                />
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>

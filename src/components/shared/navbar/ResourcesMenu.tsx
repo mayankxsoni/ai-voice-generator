@@ -61,30 +61,34 @@ const ResourcesMenu = ({
     <div>
       <div
         className={cn(
-          'absolute top-full left-1/2 z-40 h-3 w-full min-w-[320px] -translate-x-1/2 bg-transparent',
+          'fixed top-full left-1/2 z-40 h-4 w-full max-w-[340px] -translate-x-1/2 bg-transparent transition-opacity duration-300',
           menuDropdownId === 'resources-dropdown-menu'
             ? 'pointer-events-auto opacity-100'
             : 'pointer-events-none opacity-0',
         )}
       />
-      <ul
+      <div
         id="resources-dropdown-menu"
         className={cn(
-          'shadow-14 border-stroke-10 absolute top-full left-1/2 z-50 mt-2 w-[320px] -translate-x-1/2 space-y-1 rounded-3xl border bg-white p-3 transition-all duration-300',
-          // when hover show the menu
+          'fixed top-full left-1/2 z-50 mt-3 hidden w-[340px] -translate-x-1/2 transition-all duration-300 xl:block',
           menuDropdownId === 'resources-dropdown-menu'
-            ? 'translate-y-0 opacity-100'
-            : 'pointer-events-none translate-y-2.5 opacity-0',
+            ? 'pointer-events-auto translate-y-0 opacity-100'
+            : 'pointer-events-none translate-y-2 opacity-0',
         )}>
-        {resourcesMenuItems.map((item, index) => (
-          <CompanyMenuItemLink
-            key={item.href}
-            {...item}
-            showDivider={index < resourcesMenuItems.length - 1}
-            setMenuDropdownId={setMenuDropdownId}
-          />
-        ))}
-      </ul>
+        <div className="w-[340px] rounded-[28px] border border-secondary/10 bg-white p-5 shadow-[0_24px_60px_-15px_rgba(20,15,35,0.15)]">
+          <p className="mb-3 text-sm font-semibold text-secondary/40">Resources</p>
+          <ul className="space-y-1">
+            {resourcesMenuItems.map((item, index) => (
+              <CompanyMenuItemLink
+                key={item.href}
+                {...item}
+                showDivider={index < resourcesMenuItems.length - 1}
+                setMenuDropdownId={setMenuDropdownId}
+              />
+            ))}
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };
