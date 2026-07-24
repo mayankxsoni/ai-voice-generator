@@ -7,80 +7,91 @@ import RevealAnimation from '../animation/RevealAnimation';
 
 const Features = () => {
   return (
-    <section className="pt-14 pb-14 md:pt-16 md:pb-16 lg:pt-[88px] lg:pb-[88px] xl:pt-[100px] xl:pb-[100px]">
+    <section className="py-[80px]">
       <div className="main-container">
-        <div className="mb-[70px] space-y-5 text-center">
+        <div className="mb-[60px] space-y-4 text-center">
           <RevealAnimation delay={0.2}>
-            <span className="badge badge-ivory">Reasons to select us</span>
+            <span className="badge badge-ivory text-primary-600 border border-primary-200 px-4 py-1.5 rounded-full inline-block font-semibold text-xs">
+              Proven Production Impact
+            </span>
           </RevealAnimation>
-          <div className="space-y-3">
+          <div className="space-y-3 max-w-[760px] mx-auto">
             <RevealAnimation delay={0.3}>
-              <h2>Unmatched security performance</h2>
+              <h2 className="text-secondary text-3xl sm:text-4xl font-extrabold tracking-tight">
+                Designed to maximize video conversion & ROI
+              </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
-              <p className="mx-auto max-w-[744px]">
-                This level of security is essential for businesses handling confidential information, financial
-                transactions, and personal user data. With continuous monitoring and ai-driven threat analysis.
+              <p className="text-secondary/70 text-base">
+                Our videos combine ICP storytelling, high-energy UI motion design, and psychological hooks that turn curious visitors into active product users.
               </p>
             </RevealAnimation>
           </div>
         </div>
+
         <RevealAnimation delay={0.5}>
-          <div className="bg-ns-linen flex flex-col space-y-8 rounded-[20px] py-6 md:flex-row md:space-y-0">
-            <div className="max-md:border-b-stroke-10 md:border-r-stroke-10 flex-1 space-y-6 py-6 max-md:border-b md:border-r">
-              <figure className="bg-ns-ivory mx-auto flex h-[52px] w-20 items-center justify-center rounded-full px-7 py-3.5">
-                <Image src={checkCircle} alt="Satisfied clients" className="size-6" />
+          <div className="bg-secondary flex flex-col space-y-8 rounded-[28px] py-10 px-6 md:flex-row md:space-y-0 shadow-xl text-white">
+            
+            {/* Stat 1 */}
+            <div className="max-md:border-b border-white/10 md:border-r flex-1 space-y-4 py-4 text-center">
+              <figure className="bg-white/10 mx-auto flex size-14 items-center justify-center rounded-2xl p-3 border border-white/20">
+                <Image src={checkCircle} alt="Satisfied clients" className="size-7 brightness-200" />
               </figure>
-              <div className="space-y-2 text-center">
-                <h3 className="text-heading-6 flex items-center justify-center font-normal text-white">
+              <div className="space-y-2">
+                <h3 className="text-3xl sm:text-4xl font-extrabold flex items-center justify-center text-white">
                   <NumberAnimation
-                    number={99}
+                    number={98}
                     speed={1000}
-                    data-speed={1000}
                     interval={180}
                     rooms={2}
-                    heightSpaceRatio={2.5}>
-                    99
+                    heightSpaceRatio={2.5}
+                  >
+                    98
                   </NumberAnimation>
-                  % malware protection rate
+                  % Client Retention Rate
                 </h3>
-                <p className="text-accent/60 mx-auto max-w-[274px]">
-                  Defend against infections, data breaches, and cyber-attacks.
+                <p className="text-white/60 text-xs max-w-[260px] mx-auto">
+                  Trusted by founders and product leaders across 50+ B2B SaaS platforms.
                 </p>
               </div>
             </div>
-            <div className="max-md:border-b-stroke-10 md:border-r-stroke-10 flex-1 space-y-6 py-6 max-md:border-b md:border-r">
-              <figure className="bg-ns-ivory mx-auto flex h-[52px] w-20 items-center justify-center rounded-full px-7 py-3.5">
-                <Image src={users} alt="Satisfied clients" className="size-6" />
+
+            {/* Stat 2 */}
+            <div className="max-md:border-b border-white/10 md:border-r flex-1 space-y-4 py-4 text-center">
+              <figure className="bg-white/10 mx-auto flex size-14 items-center justify-center rounded-2xl p-3 border border-white/20">
+                <Image src={users} alt="Production timeline" className="size-7 brightness-200" />
               </figure>
-              <div className="space-y-2 text-center">
-                <h3 className="text-heading-6 flex items-center justify-center font-normal text-white">
-                  <NumberAnimation number={100} speed={1000} interval={180} rooms={3} heightSpaceRatio={2.5}>
-                    100
+              <div className="space-y-2">
+                <h3 className="text-3xl sm:text-4xl font-extrabold flex items-center justify-center text-white">
+                  <NumberAnimation number={14} speed={1000} interval={180} rooms={2} heightSpaceRatio={2.5}>
+                    14
                   </NumberAnimation>
-                  % software integrity
+                  -Day Average Delivery
                 </h3>
-                <p className="text-accent/60 mx-auto max-w-[274px]">
-                  Shield systems from the most advanced cyber threats.
+                <p className="text-white/60 text-xs max-w-[260px] mx-auto">
+                  Fast 2-week rush turnaround available for product launches and ad campaigns.
                 </p>
               </div>
             </div>
-            <div className="flex-1 space-y-6 py-6">
-              <figure className="bg-ns-ivory mx-auto flex h-[52px] w-20 items-center justify-center rounded-full px-7 py-3.5">
-                <Image src={thumbsUp} alt="Satisfied clients" className="size-6" />
+
+            {/* Stat 3 */}
+            <div className="flex-1 space-y-4 py-4 text-center">
+              <figure className="bg-white/10 mx-auto flex size-14 items-center justify-center rounded-2xl p-3 border border-white/20">
+                <Image src={thumbsUp} alt="Conversion boost" className="size-7 brightness-200" />
               </figure>
-              <div className="space-y-2 text-center">
-                <h3 className="text-heading-6 flex items-center justify-center font-normal text-white">
+              <div className="space-y-2">
+                <h3 className="text-3xl sm:text-4xl font-extrabold flex items-center justify-center text-white">
                   <NumberAnimation number={5} speed={1000} interval={180} rooms={1} heightSpaceRatio={2.5}>
                     5
                   </NumberAnimation>
-                  X Lighter system footprint
+                  X Average Conversion Lift
                 </h3>
-                <p className="text-accent/60 mx-auto max-w-[274px]">
-                  Ensuring seamless operations without slowing down devices.
+                <p className="text-white/60 text-xs max-w-[260px] mx-auto">
+                  Higher engagement and faster trial activations across landing pages and ad channels.
                 </p>
               </div>
             </div>
+
           </div>
         </RevealAnimation>
       </div>
