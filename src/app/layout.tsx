@@ -1,3 +1,4 @@
+import ChatbotWidget from '@/components/shared/chatbot/ChatbotWidget';
 import HeaderWrapper from '@/components/shared/HeaderWrapper';
 import SmoothScrollProvider from '@/components/shared/SmoothScroll';
 import Footer from '@/components/shared/footer/Footer';
@@ -27,6 +28,7 @@ export default function RootLayout({
               
               {children}
               <Footer />
+              <ChatbotWidget />
             </SmoothScrollProvider>
           </Suspense>
         </AppContextProvider>
