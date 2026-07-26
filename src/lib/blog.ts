@@ -34,7 +34,7 @@ const markdownPosts = (): IBlogPost[] =>
 
 /** Every published post. Drafts never leave the admin panel. */
 export async function getPublishedPosts(): Promise<IBlogPost[]> {
-  if (!isDatabaseConfigured) return markdownPosts();
+  if (!isDatabaseConfigured) {return markdownPosts();}
 
   const rows = await db.select().from(posts).where(eq(posts.status, 'published')).orderBy(desc(posts.createdAt));
   return rows.map(toBlogPost);
@@ -46,12 +46,12 @@ export async function getPublishedPostBySlug(slug: string): Promise<IBlogPost | 
   }
 
   const row = (await db.select().from(posts).where(eq(posts.slug, slug)).limit(1))[0];
-  if (!row || row.status !== 'published') return null;
+  if (!row || row.status !== 'published') {return null;}
   return toBlogPost(row);
 }
 
 export async function getPublishedSlugs(): Promise<string[]> {
-  if (!isDatabaseConfigured) return markdownPosts().map((post) => post.slug);
+  if (!isDatabaseConfigured) {return markdownPosts().map((post) => post.slug);}
 
   const rows = await db.select({ slug: posts.slug }).from(posts).where(eq(posts.status, 'published'));
   return rows.map((r) => r.slug);

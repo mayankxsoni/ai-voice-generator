@@ -40,7 +40,9 @@ export async function submitContactAction(_prev: ContactState, formData: FormDat
 
   // No database yet — tell people how to reach us instead of silently losing it.
   if (!isDatabaseConfigured) {
-    return { error: 'Our contact form is being set up. Please email support@firstpixel.media and we will reply today.' };
+    return {
+      error: 'Our contact form is being set up. Please email support@firstpixel.media and we will reply today.',
+    };
   }
 
   try {
