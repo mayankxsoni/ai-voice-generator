@@ -1,15 +1,12 @@
 import { ITeamMember } from '@/interface';
 import getMarkDownData from '@/utils/getMarkDownData';
-import Image from 'next/image';
 import Link from 'next/link';
 import RevealAnimation from '../animation/RevealAnimation';
-import SocialLinks from '../shared/SocialLinks';
+import TeamMemberAvatar from '../shared/TeamMemberAvatar';
+import TeamSocialLinks from '../shared/TeamSocialLinks';
 
 const Team = () => {
-  const teamData = getMarkDownData<ITeamMember & { [key: string]: unknown }>('src/data/team', false, 'name').slice(
-    0,
-    9,
-  );
+  const teamData = getMarkDownData<ITeamMember & { [key: string]: unknown }>('src/data/team', false, 'name');
 
   return (
     <section className="pt-14 pb-14 md:pt-16 md:pb-16 lg:pt-[88px] lg:pb-[88px] xl:pt-[100px] xl:pb-[100px]">
@@ -37,14 +34,10 @@ const Team = () => {
                 <div className="group bg-ns-ivory relative z-10 overflow-hidden rounded-[20px] p-3">
                   <figure className="mx-auto overflow-hidden lg:max-w-[408px]">
                     <Link href={`/team/${team.slug}`}>
-                      <Image
-                        height={600}
-                        width={600}
-                        quality={100}
+                      <TeamMemberAvatar
                         src={team.userImg}
-                        alt={`${team.name} profile img`}
-                        loading="lazy"
-                        className="bg-background-3 h-full w-full rounded-2xl object-cover"
+                        name={team.name}
+                        className="bg-background-3 aspect-square h-full w-full rounded-2xl object-cover"
                       />
                     </Link>
                   </figure>
@@ -55,7 +48,7 @@ const Team = () => {
                       </h3>
                       <p className="text-tagline-2 text-secondary/40 font-normal">{team.role}</p>
                     </div>
-                    <SocialLinks social={team.social} />
+                    <TeamSocialLinks social={team.social} name={team.name} />
                   </div>
                 </div>
               </div>

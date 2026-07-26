@@ -7,13 +7,14 @@ import gradientOne from '@public/images/ns-img-510.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import RevealAnimation from '../animation/RevealAnimation';
+import ContactForm from './ContactForm';
 
 const contactInfoItems = [
   {
     id: 1,
     icon: homeIcon,
     title: 'Our Address',
-    content: '2464 Royal Ln. Mesa, New Jersey 45463',
+    content: 'Gwalior, Madhya Pradesh, India',
     gradient: gradientOne,
     gradientClass: 'top-[-187px] left-[174px] -rotate-[78deg]',
   },
@@ -21,8 +22,8 @@ const contactInfoItems = [
     id: 2,
     icon: mailIcon,
     title: 'Email Us',
-    content: 'hello@nextsaaS.com',
-    link: 'mailto:hello@nextsaaS.com',
+    content: 'support@firstpixel.media',
+    link: 'mailto:support@firstpixel.media',
     gradient: gradientTwo,
     gradientClass: 'top-[-206px] left-[-36px] rotate-[62deg]',
   },
@@ -30,8 +31,8 @@ const contactInfoItems = [
     id: 3,
     icon: phoneIcon,
     title: 'Call Us',
-    content: '+391 (0)35 2568 4593',
-    link: 'tel:+391035256845933',
+    content: '+91 86076 97950',
+    link: 'tel:+918607697950',
     gradient: gradientThree,
     gradientClass: 'top-[-184px] left-[-185px]',
   },
@@ -88,106 +89,7 @@ const ContactInfo = () => {
             <RevealAnimation
               delay={0.3}
               className="mx-auto w-full max-w-[847px] rounded-4xl bg-white p-6 md:p-8 lg:p-11">
-              <form action="#" method="POST" className="space-y-8">
-                {/* name and phone number  */}
-                <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
-                  {/*  name */}
-                  <div className="w-full space-y-2 lg:max-w-[364px]">
-                    <label htmlFor="fullname" className="text-tagline-2 text-secondary block font-medium">
-                      Your name
-                    </label>
-                    <input
-                      type="text"
-                      id="fullname"
-                      name="fullname"
-                      placeholder="Enter your name"
-                      required={true}
-                      autoComplete="name"
-                      className="border-stroke-10 bg-background-1 text-tagline-2 placeholder:text-secondary/60 focus:border-ns-linen placeholder:text-tagline-2 h-[48px] w-full rounded-full border px-[18px] py-3 font-normal placeholder:font-normal focus:outline-none xl:h-[41px]"
-                    />
-                  </div>
-                  {/* number */}
-                  <div className="w-full max-w-[364px] space-y-2">
-                    <label htmlFor="number" className="text-tagline-2 text-secondary block font-medium">
-                      Your number
-                    </label>
-                    <input
-                      type="text"
-                      id="number"
-                      name="number"
-                      placeholder="Enter your number"
-                      required={true}
-                      autoComplete="tel"
-                      className="border-stroke-10 bg-background-1 text-tagline-2 placeholder:text-secondary/60 focus:border-ns-linen placeholder:text-tagline-2 h-[48px] w-full rounded-full border px-[18px] py-3 font-normal placeholder:font-normal focus:outline-none xl:h-[41px]"
-                    />
-                  </div>
-                </div>
-                {/* email  */}
-                <div className="space-y-2">
-                  <label htmlFor="email" className="text-tagline-2 text-secondary block font-medium">
-                    Email address
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Enter your email"
-                    required={true}
-                    autoComplete="email"
-                    className="border-stroke-10 bg-background-1 text-tagline-2 placeholder:text-secondary/60 focus:border-ns-linen placeholder:text-tagline-2 h-[48px] w-full rounded-full border px-[18px] py-3 font-normal placeholder:font-normal focus:outline-none xl:h-[41px]"
-                  />
-                </div>
-                {/* subject  */}
-                <div className="space-y-2">
-                  <label htmlFor="subject" className="text-tagline-2 text-secondary block font-medium">
-                    Subject
-                  </label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    placeholder="Enter your subject"
-                    required={true}
-                    className="border-stroke-10 bg-background-1 text-tagline-2 placeholder:text-secondary/60 focus:border-ns-linen placeholder:text-tagline-2 h-[48px] w-full rounded-full border px-[18px] py-3 font-normal placeholder:font-normal focus:outline-none xl:h-[41px]"
-                  />
-                </div>
-                {/* message */}
-                <div className="space-y-2">
-                  <label htmlFor="message" className="text-tagline-2 text-secondary block font-medium">
-                    Write message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={7}
-                    placeholder="Enter your messages"
-                    required={true}
-                    className="border-stroke-10 bg-background-1 text-tagline-2 placeholder:text-secondary/60 focus:border-ns-linen placeholder:text-tagline-2 w-full rounded-xl border px-[18px] py-3 font-normal placeholder:font-normal focus:outline-none"
-                    defaultValue={''}
-                  />
-                </div>
-                {/* terms checkbox */}
-                <fieldset className="mb-4 flex items-center gap-2">
-                  <label className="flex items-center gap-x-3">
-                    <input id="terms" type="checkbox" className="peer sr-only" required={true} />
-                    <span className="border-stroke-3 after:bg-ns-linen peer-checked:border-stroke-10 relative size-4 cursor-pointer rounded-full border after:absolute after:top-1/2 after:left-1/2 after:size-2.5 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full after:opacity-0 peer-checked:after:opacity-100" />
-                    <span className="sr-only">Agree to the terms and conditions</span>
-                  </label>
-                  <label htmlFor="terms" className="text-tagline-3 text-secondary/60 cursor-pointer">
-                    I agree with the
-                    <Link href="/terms-conditions" className="text-ns-linen text-tagline-3 underline">
-                      {' '}
-                      terms and conditions
-                    </Link>
-                  </label>
-                </fieldset>
-                {/* submit button */}
-                <button
-                  type="submit"
-                  className="btn btn-md btn-secondary hover:btn-primary w-full first-letter:uppercase before:content-none">
-                  Submit
-                </button>
-              </form>
+              <ContactForm />
             </RevealAnimation>
           </div>
         </div>

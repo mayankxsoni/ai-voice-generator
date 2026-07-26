@@ -9,14 +9,14 @@ ABOUT FIRST PIXEL AGENCY:
 - Proven Results: Helped 50+ SaaS companies achieve average conversion lifts of 30% to 180%, boost free trial activations by 42%, and reduce demo sales cycles from 45 days to 18 days.
 
 THE 8 AGENCY SERVICES:
-1. Animated Explainer Video (/services/animated-explainer): 60–120s videos that translate complex SaaS workflows into instant visual clarity.
-2. Product Launch Videos (/services/product-launch): Build viral hype and drive signups on Product Hunt or launch day.
-3. App Demo Videos (/services/app-demo): Showcase desktop/mobile UI in action and reduce trial friction.
-4. Feature Launch Videos (/services/feature-launch): Announce new product features that actually drive feature adoption.
-5. Product Demo Videos (/services/product-demo): Replace dry live sales demos with a polished, 24/7 video asset.
-6. Animated Promo Video Ads (/services/promo-ads): Short-form animated video ads for LinkedIn, Meta, and X (Twitter).
-7. AI Powered Video Ads (/services/ai-ads): Scale ad creatives fast with AI-assisted motion design.
-8. Tutorial Video (/services/tutorial): Onboard users faster with step-by-step interactive video guides.
+1. Animated Explainer Video (/#services): 60–120s videos that translate complex SaaS workflows into instant visual clarity.
+2. Product Launch Videos (/#services): Build viral hype and drive signups on Product Hunt or launch day.
+3. App Demo Videos (/#services): Showcase desktop/mobile UI in action and reduce trial friction.
+4. Feature Launch Videos (/#services): Announce new product features that actually drive feature adoption.
+5. Product Demo Videos (/#services): Replace dry live sales demos with a polished, 24/7 video asset.
+6. Animated Promo Video Ads (/#services): Short-form animated video ads for LinkedIn, Meta, and X (Twitter).
+7. AI Powered Video Ads (/#services): Scale ad creatives fast with AI-assisted motion design.
+8. Tutorial Video (/#services): Onboard users faster with step-by-step interactive video guides.
 
 OUR 7 SAAS INDUSTRY VERTICALS & EXPERTISE:
 - AI & ML (/expertise/ai-ml): Autonomous agents, LLMs, neural networks, and RAG pipelines simplified.
@@ -94,7 +94,7 @@ export async function POST(req: Request) {
         `- Animated Promo Ads: High-performing short-form video ads for LinkedIn & Meta.\n` +
         `- AI Powered Video Ads: Scale ad creatives fast with AI motion graphics.\n` +
         `- Tutorial Videos: Step-by-step visual guides to onboard users fast.\n\n` +
-        `You can explore all options on our [Services Page](/services) or [Book a Strategy Call](/contact-us).`;
+        `You can explore all options on our [Services Page](/#services) or [Book a Strategy Call](/contact-us).`;
     } else if (lastUserMessage.includes('price') || lastUserMessage.includes('cost') || lastUserMessage.includes('pricing') || lastUserMessage.includes('rate')) {
       reply = `Our video packages are customized based on video duration (60s, 90s, or 120s) and animation complexity.\n\n` +
         `Every package includes:\n` +
@@ -132,7 +132,7 @@ export async function POST(req: Request) {
     } else {
       reply = `Thank you for reaching out. At First Pixel, we create high-converting animated explainer videos and product demos for B2B SaaS companies.\n\n` +
         `Our videos help SaaS founders turn complex product features into instant clarity, boosting conversion rates by up to 180%.\n\n` +
-        `Would you like to check our [Services](/services), view our [Industry Expertise](/expertise), or [Schedule a 20-Min Strategy Call](/contact-us)?`;
+        `Would you like to check our [Services](/#services), view our [Industry Expertise](/expertise), or [Schedule a 20-Min Strategy Call](/contact-us)?`;
     }
 
     return NextResponse.json({ reply, provider: 'knowledge-engine' });

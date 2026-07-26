@@ -1,10 +1,11 @@
 import RevealAnimation from '@/components/animation/RevealAnimation';
+import SiteChrome from '@/components/shared/SiteChrome';
 
 import LinkButton from '@/components/ui/button/Button';
 import { defaultMetadata } from '@/utils/generateMetaData';
 import { Metadata } from 'next';
 import Image from 'next/image';
-import gradient6 from '../../public/images/ns-img-498.png';
+import gradient6 from '@public/images/ns-img-498.png';
 
 export const metadata: Metadata = {
   ...defaultMetadata,
@@ -13,6 +14,7 @@ export const metadata: Metadata = {
 
 const NotFound = () => {
   return (
+    <SiteChrome>
     <main className="bg-background-2 dark:bg-background-5">
       <section className="section-reveal pt-28 pb-20 md:pt-36 md:pb-28 lg:pt-44 lg:pb-40 xl:pt-60 xl:pb-52">
         <div className="main-container">
@@ -49,6 +51,7 @@ const NotFound = () => {
         </div>
       </section>
     </main>
+    </SiteChrome>
   );
 };
 

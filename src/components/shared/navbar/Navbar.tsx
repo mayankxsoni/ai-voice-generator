@@ -15,11 +15,12 @@ import MobileMenuButton from '../mobile-menu/MobileMenuButton';
 import ExpertiseMenu from './ExpertiseMenu';
 import OurWorkMenu from './OurWorkMenu';
 import ResourcesMenu from './ResourcesMenu';
-import ServicesMenu from './ServicesMenu';
 import { mobileMenuData } from './data';
 
+// Services has no pages of its own — it scrolls to the services section on the home page.
+const SERVICES_HREF = '/#services';
+
 const dropdownNavItems = [
-  { label: 'Services', dataMenu: 'services-mega-menu', MenuComponent: ServicesMenu },
   { label: 'Expertise', dataMenu: 'expertise-mega-menu', MenuComponent: ExpertiseMenu },
   { label: 'Our Work', dataMenu: 'ourwork-mega-menu', MenuComponent: OurWorkMenu },
   { label: 'Resources', dataMenu: 'resources-dropdown-menu', MenuComponent: ResourcesMenu },
@@ -68,6 +69,13 @@ const Navbar = ({ showTopNav }: { showTopNav: boolean }) => {
               </div>
               <nav className="hidden items-center xl:flex">
                 <ul className="flex items-center">
+                  <li className="relative py-2.5">
+                    <Link
+                      href={SERVICES_HREF}
+                      className="text-tagline-1 hover:bg-secondary/5 text-secondary/80 hover:text-secondary flex items-center rounded-full px-4 py-2 font-normal transition-all duration-400">
+                      Services
+                    </Link>
+                  </li>
                   {dropdownNavItems.map(({ label, dataMenu, MenuComponent }) => (
                     <li
                       key={label}

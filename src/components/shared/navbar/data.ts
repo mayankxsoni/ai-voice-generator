@@ -7,6 +7,10 @@ export interface MobileMenuGroup {
   submenu: MobileMenuItem[];
 }
 
+// The service detail pages were removed — every "services" link scrolls to the
+// services section on the home page instead.
+export const SERVICES_HREF = '/#services';
+
 export const mobileMenuData: MobileMenuGroup[] = [
   {
     id: 'company',
@@ -25,16 +29,7 @@ export const mobileMenuData: MobileMenuGroup[] = [
   {
     id: 'services',
     title: 'Services',
-    submenu: [
-      { id: 'animated-explainer', label: 'Animated Explainer Video', href: '/services/animated-explainer' },
-      { id: 'product-launch', label: 'Product Launch Videos', href: '/services/product-launch' },
-      { id: 'app-demo', label: 'App Demo Videos', href: '/services/app-demo' },
-      { id: 'feature-launch', label: 'Feature Launch Videos', href: '/services/feature-launch' },
-      { id: 'product-demo', label: 'Product Demo Videos', href: '/services/product-demo' },
-      { id: 'promo-ads', label: 'Animated Promo Video Ads', href: '/services/promo-ads' },
-      { id: 'ai-ads', label: 'AI Powered Video Ads', href: '/services/ai-ads' },
-      { id: 'tutorial', label: 'Tutorial Video', href: '/services/tutorial' },
-    ],
+    submenu: [{ id: 'all-services', label: 'All Services', href: SERVICES_HREF }],
   },
 
   {
@@ -77,14 +72,14 @@ export const footerData: FooterOneData[] = [
   {
     title: 'Services',
     links: [
-      { label: 'Animated Explainer Video', href: '/services/animated-explainer' },
-      { label: 'Product Launch Videos', href: '/services/product-launch' },
-      { label: 'App Demo Videos', href: '/services/app-demo' },
-      { label: 'Feature Launch Videos', href: '/services/feature-launch' },
-      { label: 'Product Demo Videos', href: '/services/product-demo' },
-      { label: 'Animated Promo Video Ads', href: '/services/promo-ads' },
-      { label: 'AI Powered Video Ads', href: '/services/ai-ads' },
-      { label: 'Tutorial Video', href: '/services/tutorial' },
+      { label: 'Animated Explainer Video', href: SERVICES_HREF },
+      { label: 'Product Launch Videos', href: SERVICES_HREF },
+      { label: 'App Demo Videos', href: SERVICES_HREF },
+      { label: 'Feature Launch Videos', href: SERVICES_HREF },
+      { label: 'Product Demo Videos', href: SERVICES_HREF },
+      { label: 'Animated Promo Video Ads', href: SERVICES_HREF },
+      { label: 'AI Powered Video Ads', href: SERVICES_HREF },
+      { label: 'Tutorial Video', href: SERVICES_HREF },
     ],
   },
   {

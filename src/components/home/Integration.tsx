@@ -30,7 +30,7 @@ const Integration = () => {
               <RevealAnimation delay={0.5} offset={10}>
                 <div className="text-center">
                   <LinkButton
-                    href="/services"
+                    href="/#services"
                     btnClass="btn-lg-v2 lg:btn-xl-v2 btn-primary-v2">
                     See delivery formats
                   </LinkButton>

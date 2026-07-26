@@ -52,7 +52,7 @@ const Feature = () => {
                 </h2>
                 <div>
                   <LinkButton
-                    href="/services"
+                    href="/#services"
                     btnClass="btn-md-v2 btn-v2-white group-hover/btn-v2:btn-secondary-v2 border-0">
                     <span>Get started</span>
                   </LinkButton>

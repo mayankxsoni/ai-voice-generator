@@ -88,7 +88,7 @@ export default function ChatbotWidget() {
           id: (Date.now() + 1).toString(),
           role: 'assistant',
           content:
-            'I am experiencing a brief connection delay. Please feel free to explore our [Services](/services) or [Contact Us](/contact-us) directly.',
+            'I am experiencing a brief connection delay. Please feel free to explore our [Services](/#services) or [Contact Us](/contact-us) directly.',
           timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
         },
       ]);

@@ -3,6 +3,7 @@ import gradient06 from '@public/images/ns-img-498.png';
 import gradient from '@public/images/ns-img-516.png';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
+import TeamMemberAvatar from '../shared/TeamMemberAvatar';
 import ContactInformation from './ContactInformation';
 const TeamMemberImg = ({ data }: { data: Partial<ITeamMember> }) => {
   const { contactInformation, social } = data;
@@ -20,7 +21,12 @@ const TeamMemberImg = ({ data }: { data: Partial<ITeamMember> }) => {
               <Image src={gradient06} alt="bg image" className="size-full object-cover" />
             </figure>
           </RevealAnimation>
-          <Image src={data.userImg as string} alt="team-member-single img" width={600} height={600} />
+          <TeamMemberAvatar
+            src={data.userImg}
+            name={data.name as string}
+            fallbackClassName="max-w-[600px]"
+            className="h-auto w-full max-w-[600px] object-cover"
+          />
         </figure>
         <ContactInformation
           contactInformation={contactInformation as IContactInformation}

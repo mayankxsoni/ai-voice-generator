@@ -1,10 +1,10 @@
 import { IBlogPost } from '@/interface';
-import getMarkDownData from '@/utils/getMarkDownData';
+import { getPublishedPosts } from '@/lib/blog';
 import RevealAnimation from '../animation/RevealAnimation';
 import FeaturedBlogSwiper from './FeaturedBlogSwiper';
 
-const FeaturedBlog = () => {
-  const allBlogs = getMarkDownData<IBlogPost & { [key: string]: unknown }>('src/data/blogs');
+const FeaturedBlog = async () => {
+  const allBlogs = await getPublishedPosts();
   const featuredBlogs: IBlogPost[] = allBlogs.filter((blog) => blog.featured === true).slice(0, 3);
 
   return (
