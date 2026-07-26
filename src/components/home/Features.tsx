@@ -113,7 +113,10 @@ const Features = () => {
   };
 
   return (
-    <section className="py-24 lg:py-32 bg-white overflow-hidden" aria-labelledby="services-heading">
+    <section
+      id="services"
+      className="scroll-mt-28 py-24 lg:py-32 bg-white overflow-hidden"
+      aria-labelledby="services-heading">
       
       {/* CSS Stylesheet for horizontal scrolling marquee */}
       <style>{`

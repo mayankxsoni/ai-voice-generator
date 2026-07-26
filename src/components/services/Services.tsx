@@ -39,7 +39,7 @@ const Services = () => {
                   </div>
                   <div>
                     <LinkButton
-                      href={`/services/${service.slug}`}
+                      href="/#services"
                       btnClass="btn-v2-white group-hover/btn-v2:btn-secondary-v2   btn-md-v2">
                       Read more
                     </LinkButton>

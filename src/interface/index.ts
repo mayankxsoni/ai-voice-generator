@@ -83,6 +83,7 @@ export interface ISocialLinks {
   instagram?: string;
   linkedin?: string;
   youtube?: string;
+  whatsapp?: string;
 }
 
 export interface IContactInformation {

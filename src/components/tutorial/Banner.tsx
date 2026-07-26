@@ -28,7 +28,7 @@ const Banner = () => {
             </div>
             <RevealAnimation delay={0.4}>
               <div>
-                <LinkButton href="/services" btnClass="btn-xl-v2 btn-primary-v2">
+                <LinkButton href="/#services" btnClass="btn-xl-v2 btn-primary-v2">
                   Explore Agency Services →
                 </LinkButton>
               </div>

@@ -1,38 +1,22 @@
-import ChatbotWidget from '@/components/shared/chatbot/ChatbotWidget';
-import HeaderWrapper from '@/components/shared/HeaderWrapper';
-import SmoothScrollProvider from '@/components/shared/SmoothScroll';
-import Footer from '@/components/shared/footer/Footer';
-import { AppContextProvider } from '@/context/AppContext';
 import { interTight } from '@/utils/font';
 import { generateMetadata } from '@/utils/generateMetaData';
 import { Metadata } from 'next';
-import { ReactNode, Suspense } from 'react';
+import { ReactNode } from 'react';
 import './globals.css';
 
 export const metadata: Metadata = {
   ...generateMetadata(),
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: ReactNode;
-}>) {
+/**
+ * Root layout is intentionally bare — it only owns <html>/<body>.
+ * The marketing chrome (header, footer, chatbot, smooth scroll) lives in
+ * (site)/layout.tsx so the admin panel at /admin can opt out of all of it.
+ */
+export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${interTight.variable} antialiased`}>
-        <AppContextProvider>
-          <Suspense>
-            <SmoothScrollProvider>
-              <HeaderWrapper />
-              
-              {children}
-              <Footer />
-              <ChatbotWidget />
-            </SmoothScrollProvider>
-          </Suspense>
-        </AppContextProvider>
-      </body>
+      <body className={`${interTight.variable} antialiased`}>{children}</body>
     </html>
   );
 }

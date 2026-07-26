@@ -42,7 +42,7 @@ const FeatureList = () => {
                 <h2 className="text-accent sm:text-heading-5 text-heading-6 mb-8">
                   We appreciate our valued clients and strive to provide them with the best service possible.
                 </h2>
-                <LinkButton href="/services" btnClass="btn-v2-white hover:btn-primary-v2 btn-md-v2 border-0">
+                <LinkButton href="/#services" btnClass="btn-v2-white hover:btn-primary-v2 btn-md-v2 border-0">
                   Get started
                 </LinkButton>
               </div>

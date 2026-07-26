@@ -1,4 +1,4 @@
-import matter from 'gray-matter';
+import { IBlogPost } from '@/interface';
 import Image, { StaticImageData } from 'next/image';
 import ReactMarkdown from 'react-markdown';
 import rehypeSlug from 'rehype-slug';
@@ -6,7 +6,7 @@ import RevealAnimation from '../animation/RevealAnimation';
 import Comment from './Comment';
 import ShareLink from './ShareLink';
 
-const BlogContent = ({ blog }: { blog: matter.GrayMatterFile<string> }) => {
+const BlogContent = ({ blog }: { blog: { data: Partial<IBlogPost>; content: string } }) => {
   return (
     <section className="pt-32 pb-14 sm:pt-36 md:pt-42 md:pb-16 lg:pb-[88px] xl:pt-[180px] xl:pb-[200px]">
       <div className="main-container">

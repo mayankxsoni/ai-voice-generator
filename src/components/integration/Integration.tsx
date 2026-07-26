@@ -114,7 +114,7 @@ const Integration = () => {
             <RevealAnimation delay={0.7}>
               <div className="text-center">
                 <LinkButton
-                  href="/services"
+                  href="/#services"
                   btnClass="btn-v2-white group-hover/btn-v2:btn-primary-v2 btn-xl-v2 border-0">
                   See in Action
                 </LinkButton>

@@ -35,7 +35,7 @@ const leftColumnMenuItems: MenuItemProps[] = [
   },
   {
     id: 'services',
-    href: '/services',
+    href: '/#services',
     title: 'Services',
     description: 'See how others are using First Pixel',
     icon: <ServiceIcon className="size-5" />,

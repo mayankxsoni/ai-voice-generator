@@ -1,6 +1,6 @@
 import { IContactInformation, ISocialLinks } from '@/interface';
 import Link from 'next/link';
-import SocialLinkV2 from '../shared/SocialLinkV2';
+import TeamSocialLinks from '../shared/TeamSocialLinks';
 
 const ContactInformation = ({
   contactInformation,
@@ -25,7 +25,7 @@ const ContactInformation = ({
         </p>
       </div>
       {/*Social links*/}
-      <SocialLinkV2 SocialLinks={social} />
+      <TeamSocialLinks social={social} variant="static" />
     </div>
   );
 };

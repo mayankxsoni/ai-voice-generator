@@ -1,10 +1,9 @@
-import { IBlogPost } from '@/interface';
-import getMarkDownData from '@/utils/getMarkDownData';
+import { getPublishedPosts } from '@/lib/blog';
 import RevealAnimation from '../animation/RevealAnimation';
 import BlogPaginationWrapper from './BlogPaginationWrapper';
 
-const BlogShowcase = () => {
-  const blogs = getMarkDownData<IBlogPost & { [key: string]: unknown }>('src/data/blogs');
+const BlogShowcase = async () => {
+  const blogs = await getPublishedPosts();
   return (
     <section className="py-14 md:py-16 lg:py-[88px] xl:py-[100px]">
       <div className="main-container">
