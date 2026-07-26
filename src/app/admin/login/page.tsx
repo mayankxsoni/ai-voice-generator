@@ -1,7 +1,15 @@
+import { isDatabaseConfigured } from '@/db';
 import { Suspense } from 'react';
 import LoginForm from '../components/LoginForm';
+import SetupNotice from '../components/SetupNotice';
+
+export const dynamic = 'force-dynamic';
 
 export default function LoginPage() {
+  if (!isDatabaseConfigured) {
+    return <SetupNotice />;
+  }
+
   return (
     <div className="admin-login">
       <div className="admin-login-card">

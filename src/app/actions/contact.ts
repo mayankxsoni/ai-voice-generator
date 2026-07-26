@@ -1,6 +1,6 @@
 'use server';
 
-import { db } from '@/db';
+import { db, isDatabaseConfigured } from '@/db';
 import { contactSubmissions } from '@/db/schema';
 import { revalidatePath } from 'next/cache';
 
@@ -36,6 +36,11 @@ export async function submitContactAction(_prev: ContactState, formData: FormDat
     message.length > MAX.message
   ) {
     return { error: 'That message is too long — please shorten it and try again.' };
+  }
+
+  // No database yet — tell people how to reach us instead of silently losing it.
+  if (!isDatabaseConfigured) {
+    return { error: 'Our contact form is being set up. Please email support@firstpixel.media and we will reply today.' };
   }
 
   try {
